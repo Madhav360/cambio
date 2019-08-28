@@ -16,7 +16,7 @@ export default class Footer extends React.Component{
             <div class="col-lg-5 col-md-5 col-xs-12">
                 <ul class="list-unstyled clear-margins">
                     <li class="widget-container widget_recent_news">
-                    <img className="img-responsive" src="image/logofooter.png" />
+                    <img className="img-responsive logofooter" src="image/logofooter.png" />
                         <div class="footerp">
                             <h2 class="title-median">Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy text</h2>
                         </div>
