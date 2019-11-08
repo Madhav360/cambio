@@ -78,7 +78,7 @@ class EmployeeCategory extends Component{
                          </div>
                          
                          <div className="col-md-12 roles-nxt-btn text-center">
-                           <Link to="#"><button className="btn">Next</button></Link>
+                           <Link to="recruiterquestionfirst"><button className="btn">Next</button></Link>
                            </div>
                    </div>  
                  

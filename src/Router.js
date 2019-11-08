@@ -19,6 +19,16 @@ import ProfileVisibility from "./ProfileVisibility";
 import EnableLocation from './EnableLocation';
 import Industry from './Industry';
 import EmployeeCategory from './EmployeeCategory';
+import RecruiterQuestionfirst from './RecruiterQuestionfirst';
+import RecruiterQuestiontwo from './RecruiterQuestiontwo';
+import RecruiterQuestionthree from './RecruiterQuestionthree';
+import RecruiterQuestionfour from './RecruiterQuestionfour';
+import RecruiterQuestionfive from './RecruiterQuestionfive';
+import RecruiterQuestionsix from './RecruiterQuestionsix';
+import Buildyourprofile from './Buildyourprofile';
+import Company from './Company';
+
+
 const appRoute =[
    {
    	path:"/",
@@ -74,6 +84,46 @@ const appRoute =[
 	path:"/EmployeeCategory",
 	isExactPath: true,
 	component: <EmployeeCategory />
+ },
+ {
+	path:"/RecruiterQuestionfirst",
+	isExactPath: true,
+	component: <RecruiterQuestionfirst />
+ },
+ {
+	path:"/RecruiterQuestiontwo",
+	isExactPath: true,
+	component: <RecruiterQuestiontwo />
+ },
+ {
+	path:"/RecruiterQuestionthree",
+	isExactPath: true,
+	component: <RecruiterQuestionthree />
+ },
+ {
+	path:"/RecruiterQuestionfour",
+	isExactPath: true,
+	component: <RecruiterQuestionfour />
+ },
+ {
+	path:"/RecruiterQuestionfive",
+	isExactPath: true,
+	component: <RecruiterQuestionfive />
+ },
+ {
+	path:"/RecruiterQuestionsix",
+	isExactPath: true,
+	component: <RecruiterQuestionsix />
+ },
+ {
+	path:"/Buildyourprofile",
+	isExactPath: true,
+	component: <Buildyourprofile />
+ },
+ {
+	path:"/Company",
+	isExactPath: true,
+	component: <Company />
  },
 ];
 
