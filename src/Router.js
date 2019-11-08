@@ -13,7 +13,12 @@ import Home from "./Home";
 import Postjob from "./Postjob";
 import Login from "./Login";
 import Pnewjob from "./Pnewjob";
-
+import Signup from "./Signup";
+import Role from "./Role";
+import ProfileVisibility from "./ProfileVisibility";
+import EnableLocation from './EnableLocation';
+import Industry from './Industry';
+import EmployeeCategory from './EmployeeCategory';
 const appRoute =[
    {
    	path:"/",
@@ -40,6 +45,36 @@ const appRoute =[
    	isExactPath: true,
    	component: <Pnewjob />
    },
+   {
+    path:"/Signup",
+   	isExactPath: true,
+   	component: <Signup />
+   },
+   {
+    path:"/Role",
+   	isExactPath: true,
+   	component: <Role />
+   },
+   {
+    path:"/ProfileVisibility",
+   	isExactPath: true,
+   	component: <ProfileVisibility />
+   },
+   {
+    path:"/EnableLocation",
+   	isExactPath: true,
+   	component: <EnableLocation />
+   },
+   {
+   path:"/Industry",
+   isExactPath: true,
+   component: <Industry />
+},
+{
+	path:"/EmployeeCategory",
+	isExactPath: true,
+	component: <EmployeeCategory />
+ },
 ];
 
 //HashRouter  also apply # 

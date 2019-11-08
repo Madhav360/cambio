@@ -5,18 +5,24 @@
   pointer-events: none;
 }
 body{
-  background-color: #0a0a0a;
+  background-color: #8885853b;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-color: #0a0a0a;
+  color: #fff !important;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fff !important;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -35,17 +41,30 @@ body{
 
 
 
-.navbar-default {
-  background-color: #0a0a0a;
-  border-color: #0a0a0a;
-  color: #fff !important;
-}
+
 .nav>li>a {
   position: relative;
   display: block;
   padding: 10px 30px;
-  color:#fff !important;
+  color:#55aefa !important;
+  background-color: #fff;
+  border: 1px solid #55aefa;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  
 }
+.nav>li>a:hover{
+  color: #fff !important;
+}
+.mdv-login{
+  margin-right: 15px;
+}
+.mdv-navlinks:hover{
+  background-color: #55aefa;
+  border-radius: 20px;
+  color: #fff !important;
+}
+
 .navbar {
   position: relative;
   min-height: 50px;
@@ -67,7 +86,7 @@ body{
   height: 50px;
 }
 
-{/* home begin */}
+/* home begin */
 
 #letsget {
   background: url(/image/new.png) center center no-repeat;
@@ -269,35 +288,83 @@ background-size: cover;
   color: #fff;
   font-size: 13px;
 }
-{/* home end  */}
+/* home end  */
 
-{/* login   */}
+/* login   */
 .login-form-1{
-  padding: 5%;
+  position: relative;
+  background-color: #fff;
+
 }
-.login-form-1 h3 {
-  text-align: left;
-  color: #fff;
+.login-form-1 h2 {
+  color: #000000c7;
   font-weight: 700;
-  margin-top: 8%;
+  text-align: center;
+  position: relative;
+  font-size: 36px;
+  padding-top: 45px;
+
 }
 .login-text{
-  color:#fff !important;
+ text-align: center;
 }
 .login-form-1 h4 {
   font-size: 14px;
-  color: #fff;
-  margin-bottom: 9%;
+  color: #000;
+text-align: center;
+position: relative;
 }
+
+.mdv-login-with ul{
+    list-style: none;
+    display: inline-flex;
+    letter-spacing: 41px;
+    margin-left: -48px;
+    margin-top: 7px;
+}
+.mdv-login-with{
+  text-align: center;
+}
+.mdv-login-with img{
+  height: 50px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.mdv-login-with .fb{
+  margin-left: 0px;
+}
+.mdv-login-with h4{
+  text-align: center;
+  padding-top: 47px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+  
+.mdv-login-form{
+  margin-top: 40px;
+}
+.mdv-login-form .form-control{
+  margin: 0 auto;
+  
+}
+
 .a_am_job_seeker_button{
   border: 1px solid #976121;
 }
 .login-form-2 {
-  padding: 15% 7% 15%;
-  background: linear-gradient(to bottom, #E2CB74 0%, #976121 100%);
+  background-color: #bfbebe4d;
+}
+.mdv-login h1{
+    color: #000000c7;
+    padding-top: 38px;
+    text-align: center;
+    padding-bottom: 54px;
+    font-size: 43px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 .login-container form{
-  padding: 10%;
+ position: relative;
 }
 .btnSubmit {
   width: 60%;
@@ -314,7 +381,7 @@ background-size: cover;
   margin-bottom: 15px;
 }
 .login-form-1 .ForgetPwd {
-  color: #D8B865;
+  color: #55aefa;
   text-decoration: none;
 }
 .jobseekerbtns{
@@ -331,21 +398,40 @@ background-size: cover;
   border:1px solid#E2CB74;
 }
 .logininputs{
-  background-color: #efefef;
-  border: 0px solid #333;
-  width: 60%;
-  margin-bottom: 25px;
-  margin-top: 4px;
-}
-{/* login end  */}
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #807777eb;
+  border-radius: 0;
+  width: 50%;
+  height: 60px;
+    padding: 0px 0px;
+    font-size: 18px;
+    color: #555;
 
-{/* Post new job begin  */}
+}
+.mdv-forgot-pwd a{
+  float: right;
+  padding-right: 142px;
+  color: #55aefa;
+}
+.mdv-login-btn{
+    width: 50%;
+    border: 1px solid #55aefa;
+    padding: 12px;
+    margin-top: 31px;
+    border-radius: 21px;
+    background-color: #55aefa;
+    color: #fff;
+}
+/* login end  */
+
+/* Post new job begin  */
 
 .pnewjob-pads{
   padding: 4%;
 }
 
-{/* Post new job end  */}
+/* Post new job end  */
 
 .postjob-padtopbtm{
   padding:4% 0;
@@ -359,7 +445,7 @@ background-size: cover;
   margin-top: 16%;
 }
 
-{/* footer begin */}
+/* footer begin */
 .footer1 {
   background: #0a0a0a;
 padding-top: 40px;
@@ -467,4 +553,210 @@ width: 200px;
   color: #fff;
 }
 
-{/* footer end */}
+/* footer end */
+
+
+
+
+
+
+/* --------------------signup start----------------- */
+.mdv-singup-page{
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.signupinputs{
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #807777eb;
+  border-radius: 0;
+  width: 50%;
+  height: 60px;
+  padding: 0px 0px;
+  font-size: 18px;
+  color: #555;
+}
+.signupinputs:focus{
+  outline: none !important;
+   box-shadow: none;
+   border-bottom: 1px solid #807777eb;
+}
+.mrg{
+  margin-left: 250px;
+}
+.mdv-signup-form{
+  margin-top: 30px;
+  
+}
+.mdv-signup-btn{
+  width: 26%;
+  border: 1px solid #55aefa;
+  padding: 12px;
+  margin-top: 75px;
+  border-radius: 21px;
+  background-color: #55aefa;
+    color: #fff;
+}
+.btn:focus {
+  outline: none !important;
+   box-shadow: none;
+}
+
+
+
+/* --------------------signup end----------------- */
+
+
+/* ---------------------- Role------------------------ */
+.rolemain h2{
+  color: #000;
+    font-weight: 700;
+    font-family: Montserrat;
+    padding-top: 11px
+}
+.rolemain p{
+  color: #808080c7;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding-top: 6px;
+}
+.roleheading{
+  font-size: 28px;
+  font-weight: 600;
+  color: #000;
+  font-family: 'Montserrat';
+}
+.roles{
+  margin-left: 6%;
+  padding-top: 30px;
+}
+.roles ul{
+  list-style: none;
+  display: inline-flex;
+}
+.condidates{
+  margin-left: 80px;
+}
+.condidate-roles-btn{
+  background-color: #8a8c8a29;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  border: 1px solid #8a8c8a29;
+ 
+}
+.condidate-roles-btn:hover{
+  background-color: #55aefa;
+  text-decoration: none;
+  color: #fff;
+}
+.condidate-roles-btn a{
+  color: #000;
+  font-size: 21px;
+}
+.condidate-roles-btn a:hover{
+  text-decoration: none;
+  color:#fff;
+}
+.roles-btn{
+  color: #000;
+    font-weight: 700;
+    font-family: Montserrat;
+    padding-top: 11px
+}
+.roles-btn:hover{
+  color: #fff;
+}
+.roles-nxt-btn .btn{
+  background-color: #55aefa;
+  color: #fff;
+  width: 258px;
+  padding: 12px;
+  font-size: 17px;
+  letter-spacing: 2px;
+  border-radius: 25px;
+  margin: 90px 0px 30px 0px;
+}
+
+/* ---------------------- Role end------------------------ */
+
+/* ---------------------- Profile Visibility------------------------ */
+.pv h2{
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.profile-privacy{
+  border-radius: 16px;
+    border: 1px solid #80808057;
+    box-shadow: 0px 0px 1px 0px;
+    height: 100px;
+    margin-bottom: 70px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.profile-privacy h3{
+    color: #55aefa;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.profile-privacy p{
+  padding-left: 10px;
+  color: grey;
+}
+/* ---------------------- Profile Visibility end------------------------ */
+
+/* ---------------------- Enable Location------------------------ */
+.enable-loaction-head h2{
+  padding-top: 14px;
+  font-weight: 600;
+  font-family: Montserrat;
+}
+.enable-loaction-head p{
+  font-size: 20px;
+    line-height: 23px;
+    color: #808080d1
+}
+
+.gps-img img{
+  margin: auto;
+  width: 300px;
+  margin-top: 40px;
+}
+
+/* ---------------------- Enable Location End------------------------ */
+
+/* ---------------------- Industry ------------------------ */
+.industry-job{
+  height: 155px;
+  width: 130px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 16px;
+  background-color: #c7c4c43b;
+
+}
+.industry-job:hover{
+  background-color: #55aefa54;
+    border: 1px solid #55aefa54;
+}
+.industry-job img{
+  margin: auto;
+  height: 50px;
+  
+}
+.industrymain h2{
+  font-weight: 600;
+  padding-top: 35px
+}
+.industrymain p{
+  color: gray;
+    font-size: 18px;
+}
+
+
+/* ---------------------- Industry end------------------------ */
