@@ -21,6 +21,17 @@ import RecruiterQuestionfive from './RecruiterQuestionfive';
 import RecruiterQuestionsix from './RecruiterQuestionsix';
 import Buildyourprofile from './Buildyourprofile';
 import Company from './Company';
+import Bio from './Bio';
+import Accountrecovery from './Accountrecovery';
+import Forgotpassword from './Forgotpassword';
+import Sidebar from './Sidebar';
+import Cardview from './Cardview';
+import Bio2 from './Bio2';
+import Groupcompany from './Groupcompany';
+import CandidateAlert from './CondidateAlert';
+import Resetotp from './Resetotp';
+import Setnewpassword from './Setnewpassword';
+
 
 
 
@@ -50,6 +61,16 @@ class App extends Component {
             <Route exact path="/recruiterquestionsix" component={() => (<RecruiterQuestionsix />)} />
             <Route exact path="/buildyourprofile" component={() => (<Buildyourprofile />)} />
             <Route exact path="/company" component={() => (<Company />)} />
+            <Route exact path="/bio" component={() => (<Bio />)} />
+            <Route exact path="/bio2" component={() => (<Bio2 />)} />
+            <Route exact path="/accountrecovery" component={() => (<Accountrecovery />)} />
+            <Route exact path="/forgotpassword" component={() => (<Forgotpassword />)} />
+            <Route exact path="/sidebar" component={() =>(<Sidebar />)} />
+            <Route exact path="/cardview" component={() =>(<Cardview />)} />
+            <Route exact path="/group" component={() =>(<Groupcompany />)} />
+            <Route exact path="/condidatealert" component={() =>(<CandidateAlert />)} />
+            <Route exact path="/resetotp" component={() =>(<Resetotp />)} />
+            <Route exact path="/setnewpassword" component={() =>(<Setnewpassword />)} />
           </Switch>
       </BrowserRouter>
     );

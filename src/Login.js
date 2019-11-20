@@ -7,14 +7,25 @@ export default class Login extends React.Component{
         super(props);
     
         this.state = {
-          hidden: true
+               mobile_number :'',
+               password : '',
         };
-        this.toggleShow = this.toggleShow.bind(this);
+       
+       
       }
-    
-      toggleShow() {
-        this.setState({ hidden: !this.state.hidden });
+      mobileNumberHandler = (event) => {
+        this.setState({
+            mobile_number:event.target.value}
+        );
       }
+      PasswordHandler = (event) => {
+        this.setState({
+            password:event.target.value}
+        );
+      }
+      
+      
+     
     render(){
 	return(
     <div>
@@ -58,15 +69,26 @@ export default class Login extends React.Component{
                     <form>
                         <div class="form-group">
                             
-                            <input type="text" class="form-control logininputs" placeholder="Email/Mobile Number" value="" />
+                            <input 
+                               type="text" 
+                               class="form-control logininputs" 
+                               placeholder="Email/Mobile Number" 
+                               value={this.state.mobile_number}
+                               onChange={this.mobileNumberHandler} />
                         </div>
                         <div class="form-group">
                            
-                            <input type={this.state.hidden ? "password" : "text"} class="form-control logininputs" placeholder="Password" value="" />
+                            <input 
+                              type="password"
+                              class="form-control logininputs" 
+                              placeholder="Password" 
+                              value={this.state.password}
+                              onChange={this.PasswordHandler}
+                              />
                             {/* <button onClick={this.toggleShow}>Show / Hide</button> */}
                         </div>
                         <div class="col-md-12 mdv-forgot-pwd">
-                            <a href="#">Forgot Password ?</a>
+                            <Link to='/forgotpassword'>Forgot Password ?</Link>
                         </div>
                         <div class="form-group text-center">
                             <input type="submit" className="btn mdv-login-btn" value="Login" />

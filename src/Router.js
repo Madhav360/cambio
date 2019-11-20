@@ -27,6 +27,16 @@ import RecruiterQuestionfive from './RecruiterQuestionfive';
 import RecruiterQuestionsix from './RecruiterQuestionsix';
 import Buildyourprofile from './Buildyourprofile';
 import Company from './Company';
+import Bio from './Bio';
+import Bio2 from './Bio2';
+import Accountrecovery from './Accountrecovery';
+import Forgotpassword from './Forgotpassword'
+import Sidebar from './Sidebar';
+import Cardview from "./Cardview";
+import Groupcompany from "./Groupcompany";
+import CandidateAlert from "./CondidateAlert";
+import Resetotp from "./Resetotp";
+import Setnewpassword from "./Setnewpassword";
 
 
 const appRoute =[
@@ -124,6 +134,56 @@ const appRoute =[
 	path:"/Company",
 	isExactPath: true,
 	component: <Company />
+ },
+ {
+	path:"/Bio",
+	isExactPath: true,
+	component: <Bio />
+ },
+ {
+	path:"/Bio2",
+	isExactPath: true,
+	component: <Bio2 />
+ },
+ {
+	path:"/Accountrecovery",
+	isExactPath: true,
+	component: <Accountrecovery />
+ },
+ {
+	path:"/Forgotpassword",
+	isExactPath: true,
+	component: <Forgotpassword />
+ },
+ {
+	path:"/Sidebar",
+	isExactPath: true,
+	component: <Sidebar />
+ },
+ {
+	path:"/Cardview",
+	isExactPath: true,
+	component: <Cardview />
+ },
+ {
+	path:"/Groupcompany",
+	isExactPath: true,
+	component: <Groupcompany />
+ },
+ {
+	path:"/CandidateAlert",
+	isExactPath: true,
+	component: <CandidateAlert />
+ },
+ {
+	path:"/Resetopt",
+	isExactPath: true,
+	component: <Resetotp />
+ },
+ {
+	path:"/Setnewpassword",
+	isExactPath: true,
+	component: <Setnewpassword />
  },
 ];
 

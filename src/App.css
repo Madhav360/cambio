@@ -87,6 +87,61 @@ body{
   height: 50px;
 }
 
+
+
+
+/* ----------------side bar--------------------- */
+.sidebar ul{
+  list-style: none;
+  display: inline-flex;
+  text-align: justify;
+  padding-top: 11px;
+  list-style-position: outside;
+  
+}
+.sidebar .profile-pitcure{
+  width: 65px;
+    height: 65px;
+    border-radius: 42px;
+    border: 2px solid #fff;
+}
+.sidebar .side-myprofile{
+  padding-left: 25px;
+  padding-top: 26px;
+}
+.sidebar .side-icon{
+  padding-left: 25px;
+  padding-top: 26px;
+}
+.sidebarmenu ul{
+  list-style: none;
+  background-color: #fff;
+ 
+}
+.sidebarmenu ul li{
+    background-color: #fff;
+    margin-left: -40px;
+    /* padding-top: 20px; */
+    border: 1px solid #a5a4a4;
+    margin-top: 14px;
+    /* padding-bottom: 20px; */
+    word-spacing: 8px;
+    padding: 20px 0px 20px 50px;
+
+}
+.sidebarmenu
+
+
+
+/* -----------------side bar end--------------------- */
+
+
+
+
+
+
+
+
 /* home begin */
 
 
@@ -318,13 +373,13 @@ background-size: cover;
   text-align: center;
   position: relative;
   font-size: 36px;
-  padding-top: 45px;
+
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
 
 }
 .login-text{
  text-align: center;
- padding-bottom: 84px;
+ padding-bottom: 55px;
 }
 .login-form-1 h4 {
   font-size: 14px;
@@ -382,9 +437,9 @@ font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
 }
 .mdv-login h1{
     color: #000000c7;
-    padding-top: 38px;
+   
     text-align: center;
-    padding-bottom: 54px;
+
     font-size: 43px;
     font-weight: 600;
   
@@ -435,6 +490,11 @@ font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
     font-size: 15px;
     color: #555;
 
+}
+.logininputs:focus{
+  outline: none !important;
+   box-shadow: none;
+   border-bottom: 1px solid #807777eb;
 }
 .mdv-forgot-pwd a{
   float: right;
@@ -606,7 +666,7 @@ width: 200px;
 }
 .mdv-login-with h4{
 color: #000;
-padding-top: 30px;
+
     font-size: 17px;
 }
 .signupinputs{
@@ -615,7 +675,7 @@ padding-top: 30px;
   border-bottom: 1px solid #807777eb;
   border-radius: 0;
   width: 50%;
-  height: 60px;
+  height: 50px;
   padding: 0px 0px;
   font-size: 15px;
   color: #555;
@@ -636,7 +696,7 @@ padding-top: 30px;
   width: 26%;
   border: 1px solid #55aefa;
   padding: 12px;
-  margin-top: 75px;
+  margin-top: 35px;
   border-radius: 21px;
   background-color: #55aefa;
     color: #fff;
@@ -671,7 +731,7 @@ padding-top: 30px;
   font-family: 'Montserrat';
 }
 .roles{
-  margin-left: 6%;
+  margin-left: 13%;
   padding-top: 30px;
 }
 .roles ul{
@@ -683,8 +743,8 @@ padding-top: 30px;
 }
 .condidate-roles-btn{
   background-color: #8a8c8a29;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   border-radius: 100px;
   border: 1px solid #8a8c8a29;
  
@@ -719,7 +779,7 @@ padding-top: 30px;
   font-size: 17px;
 
   border-radius: 25px;
-  margin: 90px 0px 30px 0px;
+  margin: 40px 0px 30px 0px;
 }
 
 /* ---------------------- Role end------------------------ */
@@ -939,16 +999,358 @@ padding-top: 30px;
 }
 
 
+/* ---------------------forgot-password start--------------------- */
+.forgot-password img{
+  width: 200px;
+}
+.otpinupt ul{
+  list-style: none;
+  display: inline-flex;
+  margin-top: 28px;
+  margin-bottom: -19px;
+  margin-left: -21px;
+}
+.otpinupt ul li input{
+  width: 50px;
+  height: 50px;
+  box-shadow: 0;
+  border-radius: 0;
+  margin-right: 10px;
+  background-color: #e3e2e2;
+    border: 0;
+
+}
+.otpinupt ul li input:focus{
+  outline: none !important;
+  box-shadow: none;
+  border-bottom: 1px solid #807777eb;
+}
+
+
+/* ---------------------forgot-password end--------------------- */
+
+
+
 /* ---------------------company------------------- */
 .company ul{
   display: inline-flex;
   list-style: none;
+  padding-top: 16px;
+  margin-left: -22px;
 }
 .company ul li{
   margin-right: 18px;
 }
 
 
+.mdv-company-icons{
+  height: 40px;
+  width: 40px;
+  background-color: #e3e2e2;
+  font-size: 16px;
+  border-radius: 24px;
 
+}
+
+
+.mdv-company-icons:hover{
+  color: #fff;
+  background-color: #55aefa;
+}
+.mdv-company-icons:focus{
+  color: #fff;
+  background-color: #55aefa;
+}
+
+.company p{
+  font-size: 20px;
+  color: #55aefa;
+}
+.company p:last-child{
+  font-size: 16px;
+  color: grey
+}
+.company-form{
+  margin-top: 15px;
+}
+.company-inputs{
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #807777eb;
+  border-radius: 0;
+  width: 60%;
+  height: 50px;
+  padding: 0px 0px;
+  font-size: 15px;
+  color: #555;
+}
+.company-braches-inputs{
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #807777eb;
+  border-radius: 0;
+  width: 76%;
+  height: 60px;
+  padding: 0px 0px;
+  font-size: 15px;
+  color: #555;
+}
+.company-inputs:focus{
+  outline: none !important;
+   box-shadow: none;
+   border-bottom: 1px solid #807777eb;
+}
+.company-braches-inputs:focus{
+  outline: none !important;
+   box-shadow: none;
+   border-bottom: 1px solid #807777eb;
+}
+.company-use-gps ul{
+  list-style: none;
+  display: inline-flex;
+  text-align: left;
+}
+.company-use-gps ul li button{
+  background-color: #e3e2e2;
+    border: 1px solid #e3e2e2;
+    width: 158px;
+    border-radius: 10px;
+    margin-right: 16px;
+}
+.company-use-gps ul li:first-child {
+  margin-left: -35px;
+}
+.mdv-first-input{
+  float: right;
+}
+.mvd-mrg{
+  margin-top: 35px;
+}
+
+.abt-cmpny{
+  text-align: center;
+  padding-left: 32px;
+  padding-top: 21px;
+  color: #55aefa;
+}
+.company-textarea{
+    height: 162px !important;
+    width: 60%;
+    background-color: #e3e2e2;
+    border: 1px solid #e3e2e2;
+    border-radius: 0;
+    resize: none;
+
+}
+.company-textarea ul{
+  list-style: none;
+  display: inline-flex;
+}
+.company-textarea ul li{
+  margin-right: 66px;
+}
+.mdv-company-camera{
+  font-size: 44px;
+  padding-top: 48px;
+}
+.compamy-logo{
+  color: #55aefa;
+  padding-top: 21px;
+}
+.company-textarea:focus{
+  outline: none !important;
+  box-shadow: none;
+  border: 1px solid #e3e2e2;
+}
+.company-skip-btn .company-skip{
+  width: 205px;
+  padding: 11px;
+  font-size: 18px;
+  border-radius: 23px;
+  background-color: #55aefa;
+  color: #fff;
+  border: 1px solid #55aefa;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.company-skip-btn button:hover{
+  color: #fff;
+}
+.company-skip-btn{
+  margin-bottom: 20px;
+}
+.company-skip-btn a{
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: #55aefa;
+}
+.company-skip-btn a:hover{
+  text-decoration: none;
+  color: #55aefa;
+}
+
+
+.condalert ul{
+  list-style: none;
+  display: inline-flex;
+  margin-left: -39px;
+}
+.condalert ul li{
+ margin-right: 10px;
+}
+.condalert ul li button{
+  background-color: #e3e2e2;
+  width: 158px;
+  border-radius: 10px;
+padding: 2px;
+}
 
 /* -----------------------company end------------------ */
+
+
+/* -------------------Bio----------------------------------- */
+.employee-profile-pic img{
+    margin: auto;
+    height: 90px !important;
+    width: 90px;
+
+    border-radius: 94px;
+    border: 1px solid #e3e2e2;
+}
+
+.col-centered{
+  margin: 0 auto;
+  float: none;
+}
+.col-centered textarea{
+  height: 137px !important;
+  resize: none;
+  border: 1px solid #e3e2e2;
+  border-radius: 0;
+ 
+  background-color: #e3e2e2;
+  
+}
+.col-centered textarea:focus{
+  outline: none !important;
+  box-shadow: none;
+  border: 1px solid #e3e2e2;
+}
+/* -------------------Bio End------------------------------- */
+
+/* ---------------------Account recover--------------------------- */
+.account-recovery p{
+  font-size: 17px;
+  color: #afabab;
+  
+}
+.accout-recover-input{
+  margin:0 auto;
+  float: none;
+}
+
+.accout-recover-input input{
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #807777eb;
+  border-radius: 0;
+ 
+  height: 60px;
+  padding: 0px 0px;
+  font-size: 15px;
+  color: #555;
+}
+.accout-recover-input input:focus{
+  outline: none !important;
+   box-shadow: none;
+   border-bottom: 1px solid #807777eb;
+}
+.acc-save{
+  margin-top: 40px !important;
+}
+
+/* ---------------------Account recover end---------------------------- */
+
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+
+/* ---------------------------home page------------------ */
+.carousel.carousel-slider {
+position: absolute;
+  height: 550px;
+}
+.carousel .slide .legend {
+  transition: all .5s ease-in-out;
+  position: absolute;
+  bottom: 77% !important;
+  left: 34% !important;
+  border-radius: 10px;
+   background: none !important; 
+  color: #fff;
+  padding: 10px;
+  font-size: 56px !important;
+  opacity: unset !important;
+
+ 
+}
+.dremjob{
+  font-weight: 600;
+}
+.carousel .slide img {
+  background-position: center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel .thumbs {
+  display: none !important;
+}
+/* ---------------------------home page end------------------- */
+
+.bio-2{
+  padding: 0px;
+}
+
+
+.company2 ul{
+  display: inline-flex;
+  list-style: none;
+  padding-top: 16px;
+  margin-left: -22px;
+}
+.company2 ul li{
+  margin-right: 18px;
+}
+
+.bio2-camera-section{
+  height: 120px;
+  background-color: #d2cfcf;
+}
+.bio2-camera-section ul{
+  padding-top: 35px;
+}
+.recv{
+  color: #55aefa;
+}
+.mdv-company-icon{
+  font-size: 35px;
+}
+.bio-2 p:last-child{
+font-size: 15px;
+color: grey;
+}
+
