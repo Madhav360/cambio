@@ -31,6 +31,7 @@ import Groupcompany from './Groupcompany';
 import CandidateAlert from './CondidateAlert';
 import Resetotp from './Resetotp';
 import Setnewpassword from './Setnewpassword';
+import Dashboard from './Dashboard';
 
 
 
@@ -71,6 +72,7 @@ class App extends Component {
             <Route exact path="/condidatealert" component={() =>(<CandidateAlert />)} />
             <Route exact path="/resetotp" component={() =>(<Resetotp />)} />
             <Route exact path="/setnewpassword" component={() =>(<Setnewpassword />)} />
+            <Route exact path="/dashboard" component={() =>(<Dashboard />)} />
           </Switch>
       </BrowserRouter>
     );

@@ -2,7 +2,6 @@ import React from 'react';
 import {Component} from 'react';
 import Header from './common/Header';
 import { Link } from 'react-router-dom';
-import  MultiSelectReact  from 'multi-select-react';
 
 
 
@@ -45,7 +44,7 @@ class Company extends Component{
                          </div>
                          <div className="company text-center">
                             <ul>
-                               <li> <button className="btn mdv-company-icons active"><i className='far fa-building'></i></button></li>
+                               <li> <button className="btn mdv-company-icons"><i className='far fa-building'></i></button></li>
                                <li> <Link to="/group"><button className="btn mdv-company-icons"><i className='fas  fa-users'></i></button></Link></li>
                                <li><Link to="/condidatealert"><button className="btn mdv-company-icons"><i className='far  fa-bell'></i> </button></Link></li>
                             </ul>

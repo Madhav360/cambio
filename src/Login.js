@@ -8,8 +8,10 @@ export default class Login extends React.Component{
     
         this.state = {
                mobile_number :'',
-               password : '',
+              
+               hidden: true
         };
+        this.toggleShow = this.toggleShow.bind(this);
        
        
       }
@@ -18,13 +20,14 @@ export default class Login extends React.Component{
             mobile_number:event.target.value}
         );
       }
-      PasswordHandler = (event) => {
-        this.setState({
-            password:event.target.value}
-        );
+    //   PasswordHandler = (event) => {
+    //     this.setState({
+    //         password:event.target.value}
+    //     );
+    //   }
+    toggleShow() {
+        this.setState({ hidden: !this.state.hidden });
       }
-      
-      
      
     render(){
 	return(
@@ -82,10 +85,11 @@ export default class Login extends React.Component{
                               type="password"
                               class="form-control logininputs" 
                               placeholder="Password" 
-                              value={this.state.password}
-                              onChange={this.PasswordHandler}
+                              value={this.state.hidden ? "password" : "text"}
+                              
                               />
-                            {/* <button onClick={this.toggleShow}>Show / Hide</button> */}
+                              <button onClick={this.toggleShow}>Show / Hide</button>
+                            
                         </div>
                         <div class="col-md-12 mdv-forgot-pwd">
                             <Link to='/forgotpassword'>Forgot Password ?</Link>

@@ -37,6 +37,7 @@ import Groupcompany from "./Groupcompany";
 import CandidateAlert from "./CondidateAlert";
 import Resetotp from "./Resetotp";
 import Setnewpassword from "./Setnewpassword";
+import Dashboard from "./Dashboard";
 
 
 const appRoute =[
@@ -184,6 +185,11 @@ const appRoute =[
 	path:"/Setnewpassword",
 	isExactPath: true,
 	component: <Setnewpassword />
+ },
+ {
+	path:"/Dashboard",
+	isExactPath: true,
+	component: <Dashboard />
  },
 ];
 
