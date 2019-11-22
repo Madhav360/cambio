@@ -8,10 +8,9 @@ export default class Login extends React.Component{
     
         this.state = {
                mobile_number :'',
-              
-               hidden: true
+               isPasswordShow : false
         };
-        this.toggleShow = this.toggleShow.bind(this);
+        
        
        
       }
@@ -20,16 +19,14 @@ export default class Login extends React.Component{
             mobile_number:event.target.value}
         );
       }
-    //   PasswordHandler = (event) => {
-    //     this.setState({
-    //         password:event.target.value}
-    //     );
-    //   }
-    toggleShow() {
-        this.setState({ hidden: !this.state.hidden });
-      }
+      togglePasswordVisibility = () =>{
+        const {isPasswordShow} = this.state;
+        this.setState({isPasswordShow : !isPasswordShow});
+    }
+
      
     render(){
+        const { isPasswordShow } = this.state;
 	return(
     <div>
 
@@ -70,8 +67,7 @@ export default class Login extends React.Component{
                     </div>
                     <div className="mdv-login-form">
                     <form>
-                        <div class="form-group">
-                            
+                        <div class="col-md-12 form-group">
                             <input 
                                type="text" 
                                class="form-control logininputs" 
@@ -79,17 +75,16 @@ export default class Login extends React.Component{
                                value={this.state.mobile_number}
                                onChange={this.mobileNumberHandler} />
                         </div>
-                        <div class="form-group">
+                        <div class="col-md-12 form-group">
                            
                             <input 
-                              type="password"
+                              type={isPasswordShow ? "text" : "password"}
                               class="form-control logininputs" 
-                              placeholder="Password" 
-                              value={this.state.hidden ? "password" : "text"}
-                              
+                              placeholder="Enter Password" 
                               />
-                              <button onClick={this.toggleShow}>Show / Hide</button>
-                            
+                            <i className={`fa ${isPasswordShow ? "fa-eye-slash": "fa-eye"} passwordicon`}
+                              onClick={this.togglePasswordVisibility}
+                           />
                         </div>
                         <div class="col-md-12 mdv-forgot-pwd">
                             <Link to='/forgotpassword'>Forgot Password ?</Link>

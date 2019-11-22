@@ -65,7 +65,7 @@ class Signup extends Component{
                             
                             <Link to="/Role"><input type="submit" className="btn mdv-signup-btn" value="Submit" /></Link>
                         </div>
-                        <div class="form-group login-text">
+                        <div class="form-group signup-text">
                            A Already User ? <Link to="/Login">Signup</Link>
                            
                         </div>

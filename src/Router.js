@@ -10,7 +10,7 @@ import{
 } from "react-router-dom";
 
 import Home from "./Home";
-import Postjob from "./Postjob";
+
 import Login from "./Login";
 import Pnewjob from "./Pnewjob";
 import Signup from "./Signup";
@@ -38,6 +38,8 @@ import CandidateAlert from "./CondidateAlert";
 import Resetotp from "./Resetotp";
 import Setnewpassword from "./Setnewpassword";
 import Dashboard from "./Dashboard";
+import Post_a_Job from "./Post_a_job";
+import Candidate_Saved from "./Cadidate_Saved";
 
 
 const appRoute =[
@@ -51,11 +53,7 @@ const appRoute =[
    	isExactPath: true,
    	component: <Home />
    },
-   {
-    path:"/Postjob",
-   	isExactPath: true,
-   	component: <Postjob />
-   },
+  
    {
     path:"/Login",
    	isExactPath: true,
@@ -190,6 +188,16 @@ const appRoute =[
 	path:"/Dashboard",
 	isExactPath: true,
 	component: <Dashboard />
+ },
+ {
+	path:"/Post_a_Job",
+	isExactPath: true,
+	component: <Post_a_Job />
+ },
+ {
+	path:"/Candidate_Saved",
+	isExactPath: true,
+	component: <Candidate_Saved />
  },
 ];
 

@@ -4,7 +4,6 @@ import { BrowserRouter, Switch } from 'react-router-dom';
 
 import './App.css';
 import Home from './Home';
-import Postjob from './Postjob';
 import Login from './Login';
 import Pnewjob from './Pnewjob';
 import Signup from './Signup';
@@ -32,6 +31,8 @@ import CandidateAlert from './CondidateAlert';
 import Resetotp from './Resetotp';
 import Setnewpassword from './Setnewpassword';
 import Dashboard from './Dashboard';
+import Post_a_Job from './Post_a_job';
+import Candidate_Saved from './Cadidate_Saved';
 
 
 
@@ -45,7 +46,7 @@ class App extends Component {
           <Switch>
          
             <Route exact path="/" component={() => (<div className="App"><Home /></div>)} />
-            <Route exact path="/Postjob" component={() => (<Postjob />)} />
+          
             <Route exact path="/Login" component={() => (<Login />)} />
             <Route exact path="/Pnewjob" component={() => (<Pnewjob />)} />
             <Route exact path="/Signup" component={() => (<Signup />)} />
@@ -73,6 +74,8 @@ class App extends Component {
             <Route exact path="/resetotp" component={() =>(<Resetotp />)} />
             <Route exact path="/setnewpassword" component={() =>(<Setnewpassword />)} />
             <Route exact path="/dashboard" component={() =>(<Dashboard />)} />
+            <Route exact path="/postajob" component={() =>(<Post_a_Job />)} />
+            <Route exact path="/candidatesave" component={() =>(<Candidate_Saved />)} />
           </Switch>
       </BrowserRouter>
     );

@@ -91,6 +91,7 @@ body{
 
 
 /* ----------------side bar--------------------- */
+
 .sidebar ul{
   list-style: none;
   display: inline-flex;
@@ -98,6 +99,20 @@ body{
   padding-top: 11px;
   list-style-position: outside;
   
+}
+.sidebarmenu a{
+  text-decoration: none;
+  color: grey;
+}
+.sidebarmenu a:hover{
+  color: #55aefa;
+  text-decoration: none;
+}
+.sidebarmenu span{
+  background-color: red;
+  padding: 5px 6px 5px 6px;
+  border-radius: 23px;
+  color: #fff;
 }
 .sidebar .profile-pitcure{
   width: 65px;
@@ -349,9 +364,7 @@ background-size: cover;
 /* home end  */
 
 /* login   */
-.mobileapp{
-  margin-bottom: 20px;
-}
+
 .mobileapp ul{
   list-style: none;
   display: inline-flex;
@@ -379,7 +392,14 @@ background-size: cover;
 }
 .login-text{
  text-align: center;
- padding-bottom: 55px;
+ padding-bottom: 44px;
+}
+.passwordicon{
+  position: absolute;
+  right: 27%;
+    font-size: 20px;
+    color: grey;
+    top: 25px;
 }
 .login-form-1 h4 {
   font-size: 14px;
@@ -485,7 +505,7 @@ font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
   border-bottom: 1px solid #807777eb;
   border-radius: 0;
   width: 50%;
-  height: 60px;
+  height: 50px;
     padding: 0px 0px;
     font-size: 15px;
     color: #555;
@@ -657,16 +677,13 @@ width: 200px;
 .mdv-singup-page h2{
   font-size: 31px;
     font-weight: 700;
-    padding-top: 20px;
-
 }
 .mdv-singup-page h4{
   color: #b1afaf;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 .mdv-login-with h4{
-color: #000;
-
+    color: #000;
     font-size: 17px;
 }
 .signupinputs{
@@ -689,7 +706,7 @@ color: #000;
   margin-left: 250px;
 }
 .mdv-signup-form{
-  margin-top: 30px;
+  margin-top: 20px;
   
 }
 .mdv-signup-btn{
@@ -705,7 +722,10 @@ color: #000;
   outline: none !important;
    box-shadow: none;
 }
-
+.signup-text{
+  text-align: center;
+    padding-bottom: 14px;
+}
 
 
 /* --------------------signup end----------------- */
@@ -720,9 +740,10 @@ color: #000;
 }
 .rolemain p{
   color: #808080c7;
-
-    font-size: 17px;
-    padding-top: 6px;
+  font-size: 17px;
+}
+.selectrole{
+  margin-top: -20px;
 }
 .roleheading{
   font-size: 28px;
@@ -741,6 +762,7 @@ color: #000;
 .condidates{
   margin-left: 80px;
 }
+
 .condidate-roles-btn{
   background-color: #8a8c8a29;
   height: 150px;
@@ -1353,4 +1375,184 @@ position: absolute;
 font-size: 15px;
 color: grey;
 }
+
+
+/* -------------------- dashboard start here-------------------------- */
+.back{
+ padding-left: 17px;
+ padding-top: 17px;
+ font-weight: 700;
+ color: #55aefa;
+ cursor: pointer;
+}
+.dashboard-head h3{
+  font-size: 35px;
+    font-weight: 600;
+    position: relative;
+}
+.dashaboard-menu button{
+  position: relative;
+  background-color: #e3e2e2;
+  height: 180px;
+  width: 180px;
+  border-radius: 105px;
+  font-size: 20px;
+  color: #000;
+
+  margin-top: 23px;
+}
+
+.dashaboard-menu button:hover{
+  background-color: #55aefa;
+  color: #fff;
+}
+
+.dashaboard-menu button:focus{
+  background-color: #55aefa;
+  color: #fff;
+}
+
+
+
+
+/* -----------------------Dashboard end ---------------------------------- */
+.dashpagewidth{
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 10px;
+}
+.postajob-head h3{
+  font-size: 25px;
+    font-weight: 600;
+}
+
+
+/* ---------------------Post a job start------------------------------------------ */
+.postajob-head h3{
+  font-size: 25px;
+    font-weight: 600;
+}
+.postinput{
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #807777eb;
+  border-radius: 0;
+   width: 80%;
+   height: 50px;
+    padding: 0px 0px;
+    font-size: 15px;
+    color: #555;
+
+}
+.postinput:focus{
+  outline: none !important;
+  box-shadow: none;
+  border-bottom: 1px solid #807777eb;
+}
+.post-job-form{
+  width: 80%;
+  
+  float: none;
+  margin: auto;
+}
+.desciptiontextarea{
+  width: 90%;
+  background-color: #F1F1F1;
+  resize: none;
+  border: none;
+  border-radius: 0;
+}
+.desciptiontextarea:focus{
+  outline: none !important;
+  box-shadow: none;
+  border-bottom: 1px solid #807777eb;
+  border: none;
+  border-radius: 0;
+}
+.cabs ul{
+  display: inline-flex;
+  list-style: none;
+  margin-left: -38px;
+}
+.cabs ul li{
+  margin-right: 20px;
+}
+.cabs p{
+  font-weight: 700;
+}
+.cabs ul li button{
+  width: 60px;
+  border: 1px solid #F1F1F1;
+  background-color: #F1F1F1;
+  border-radius: 21px;
+  color: #000;
+}
+.cabs ul li button:hover{
+  background-color: #55aefa;
+  color: #fff;
+}
+
+.cabs ul li button:focus{
+  background-color: #55aefa;
+  color: #fff;
+}
+/* ---------------------Post a job end------------------------------------------ */
+
+
+/* ---------------------Candidate Saved start------------------------------------ */
+.saved-candiadte-details{
+ background-color: #87e5f12b;
+ border-radius: 20px;
+ margin: 10px 0px 10px 0px;
+}
+.saved-candiadte-details ul{
+  display: inline-flex;
+  list-style: none;
+  padding-top: 28px;
+    padding-bottom: 18px;
+}
+.saved-candiadte-details ul li{
+ 
+}
+.saved-candiadte-details .saved-pitcure{
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 31px;
+}
+.candidatenamewidth{
+  width: 280px;
+  padding-left: 20px;
+}
+.candidatenamewidth h6{
+  font-size: 20px;
+  color: #55aefa;
+}
+.candidatenamewidth p{
+  color: grey;
+  margin-top: -6px;
+  font-size: 17px;
+}
+.saved-candiadte-details .glyphicon-home{
+  font-size: 25px;
+  padding-top: 21px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* -----------------------Candiadte saved end--------------------------------- */
+
+
+
+
+
+
 

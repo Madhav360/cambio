@@ -20,7 +20,7 @@ class Role extends Component{
                          <div className="rolemain text-center">
                            <h2>Hey There</h2>
                            <p>Signup to continue</p>
-                           <p>Select Your 
+                           <p className="selectrole">Select Your 
                                <span className="roleheading">
                                    <br /> Role
                                </span>
