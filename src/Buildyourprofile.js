@@ -22,15 +22,23 @@ class Buildyourprofile extends Component{
                            <h2>Let's Build Your Profile</h2>
                           <p>Below are 2 individual tabs</p>
                          </div>
-                         <div class="timeline">
-                            <div class="mdv-container right">
+                         <div class="buildrourprofile text-center">
+                            <div class="round">
                                 <div class="content">
-                                    <h2>2017</h2>
+                                    <Link to="#">
+                                        <button className="btn">
+                                            Company
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
-                            <div class="-mdv-container right">
+                            <div class="round ">
                                <div class="content">
-                                  <h2>2016</h2>
+                                   <Link to="#">
+                                        <button className="btn">
+                                            Bio
+                                        </button>
+                                    </Link>
                                </div>
                             </div> 
                           </div>

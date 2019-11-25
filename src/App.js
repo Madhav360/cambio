@@ -33,6 +33,9 @@ import Setnewpassword from './Setnewpassword';
 import Dashboard from './Dashboard';
 import Post_a_Job from './Post_a_job';
 import Candidate_Saved from './Cadidate_Saved';
+import Notifications from './Notificatins';
+import ProfileSetting from './ProfileSetting';
+import Post from './Post';
 
 
 
@@ -76,6 +79,9 @@ class App extends Component {
             <Route exact path="/dashboard" component={() =>(<Dashboard />)} />
             <Route exact path="/postajob" component={() =>(<Post_a_Job />)} />
             <Route exact path="/candidatesave" component={() =>(<Candidate_Saved />)} />
+            <Route exact path="/notifications" component={() =>(<Notifications />)} />
+            <Route exact path="/profile-setting" component={() =>(<ProfileSetting />)} />
+            <Route exact path="/post" component={() =>(<Post />)} />
           </Switch>
       </BrowserRouter>
     );

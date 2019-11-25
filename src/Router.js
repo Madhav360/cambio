@@ -40,6 +40,10 @@ import Setnewpassword from "./Setnewpassword";
 import Dashboard from "./Dashboard";
 import Post_a_Job from "./Post_a_job";
 import Candidate_Saved from "./Cadidate_Saved";
+import Notifications from "./Notificatins";
+import ProfileSetting from "./ProfileSetting";
+import Post from "./Post";
+
 
 
 const appRoute =[
@@ -198,6 +202,21 @@ const appRoute =[
 	path:"/Candidate_Saved",
 	isExactPath: true,
 	component: <Candidate_Saved />
+ },
+ {
+	path:"/Notifications",
+	isExactPath: true,
+	component: <Notifications />
+ },
+ {
+	path:"/ProfileSetting",
+	isExactPath: true,
+	component: <ProfileSetting />
+ },
+ {
+	path:"/Post",
+	isExactPath: true,
+	component: <Post />
  },
 ];
 

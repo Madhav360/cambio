@@ -7,13 +7,34 @@ class Sidebar extends Component{
         super(props);
         this.state = {
             imgswipe: 'image/menuicon/swipeblack.png',
-            imghome: 'image/menuicon/homeblack.png'
+            imghome: 'image/menuicon/homeblack.png',
+            imgsaved: 'image/menuicon/savedblack.png',
+            imgdash: 'image/menuicon/dashboardblack.png',
+            imgupg: 'image/menuicon/upgradeblack.png',
+            imgnoti: 'image/menuicon/notificationblack.png'
+
+            
          };
          this.handleMouseOver = this.handleMouseOver.bind(this);
          this.handleMouseOut = this.handleMouseOut.bind(this);
 
          this.handleHomeMouseOver = this.handleHomeMouseOver.bind(this);
          this.handleHomeMouseOut = this.handleHomeMouseOut.bind(this);
+
+         this.handleSavedMouseOver = this.handleSavedMouseOver.bind(this);
+         this.handleSavedMouseOut = this.handleSavedMouseOut.bind(this);
+
+         this.handleDashMouseOver = this.handleDashMouseOver.bind(this);
+         this.handleDashMouseOut = this.handleDashMouseOut.bind(this);
+
+         this.handleUpgMouseOver = this.handleUpgMouseOver.bind(this);
+         this.handleUpgMouseOut = this.handleUpgMouseOut.bind(this);
+
+         this.handleNotiMouseOver = this.handleNotiMouseOver.bind(this);
+         this.handleNotiMouseOut = this.handleUpgMouseOut.bind(this);
+
+         
+         
        }
      
        handleMouseOver() {
@@ -37,29 +58,101 @@ class Sidebar extends Component{
             this.setState({
                imghome: 'image/menuicon/homeblack.png'
             });
-    
        }
+
+       handleSavedMouseOver() {
+        this.setState({
+           imgsaved: 'image/menuicon/savedblue.png'
+        });
+      }
+    
+      handleSavedMouseOut() {
+        this.setState({
+           imgsaved: 'image/menuicon/savedblack.png'
+        });
+   }
+
+   handleDashMouseOver() {
+    this.setState({
+       imgdash: 'image/menuicon/dashboardblue.png'
+    });
+  }
+
+  handleDashMouseOut() {
+    this.setState({
+       imgdash: 'image/menuicon/dashboardblack.png'
+    });
+}
+handleUpgMouseOver() {
+    this.setState({
+       imgupg: 'image/menuicon/upgradeblue.png'
+    });
+  }
+
+  handleUpgMouseOut() {
+    this.setState({
+       imgupg: 'image/menuicon/upgradeblack.png'
+    });
+}
+handleNotiMouseOver() {
+    this.setState({
+       imgnoti: 'image/menuicon/notificationblue.png'
+    });
+  }
+
+  handleNotiMouseOut() {
+    this.setState({
+       imgnoti: 'image/menuicon/notificationblack.png'
+    });
+}
     render(){
         return(
-            <div>
+            <div className="fixedsidebar">
                 <div className="container-fluid">
                     <div className="row">
                     <div className="">
-                    <div className="sidebar bg-primary">
+                    <div className="sidebar">
                         <ul>
                             <li><img src="image/icons/shikhar.jpg" className="img-responsive profile-pitcure" /></li>
                             <li  className="side-myprofile">My Profile </li>
-                            <li className="side-icon">|||</li>
+                            <li className="side-icon"><img src="image/menuicon/chat.png" className="img-responsive chatimg" /></li>
                         </ul>
                     </div>
                     <div className="sidebarmenu">
                         <ul>
-                            <li><Link to = "#"><img className="menu-icons" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} src={this.state.imgswipe}/> Swipe</Link></li>
-                            <li><Link to="#"><img className="menu-icons" onMouseOver={this.handleHomeMouseOver} onMouseOut={this.handleHomeMouseOut} src={this.state.imghome}/> Home</Link></li>
-                            <li><Link to="/candidatesave"><i class="glyphicon glyphicon-save-file"></i> Saved</Link></li>
-                            <li><Link to ="/dashboard"><i class="glyphicon glyphicon-dashboard"></i> Dashboard</Link></li>
-                            <li><i class="glyphicon glyphicon-home"></i> Upgrade</li>
-                            <li><i class="glyphicon glyphicon-home"></i> Notification <span>10</span></li>
+                            <li><Link to = "#">
+                                <img className="menu-icons menu-icons1" 
+                                 onMouseOver={this.handleMouseOver} 
+                                 onMouseOut={this.handleMouseOut} 
+                                 src={this.state.imgswipe}/> Swipe
+                                 </Link></li>
+                            <li><Link to="#">
+                                <img className="menu-icons menu-icons1" 
+                                onMouseOver={this.handleHomeMouseOver} 
+                                onMouseOut={this.handleHomeMouseOut} 
+                                src={this.state.imghome}/> Home
+                                </Link></li>
+                            <li><Link to="/candidatesave">
+                                <img className="menu-icons menu-icons1" 
+                                onMouseOver={this.handleSavedMouseOver} 
+                                onMouseOut={this.handleSavedMouseOut} 
+                                src={this.state.imgsaved}/> Saved</Link></li>
+                            <li><Link to ="/dashboard">
+                                <img className="menu-icons menu-icons1" 
+                                onMouseOver={this.handleDashMouseOver} 
+                                onMouseOut={this.handleDashMouseOut} 
+                                src={this.state.imgdash}/> Dashboard</Link>
+                                </li>
+                            <li><Link to="#">
+                                <img className="menu-icons menu-icons1" 
+                                onMouseOver={this.handleUpgMouseOver} 
+                                onMouseOut={this.handleUpgMouseOut} 
+                                src={this.state.imgupg}/> Upgrade</Link></li>
+                            <li><Link to="/notifications">
+                                <img className="menu-icons menu-icons1" 
+                                onMouseOver={this.handleNotiMouseOver} 
+                                onMouseOut={this.handleNotiMouseOut} 
+                                src={this.state.imgnoti}/> Notification </Link> <span>10</span></li>
                         </ul>
                     </div>
                 </div>

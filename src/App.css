@@ -92,6 +92,9 @@ body{
 
 /* ----------------side bar--------------------- */
 
+.sidebar{
+  background-color: #55aefa;
+}
 .sidebar ul{
   list-style: none;
   display: inline-flex;
@@ -99,6 +102,12 @@ body{
   padding-top: 11px;
   list-style-position: outside;
   
+}
+.chatimg{
+  margin-top:-10px;
+}
+.menu-icons{
+  width: 20px !important;
 }
 .sidebarmenu a{
   text-decoration: none;
@@ -123,6 +132,7 @@ body{
 .sidebar .side-myprofile{
   padding-left: 25px;
   padding-top: 26px;
+  color: #fff;
 }
 .sidebar .side-icon{
   padding-left: 25px;
@@ -144,9 +154,6 @@ body{
     padding: 20px 0px 20px 50px;
 
 }
-.sidebarmenu
-
-
 
 /* -----------------side bar end--------------------- */
 
@@ -813,11 +820,10 @@ width: 200px;
 }
 .profile-privacy{
   border-radius: 16px;
-    border: 1px solid #80808057;
-    box-shadow: 0px 0px 1px 0px;
+  
     height: 100px;
     margin-bottom: 70px;
-    background-color: #fff;
+    background-color: #EFF8FF;
     text-align: left;
 }
 
@@ -926,99 +932,6 @@ width: 200px;
 
 /* ---------------------- Questions end------------------------ */
 
-
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-/* Container around content */
-.mdv-container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: white;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.mdv-container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  left: 0;
-}
-
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color:red ;
-  position: relative;
-  border-radius: 6px;
-}
 
 
 /* ---------------------forgot-password start--------------------- */
@@ -1389,19 +1302,24 @@ color: grey;
   font-size: 35px;
     font-weight: 600;
     position: relative;
+    padding-top: 50px;
 }
 .dashaboard-menu button{
   position: relative;
   background-color: #e3e2e2;
-  height: 180px;
-  width: 180px;
+  height: 140px;
+  width: 140px;
   border-radius: 105px;
-  font-size: 20px;
+  font-size: 16px;
   color: #000;
+  margin-top: 23px;
+  margin-bottom: 24px;
 
   margin-top: 23px;
 }
-
+.dashaboard-menu{
+  margin-bottom: 27px;
+}
 .dashaboard-menu button:hover{
   background-color: #55aefa;
   color: #fff;
@@ -1418,7 +1336,7 @@ color: grey;
 /* -----------------------Dashboard end ---------------------------------- */
 .dashpagewidth{
   background-color: #fff;
-  margin: 20px;
+  margin: 25px 11px 25px 0px;
   border-radius: 10px;
 }
 .postajob-head h3{
@@ -1511,9 +1429,7 @@ color: grey;
   padding-top: 28px;
     padding-bottom: 18px;
 }
-.saved-candiadte-details ul li{
- 
-}
+
 .saved-candiadte-details .saved-pitcure{
   width: 60px;
   height: 60px;
@@ -1550,6 +1466,337 @@ color: grey;
 
 /* -----------------------Candiadte saved end--------------------------------- */
 
+
+/* ----------------------------Notification start------------------------------- */
+
+.notification-data{
+  background-color: #03a9f42e;
+  width: 95%;
+  margin: 25px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 95px;
+
+}
+.user-notication p{
+font-size: 15px;
+padding: 20px 0px 0px 0px;
+color: #000;
+font-weight: 500;
+}
+
+.user-natifiaction-date{
+font-size: 15px;
+color: #000;
+font-weight: 500;
+padding-top: 20px;
+
+}
+.user-natification-time{
+  margin-top: -9px;
+  color: #000;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  .dashpagewidth {
+    margin: 0px;
+  }
+  .notification-data{
+    width: 90%;
+    height: auto;
+    margin: 14px;
+  }
+  
+  .user-natification-time{
+    padding-bottom: 9px;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------- Notification End--------------------------------------- */
+
+
+
+/* -------------------Post and Search bar------------------------------------------- */
+.searchpost{
+  margin: auto;
+  float: none;
+  position: relative;
+}
+.searchbar{
+    margin-top: 18px;
+    height: 43px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    border: none;
+    border-top: none;
+    box-shadow: none;
+    padding-left: 17px;
+}
+.searchbar:focus{
+  outline: none !important;
+   box-shadow: none;
+   border-bottom: 1px solid #f1f1f1;
+}
+.seachicon{
+  position: absolute;
+  top: 14px;
+  right: 36px;
+  font-size: 18px;
+  color: grey;
+}
+.postbtn{
+  margin-top: 10px;
+}
+.postbtn ul{
+  list-style: none;
+  display: inline-flex;
+  position: relative;
+}
+.postbtn ul li{
+  margin-right: 15px;
+}
+.postbtn ul li button{
+  width: 89px;
+  border-radius: 31px;
+  color: #000;
+  font-size: 13px;
+  padding: 9px;
+  background-color: #F1F1F1;
+}
+.postbtn ul li button:hover{
+  background-color: #55aefa;
+  color: #fff;
+}
+.postbtn ul li button:focus{
+  background-color: #55aefa;
+  color: #fff;
+}
+
+.post-use-picture{
+  height: 60px;
+  width: 60px;
+  float: right;
+  margin-top: 26px;
+  border-radius: 32px;
+  margin-right: -17px;
+    position: relative;
+    cursor: pointer;
+}
+.user-post-profile{
+  float: none;
+  margin: auto;
+}
+.post-user-name h3{
+  font-size: 16px;
+    padding-top: 18px;
+    cursor: pointer;
+}
+.post-user-name button{
+  background-color: #fff;
+  border: 1px solid #55aefa;
+  border-radius: 18px;
+  font-size: 12px;
+  padding: 2px;
+  width: 77px;
+  color: #55aefa;
+  margin-top: -7px;
+  position: absolute;
+}
+.post-user-name button:hover{
+  background-color: #55aefa;
+  color: #fff;
+}
+
+.post-user-date{
+  float: right;
+    padding-top: 36px;
+    padding-right: 45px;
+}
+
+.post-user-date p{
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+.post-user-date .posttime{
+  color: grey;
+}
+
+.post-conents{
+  width: 70%;
+  margin-left: 16%;
+}
+.post-conent p{
+  font-size: 13px;
+  text-align: justify;
+  padding: 10px
+}
+.post-picture img{
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.postlikes ul{
+  display: inline-flex;
+  position: relative;
+  list-style: none;
+  margin-left: -30px;
+}
+.postlikes ul li{
+  margin-right: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: grey;
+  cursor: pointer;
+}
+.post-comment-action ul{
+  display: inline-flex;
+  position: relative;
+  list-style: none;
+  margin-left: -30px;
+}
+
+.post-comment-action ul li{
+  margin-right: 10px;
+  font-size: 15px;
+  color: #696868;
+  cursor: pointer;
+}
+.post-comment-action ul li:hover{
+  color: #55aefa;
+}
+
+.commentbox{
+  margin-top: 18px;
+  height: 36px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  border: none;
+  border-top: none;
+  box-shadow: none;
+  padding-left: 17px;
+}
+.commentbox:focus{
+outline: none !important;
+ box-shadow: none;
+ border-bottom: 1px solid #f1f1f1;
+}
+.postcommenticon{
+  position: absolute;
+    top: 28px;
+    right: 41px;
+    color: grey;
+    font-size: 17px;
+}
+.userpost-comments ul{
+  list-style: none;
+  margin-top: -22px;
+}
+
+.commentor-name h6{
+  padding-top: 26px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.commentor-name p{
+  margin-top: -10px;
+  color: grey;
+  font-size: 13px;
+}
+.commenttime h6{
+  font-size: 13px;
+}
+.commentor-pics{
+  width: 50px;
+  height: 50px;
+  border-radius: 27px;
+  margin-top: 27px;
+  margin-left: 21px;
+}
+
+.sendpost{
+  margin-bottom: 15px;
+}
+
+.addmorepost{
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background-color: #55aefa;
+  padding: 12px 15px 12px 14px;
+  /* width: 50px; */
+  color: #fff;
+  font-size: 40px;
+  border-radius: 49px;
+  cursor: pointer;
+}
+.viewallcomments p{
+  padding-bottom: 20px;
+  color: #55aefa;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------Post and Search bar end------------------------------------------------- */
+.buildrourprofile .round{
+  width: 30px;
+  height: 30px;
+  background-color: #55aefa;
+}
+
+
+
+
+/* ------------------Let's Build your profile------------------------------------ */
+
+
+
+
+
+
+
+
+/* ------------------Let's Build your profile end------------------------------------ */
 
 
 

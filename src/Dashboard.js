@@ -1,7 +1,7 @@
 import React, {Component } from 'react';
 import Sidebar from './Sidebar';
 import { Link } from 'react-router-dom';
-import Header from './common/Header'
+
 
 
 class Dashboard extends Component{
@@ -14,7 +14,7 @@ class Dashboard extends Component{
     render(){
         return(
             <div>
-                <Header />
+             
                 <div className="col-lg-3 col-md-3 col-sm-12 col-12">
                       <Sidebar />
                 </div>
@@ -25,7 +25,7 @@ class Dashboard extends Component{
                      
                          <h3 className="text-center">Dashboard</h3>
                      </div>
-                      <div class="col-md-3 col-xs-4">
+                      <div class="col-md-2 col-xs-4">
                           <div className="dashaboard-menu text-center">
                               <Link to ="#">
                                   <button className="btn">
@@ -34,7 +34,7 @@ class Dashboard extends Component{
                               </Link>
                           </div>
                       </div>
-                      <div class="col-md-3 col-xs-4">
+                      <div class="col-md-2 col-xs-4">
                           <div className="dashaboard-menu text-center">
                               <Link to ="#">
                                   <button className="btn">
@@ -43,7 +43,7 @@ class Dashboard extends Component{
                               </Link>
                           </div>
                       </div>
-                      <div class="col-md-3 col-xs-4">
+                      <div class="col-md-2 col-xs-4">
                           <div className="dashaboard-menu text-center">
                               <Link to ="#">
                                   <button className="btn">
@@ -52,7 +52,7 @@ class Dashboard extends Component{
                               </Link>
                           </div>
                       </div>
-                      <div class="col-md-3 col-xs-4">
+                      <div class="col-md-2 col-xs-4">
                           <div className="dashaboard-menu text-center">
                               <Link to ="#">
                                   <button className="btn">
@@ -61,7 +61,7 @@ class Dashboard extends Component{
                               </Link>
                           </div>
                       </div>
-                      <div class="col-md-3 col-xs-4">
+                      <div class="col-md-2 col-xs-4">
                           <div className="dashaboard-menu text-center">
                               <Link to ="#">
                                   <button className="btn">
@@ -70,7 +70,7 @@ class Dashboard extends Component{
                               </Link>
                           </div>
                       </div>
-                      <div class="col-md-3 col-xs-4">
+                      <div class="col-md-2 col-xs-4">
                           <div className="dashaboard-menu text-center">
                               <Link to ="#">
                                   <button className="btn">
@@ -79,7 +79,7 @@ class Dashboard extends Component{
                               </Link>
                           </div>
                       </div>
-                      <div class="col-md-3 col-xs-4">
+                      <div class="col-md-2 col-xs-4">
                           <div className="dashaboard-menu text-center">
                               <Link to ="#">
                                   <button className="btn">
@@ -89,7 +89,7 @@ class Dashboard extends Component{
                               </Link>
                           </div>
                       </div>
-                      <div class="col-md-3 col-xs-4">
+                      <div class="col-md-2 col-xs-4">
                           <div className="dashaboard-menu text-center">
                               <Link to ="#">
                                   <button className="btn">
@@ -99,7 +99,7 @@ class Dashboard extends Component{
                               </Link>
                           </div>
                       </div>   
-                      <div class="col-md-3 col-xs-4">
+                      <div class="col-md-2 col-xs-4">
                           <div className="dashaboard-menu text-center">
                               <Link to ="#">
                                   <button className="btn">
@@ -109,7 +109,7 @@ class Dashboard extends Component{
                               </Link>
                           </div>
                       </div>
-                      <div class="col-md-3 col-xs-4">
+                      <div class="col-md-2 col-xs-4">
                           <div className="dashaboard-menu text-center">
                               <Link to ="#">
                                   <button className="btn">

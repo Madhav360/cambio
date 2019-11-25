@@ -30,13 +30,13 @@ class Role extends Component{
                              <ul>
                                  <li className="condidates">
                                     <button className="btn condidate-roles-btn">
-                                        <Link to="#"><p>A <br /><span className="roles-btn">Condidates</span> </p>
+                                        <Link to="#"><p>A <br /><span className="roles-btn">Candidate</span> </p>
                                         </Link>
                                     </button>  
                                  </li>
                                  <li className="condidates">
                                     <button className="btn condidate-roles-btn">
-                                        <Link to="#"><p>An <br /><span className="roles-btn">Employee</span> </p>
+                                        <Link to="#"><p>An <br /><span className="roles-btn">Employer</span> </p>
                                         </Link>
                                     </button>
                                  </li>
