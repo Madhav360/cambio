@@ -1,0 +1,2333 @@
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+  }
+  body{
+    background-color: #F9F9F9;
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  }
+  
+  .navbar-default {
+    background-color: #fff;
+    border-color: #0a0a0a;
+    color: #fff !important;
+  }
+  
+  .App-header {
+    background-color: #fff !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  
+  
+  
+  .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 30px;
+    color:#55aefa !important;
+    background-color: #fff;
+    border: 1px solid #55aefa;
+    border-radius: 20px;
+   
+    
+  }
+  .nav>li>a:hover{
+    color: #fff !important;
+  }
+  .mdv-login{
+    margin-right: 15px;
+  }
+  .mdv-navlinks:hover{
+    background-color: #55aefa;
+    border-radius: 20px;
+    color: #fff !important;
+  }
+  
+  .navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+    padding: 14px 0;
+    -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+  }
+  .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 0px 15px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .nav-logoheight{
+    height: 50px;
+  }
+  
+  
+  
+  
+  /* ----------------side bar--------------------- */
+  .fixedsidebar{
+    margin-left: -15px;
+  }
+  
+  .sidebar{
+    background-color: #55aefa;
+  }
+  .sidebar ul{
+    list-style: none;
+    display: inline-flex;
+    text-align: justify;
+    padding-top: 11px;
+    list-style-position: outside;
+    
+  }
+  .chatimg{
+    margin-top:-10px;
+  }
+  .menu-icons{
+    width: 20px !important;
+  }
+  .sidebarmenu a{
+    text-decoration: none;
+    color: grey;
+  }
+  .sidebarmenu a:hover{
+    color: #55aefa;
+    text-decoration: none;
+  }
+  .sidebarmenu span{
+    background-color: red;
+    padding: 5px 6px 5px 6px;
+    border-radius: 23px;
+    color: #fff;
+  }
+  .sidebar .profile-pitcure{
+    width: 65px;
+      height: 65px;
+      border-radius: 42px;
+      border: 2px solid #fff;
+  }
+  .sidebar .side-myprofile{
+    padding-left: 25px;
+    padding-top: 26px;
+    color: #fff;
+  }
+  .sidebar .side-icon{
+    padding-left: 25px;
+    padding-top: 26px;
+  }
+  .sidebarmenu ul{
+    list-style: none;
+    background-color: #fff;
+   
+  }
+  .sidebarmenu ul li{
+      background-color: #fff;
+      margin-left: -40px;
+      /* padding-top: 20px; */
+      border: 1px solid #a5a4a4;
+      margin-top: 14px;
+      /* padding-bottom: 20px; */
+      word-spacing: 8px;
+      padding: 20px 0px 20px 50px;
+  
+  }
+  
+  /* -----------------side bar end--------------------- */
+  
+  
+  
+  
+  
+  
+  
+  
+  /* home begin */
+  
+  
+  
+  #letsget {
+    background: url(/image/new.png) center center no-repeat;
+    position: relative;
+    background-size: cover;
+  }
+  .home-lookingfor {
+    margin-top: 35px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 0px;
+  }
+  .home-lookingyour {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1;
+  margin-bottom: 20px;
+  }
+  .home-lookingyour span{
+      color: #D8B865;
+    font-weight: 900;
+  }
+  .home-formsmarg{
+  margin-top: 36px;
+  }
+  .homesearch-location {
+    background-color: #FFFFFF;
+    color: #333;
+    padding: 15px 28px;
+    font-size: 14px;
+    border: 1px solid #e4e0e0;
+    width: 100%;
+  }
+  .homesearch-iconss {
+    position: relative;
+    bottom: 38px;
+    left: 4px;
+    color: #D8B865;
+  }
+  .homesearch-btn {
+    background: linear-gradient(to bottom, #E2CB74 0%, #976121 100%);
+    font-size: 15px;
+    padding: 14px;
+  width: 100%;
+  border: none !important;
+  }
+  .search_homeicon{
+  font-size: 18px;
+  }
+  .homepadds0{
+  padding: 0px;
+  }
+  .home-bgscategories{
+  background-color: #0a0a0a;
+    padding: 22px 0 0;
+  }
+  .home-categorieshead{
+  font-size: 16px;
+    font-weight: 700;
+    color: #D8B865
+  }
+  .home-categoriestext {
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+  }
+  .shadow-depth-1 {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0), 0px 4px 3px 2px rgba(0, 0, 0, 0.06);
+    padding: 0 20px;
+    min-height: 110px;
+  }
+  .thumbnail {
+    display: block;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #585858;
+      border: 0px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+  }
+  .home-fixedbgs{
+  background-color: #0a0a0a;
+    padding: 23px;
+  }
+  .home-fixedlogo {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #home-downloadappbgs {
+    background: #0a0a0a;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6px;
+  }
+  .home-downloadapphead {
+    font-size: 30px;
+    color: #333;
+    margin-top: 10%;
+    font-weight: 700;
+  }
+  .home-downloadgoogle {
+    width: 200px;
+    height: 66px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .home-uniquebgs{
+    padding: 50px 0;
+    /* background: url(/image/bgunique.png) center center no-repeat; */
+    background-color: #0a0a0a;
+    background-size: cover;
+    
+  }
+  .home-uniquehead {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .home-uniquetext {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 27px;
+    margin-top: 20px;
+  }
+  .home-uniquebtns {
+    background: transparent;
+    border: 1px solid #D8B865;
+    border-radius: 0px;
+    padding: 9px 30px;
+    color: #D8B865;
+  margin-bottom: 20px;
+  }
+  .home-acessbgs{
+  padding: 50px 0;
+  /* background: url(/image/bgaccess.png) center center no-repeat; */
+  background-color: #0a0a0a;
+  background-size: cover;
+  }
+  .home-interviews{
+  padding: 50px 0;
+  /* background: url(/image/bginterview.png) center center no-repeat; */
+  background-color: #0a0a0a;
+  background-size: cover;
+  }
+  
+  
+  .browse-categorypads{
+    padding: 36px 0;
+    background-color: #0a0a0a;
+  }
+  .browse-categoryhead{
+    color: #fff;
+    font-weight: 600;
+    font-size: 28px;
+  }
+  .browse-categorytext{
+    color: #b8b8b9;
+  }
+  .single_what_we_do {
+    background-color: #585858;
+    text-align: center;
+    padding: 0 3px;
+    border-radius: 0px;
+    position: relative;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+  .single_what_we_do:hover {
+    -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    background-color: #585858;
+    cursor: pointer;
+  }
+  .single_what_we_do .what_we_do_figure {
+    padding: 18px 0 10px;
+  }
+  .single_what_we_do .what_we_do_figure img {
+    margin: 0 auto;
+  }
+  .single_what_we_do .what_we_do_title {
+    font-weight: 600;
+    font-size: 15px;
+    padding-bottom: 7px;
+    margin: 0;
+    color: #D8B865;
+  }
+  .single_what_we_do .what_we_do_content {
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 13px;
+  }
+  /* home end  */
+  
+  /* login   */
+  
+  .mobileapp ul{
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+  }
+  .mobileapp ul li{
+    margin-right: 18px;
+  }
+  
+  
+  .login-form-1{
+    position: relative;
+    background-color: #fff;
+  
+  }
+  .login-form-1 h2 {
+    color: #000000c7;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    font-size: 36px;
+  
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  
+  }
+  .login-text{
+   text-align: center;
+   padding-bottom: 44px;
+  }
+  .passwordicon{
+    position: absolute;
+    right: 27%;
+      font-size: 20px;
+      color: grey;
+      top: 25px;
+  }
+  .login-form-1 h4 {
+    font-size: 14px;
+    color: #000;
+  text-align: center;
+  position: relative;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  }
+  .login-form-1 p{
+    color: #bfb9b9;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+  }
+  
+  .mdv-login-with ul{
+      list-style: none;
+      display: inline-flex;
+      letter-spacing: 41px;
+      margin-left: -48px;
+      margin-top: 7px;
+  }
+  .mdv-login-with{
+    text-align: center;
+  }
+  .mdv-login-with img{
+    height: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .mdv-login-with .fb{
+    margin-left: 0px;
+  }
+  .mdv-login-with h4{
+    text-align: center;
+    padding-top: 47px;
+      font-size: 22px;
+      font-weight: 600;
+      font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  }
+    
+  .mdv-login-form{
+    margin-top: 40px;
+  }
+  .mdv-login-form .form-control{
+    margin: 0 auto;
+    
+  }
+  
+  .a_am_job_seeker_button{
+    border: 1px solid #976121;
+  }
+  .login-form-2 {
+    background-color: #bfbebe4d;
+  }
+  .mdv-login h1{
+      color: #000000c7;
+     
+      text-align: center;
+  
+      font-size: 43px;
+      font-weight: 600;
+    
+      font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  }
+  .login-container form{
+   position: relative;
+  }
+  .btnSubmit {
+    width: 60%;
+    border-radius: 6px;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+  }
+  .login-form-1 .btnSubmit {
+    color: #fff;
+    /* background-color: #E2CB74; */
+    background: linear-gradient(to bottom, #E2CB74 0%, #976121 100%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .login-form-1 .ForgetPwd {
+    color: #55aefa;
+    text-decoration: none;
+  }
+  .jobseekerbtns{
+    color: #D8B865;
+    background-color: #ffffff;
+    border-color: #D8B865;
+    border-radius: 5px;
+    margin-right: 13px;
+    margin-bottom: 33px;
+  }
+  .jobseekerbtns:hover{
+    background: linear-gradient(to bottom, #E2CB74 0%, #976121 100%);
+    color:#fff;
+    border:1px solid#E2CB74;
+  }
+  .logininputs{
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #807777eb;
+    border-radius: 0;
+    width: 50%;
+    height: 50px;
+      padding: 0px 0px;
+      font-size: 15px;
+      color: #555;
+  
+  }
+  .logininputs:focus{
+    outline: none !important;
+     box-shadow: none;
+     border-bottom: 1px solid #807777eb;
+  }
+  .mdv-forgot-pwd a{
+    float: right;
+    padding-right: 142px;
+    color: #55aefa;
+  }
+  .mdv-login-btn{
+      width: 50%;
+      border: 1px solid #55aefa;
+      padding: 12px;
+      margin-top: 31px;
+      border-radius: 21px;
+      background-color: #55aefa;
+      color: #fff;
+  }
+  /* login end  */
+  
+  /* Post new job begin  */
+  
+  .pnewjob-pads{
+    padding: 4%;
+  }
+  
+  /* Post new job end  */
+  
+  .postjob-padtopbtm{
+    padding:4% 0;
+  }
+  .postjob-padbutto{
+    background: linear-gradient(to bottom, #E2CB74 0%, #976121 100%);
+    border-color: #E2CB74;
+    color: #fff;
+    padding: 13px 45px;
+    border-radius: 30px;
+    margin-top: 16%;
+  }
+  
+  /* footer begin */
+  .footer1 {
+    background: #0a0a0a;
+  padding-top: 40px;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+  border-top:0.5px solid #1b1b1b;
+  }
+  .title-widget {
+    color: #D8B865;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .widget_nav_menu ul {
+    list-style: outside none none;
+    padding-left: 0;
+  }
+  .widget_archive ul li {
+    background-color: rgba(0, 0, 0, 0.3);
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 3px;
+  }
+  .widget_nav_menu ul li a {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    width: 95%;
+  }
+  .widget_nav_menu ul li a:hover{
+    text-decoration: none;
+    color: #D8B865;
+  }
+  .title-median {
+    color: #efecec;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background-color: #E2CB74;
+    color: #0a0a0a;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+  }          
+  .social-icon:hover {
+  width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background-color: #fff;
+    color: #0a0a0a;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .nomargin {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .footer-bottom {
+    background-color: #0a0a0a;
+    min-height: 30px;
+    width: 100%;
+  }
+  .logofooter{
+  width: 200px;
+  }
+  .copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    font-size: 12px;
+  }
+  .design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+  }
+  .design a {
+    color: #fff;
+  }
+  
+  /* footer end */
+  
+  
+  
+  
+  
+  
+  /* --------------------signup start----------------- */
+  .mdv-singup-page{
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .mdv-singup-page h2{
+    font-size: 31px;
+      font-weight: 700;
+  }
+  .mdv-singup-page h4{
+    color: #b1afaf;
+    padding-top: 0px;
+  }
+  .mdv-login-with h4{
+      color: #000;
+      font-size: 17px;
+  }
+  .signupinputs{
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #807777eb;
+    border-radius: 0;
+    width: 50%;
+    height: 50px;
+    padding: 0px 0px;
+    font-size: 15px;
+    color: #555;
+  }
+  .signupinputs:focus{
+    outline: none !important;
+     box-shadow: none;
+     border-bottom: 1px solid #807777eb;
+  }
+  .mrg{
+    margin-left: 250px;
+  }
+  .mdv-signup-form{
+    margin-top: 20px;
+    
+  }
+  .mdv-signup-btn{
+    width: 26%;
+    border: 1px solid #55aefa;
+    padding: 12px;
+    margin-top: 35px;
+    border-radius: 21px;
+    background-color: #55aefa;
+      color: #fff;
+  }
+  .btn:focus {
+    outline: none !important;
+     box-shadow: none;
+  }
+  .signup-text{
+    text-align: center;
+      padding-bottom: 14px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+  
+    .mrg {
+      margin-left: 0px;
+    }
+    .signupinputs{
+     width: 100%;
+    }
+  
+  }
+  
+  
+  
+  
+  /* --------------------signup end----------------- */
+  
+  
+  /* ---------------------- Role------------------------ */
+  .rolemain h2{
+    color: #000;
+      font-weight: 700;
+      font-family: Montserrat;
+      padding-top: 11px
+  }
+  .rolemain p{
+    color: #808080c7;
+    font-size: 17px;
+  }
+  .selectrole{
+    margin-top: -20px;
+  }
+  .roleheading{
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Montserrat';
+  }
+  .roles{
+    margin-left: 13%;
+    padding-top: 30px;
+  }
+  .roles ul{
+    list-style: none;
+    display: inline-flex;
+  }
+  .condidates{
+    margin-left: 80px;
+  }
+  
+  .condidate-roles-btn{
+    background-color: #8a8c8a29;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    border: 1px solid #8a8c8a29;
+   
+  }
+  .condidate-roles-btn:hover{
+    background-color: #55aefa;
+    text-decoration: none;
+    color: #fff;
+  }
+  .condidate-roles-btn a{
+    color: #000;
+    font-size: 21px;
+  }
+  .condidate-roles-btn a:hover{
+    text-decoration: none;
+    color:#fff;
+  }
+  .roles-btn{
+    color: #000;
+      font-weight: 700;
+      font-family: Montserrat;
+      padding-top: 11px
+  }
+  .roles-btn:hover{
+    color: #fff;
+  }
+  .roles-nxt-btn .btn{
+    background-color: #55aefa;
+    color: #fff;
+    width: 258px;
+    padding: 12px;
+    font-size: 17px;
+  
+    border-radius: 25px;
+    margin: 40px 0px 30px 0px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .roles {
+     margin-left: 0px;
+    }
+    .roles ul {
+      display: block;
+    }
+    .condidates {
+      margin-bottom: 35px;
+    }
+    .industry-job {
+      height: 115px !important;
+      width: 108px !important;
+      margin-top: 0 !important;
+    }
+    .industry-job h5{
+      font-size: 10px;
+    }
+  
+  }
+  
+  /* ---------------------- Role end------------------------ */
+  
+  /* ---------------------- Profile Visibility------------------------ */
+  .pv h2{
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .profile-privacy{
+    border-radius: 16px;
+    
+      height: 100px;
+      margin-bottom: 70px;
+      background-color: #EFF8FF;
+      text-align: left;
+  }
+  
+  .profile-privacy h3{
+      color: #55aefa;
+      padding-left: 10px;
+      font-size: 20px;
+      font-weight: 400;
+  }
+  .profile-privacy p{
+    padding-left: 10px;
+    color: grey;
+  }
+  /* ---------------------- Profile Visibility end------------------------ */
+  
+  /* ---------------------- Enable Location------------------------ */
+  .enable-loaction-head h2{
+    padding-top: 14px;
+    font-weight: 600;
+    font-family: Montserrat;
+  }
+  .enable-loaction-head p{
+    font-size: 20px;
+      line-height: 23px;
+      color: #808080d1
+  }
+  
+  .gps-img img{
+    margin: auto;
+    width: 300px;
+    margin-top: 40px;
+  }
+  
+  /* ---------------------- Enable Location End------------------------ */
+  
+  /* ---------------------- Industry ------------------------ */
+  .industry-job{
+    height: 155px;
+    width: 130px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 16px;
+    background-color: #c7c4c43b;
+  
+  }
+  .industry-job:hover{
+    background-color: #55aefa54;
+      border: 1px solid #55aefa54;
+  }
+  .industry-job img{
+    margin: auto;
+    height: 50px;
+    
+  }
+  .industrymain h2{
+    font-weight: 600;
+    padding-top: 35px
+  }
+  .industrymain p{
+    color: gray;
+      font-size: 18px;
+  }
+  
+  
+  /* ---------------------- Industry end------------------------ */
+  
+  
+  /* ---------------------- Questions------------------------ */
+  .questionmain p{
+    padding-top: 44px;
+      font-size: 19px;
+      color: grey;
+  }
+  .questionmain h4{
+      font-weight: 300;
+      font-size: 19px;
+    
+  }
+  .qbtn{
+    width: 420px;
+    height: 67px;
+    margin-top: 52px;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: #e4e2e2;
+    border: 1px solid #e4e2e2;
+  }
+  .qbtn:hover{
+    background-color: #55aefa;
+    color: #fff;
+  }
+  .qbtn:focus {
+    background-color: #55aefa;
+    color: #fff;
+  }
+  .qskip{
+    padding-top: 70px;
+    padding-bottom: 20px
+  }
+  .qskip a{
+    color:#55aefa;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+  
+    .qbtn {
+      width: 310px;
+      height: 48px;
+      margin-top: 20px;
+      font-size: 13px;
+    }
+    .qskip {
+      padding-top: 35px;
+    }
+  
+  
+  }
+  
+  
+  /* ---------------------- Questions end------------------------ */
+  
+  
+  
+  /* ---------------------forgot-password start--------------------- */
+  .forgot-password img{
+    width: 200px;
+  }
+  .otpinupt ul{
+    list-style: none;
+    display: inline-flex;
+    margin-top: 28px;
+    margin-bottom: -19px;
+    margin-left: -21px;
+  }
+  .otpinupt ul li input{
+    width: 50px;
+    height: 50px;
+    box-shadow: 0;
+    border-radius: 0;
+    margin-right: 10px;
+    background-color: #e3e2e2;
+      border: 0;
+  
+  }
+  .otpinupt ul li input:focus{
+    outline: none !important;
+    box-shadow: none;
+    border-bottom: 1px solid #807777eb;
+  }
+  
+  
+  /* ---------------------forgot-password end--------------------- */
+  
+  
+  
+  /* ---------------------company------------------- */
+  .company ul{
+    display: inline-flex;
+    list-style: none;
+    padding-top: 16px;
+    margin-left: -22px;
+  }
+  .company ul li{
+    margin-right: 18px;
+  }
+  
+  
+  .mdv-company-icons{
+    height: 40px;
+    width: 40px;
+    background-color: #e3e2e2;
+    font-size: 16px;
+    border-radius: 24px;
+  
+  }
+  
+  
+  .mdv-company-icons:hover{
+    color: #fff;
+    background-color: #55aefa;
+  }
+  .mdv-company-icons:focus{
+    color: #fff;
+    background-color: #55aefa;
+  }
+  
+  .company p{
+    font-size: 20px;
+    color: #55aefa;
+  }
+  .company p:last-child{
+    font-size: 16px;
+    color: grey
+  }
+  .company-form{
+    margin-top: 15px;
+  }
+  .company-inputs{
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #807777eb;
+    border-radius: 0;
+    width: 60%;
+    height: 50px;
+    padding: 0px 0px;
+    font-size: 15px;
+    color: #555;
+  }
+  .company-braches-inputs{
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #807777eb;
+    border-radius: 0;
+    width: 76%;
+    height: 60px;
+    padding: 0px 0px;
+    font-size: 15px;
+    color: #555;
+  }
+  .company-inputs:focus{
+    outline: none !important;
+     box-shadow: none;
+     border-bottom: 1px solid #807777eb;
+  }
+  .company-braches-inputs:focus{
+    outline: none !important;
+     box-shadow: none;
+     border-bottom: 1px solid #807777eb;
+  }
+  .company-use-gps ul{
+    list-style: none;
+    display: inline-flex;
+    text-align: left;
+  }
+  .company-use-gps ul li button{
+    background-color: #e3e2e2;
+      border: 1px solid #e3e2e2;
+      width: 158px;
+      border-radius: 10px;
+      margin-right: 16px;
+  }
+  .company-use-gps ul li:first-child {
+    margin-left: -35px;
+  }
+  .mdv-first-input{
+    float: right;
+  }
+  .mvd-mrg{
+    margin-top: 35px;
+  }
+  
+  .abt-cmpny{
+    text-align: center;
+    padding-left: 32px;
+    padding-top: 21px;
+    color: #55aefa;
+  }
+  .company-textarea{
+      height: 162px !important;
+      width: 60%;
+      background-color: #e3e2e2;
+      border: 1px solid #e3e2e2;
+      border-radius: 0;
+      resize: none;
+  
+  }
+  .company-textarea ul{
+    list-style: none;
+    display: inline-flex;
+  }
+  .company-textarea ul li{
+    margin-right: 66px;
+  }
+  .mdv-company-camera{
+    font-size: 44px;
+    padding-top: 48px;
+  }
+  .compamy-logo{
+    color: #55aefa;
+    padding-top: 21px;
+  }
+  .company-textarea:focus{
+    outline: none !important;
+    box-shadow: none;
+    border: 1px solid #e3e2e2;
+  }
+  .company-skip-btn .company-skip{
+    width: 205px;
+    padding: 11px;
+    font-size: 18px;
+    border-radius: 23px;
+    background-color: #55aefa;
+    color: #fff;
+    border: 1px solid #55aefa;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .company-skip-btn button:hover{
+    color: #fff;
+  }
+  .company-skip-btn{
+    margin-bottom: 20px;
+  }
+  .company-skip-btn a{
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #55aefa;
+  }
+  .company-skip-btn a:hover{
+    text-decoration: none;
+    color: #55aefa;
+  }
+  
+  
+  .condalert ul{
+    list-style: none;
+    display: inline-flex;
+    margin-left: -39px;
+  }
+  .condalert ul li{
+   margin-right: 10px;
+  }
+  .condalert ul li button{
+    background-color: #e3e2e2;
+    width: 158px;
+    border-radius: 10px;
+  padding: 2px;
+  }
+  
+  /* -----------------------company end------------------ */
+  
+  
+  /* -------------------Bio----------------------------------- */
+  .employee-profile-pic img{
+      margin: auto;
+      height: 90px !important;
+      width: 90px;
+  
+      border-radius: 94px;
+      border: 1px solid #e3e2e2;
+  }
+  
+  .col-centered{
+    margin: 0 auto;
+    float: none;
+  }
+  .col-centered textarea{
+    height: 137px !important;
+    resize: none;
+    border: 1px solid #e3e2e2;
+    border-radius: 0;
+   
+    background-color: #e3e2e2;
+    
+  }
+  .col-centered textarea:focus{
+    outline: none !important;
+    box-shadow: none;
+    border: 1px solid #e3e2e2;
+  }
+  /* -------------------Bio End------------------------------- */
+  
+  /* ---------------------Account recover--------------------------- */
+  .account-recovery p{
+    font-size: 17px;
+    color: #afabab;
+    
+  }
+  .accout-recover-input{
+    margin:0 auto;
+    float: none;
+  }
+  
+  .accout-recover-input input{
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #807777eb;
+    border-radius: 0;
+   
+    height: 60px;
+    padding: 0px 0px;
+    font-size: 15px;
+    color: #555;
+  }
+  .accout-recover-input input:focus{
+    outline: none !important;
+     box-shadow: none;
+     border-bottom: 1px solid #807777eb;
+  }
+  .acc-save{
+    margin-top: 40px !important;
+  }
+  
+  /* ---------------------Account recover end---------------------------- */
+  
+  
+  .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  
+  
+  /* ---------------------------home page------------------ */
+  .carousel.carousel-slider {
+  position: absolute;
+    height: 550px;
+  }
+  .carousel .slide .legend {
+    transition: all .5s ease-in-out;
+    position: absolute;
+    bottom: 77% !important;
+    left: 34% !important;
+    border-radius: 10px;
+     background: none !important; 
+    color: #fff;
+    padding: 10px;
+    font-size: 56px !important;
+    opacity: unset !important;
+  
+   
+  }
+  .dremjob{
+    font-weight: 600;
+  }
+  .carousel .slide img {
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .carousel .thumbs {
+    display: none !important;
+  }
+  /* ---------------------------home page end------------------- */
+  
+  .bio-2{
+    padding: 0px;
+  }
+  
+  
+  .company2 ul{
+    display: inline-flex;
+    list-style: none;
+    padding-top: 16px;
+    margin-left: -22px;
+  }
+  .company2 ul li{
+    margin-right: 18px;
+  }
+  
+  .bio2-camera-section{
+    height: 120px;
+    background-color: #d2cfcf;
+  }
+  .bio2-camera-section ul{
+    padding-top: 35px;
+  }
+  .recv{
+    color: #55aefa;
+  }
+  .mdv-company-icon{
+    font-size: 35px;
+  }
+  .bio-2 p:last-child{
+  font-size: 15px;
+  color: grey;
+  }
+  
+  
+  /* -------------------- dashboard start here-------------------------- */
+  .back{
+   padding-left: 17px;
+   padding-top: 17px;
+   font-weight: 700;
+   color: #55aefa;
+   cursor: pointer;
+  }
+  
+  
+  .dashboardmenus> .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .dashboardmenus>.flex-container > div {
+    width: 157px;
+    margin: 18px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .mg-20{
+    margin-bottom: 50px;
+  }
+  .dashaboard-menuu button{
+    position: relative;
+    background-color: #e3e2e2;
+    height: 140px;
+    width: 140px;
+    border-radius: 105px;
+    font-size: 16px;
+    color: #000;
+  }
+  .dashaboard-menuu button:hover{
+    background-color: #55aefa;
+    color: #fff;
+  }
+  .dashaboard-menuu button:focus{
+    background-color: #55aefa;
+    color: #fff;
+  }
+  .dashaboard-menuu button{
+    position: relative;
+    background-color: #e3e2e2;
+    height: 140px;
+    width: 140px;
+    border-radius: 105px;
+    font-size: 16px;
+    color: #000;
+  }
+  .dashboard-head h3{
+    font-size: 35px;
+      font-weight: 600;
+      position: relative;
+      padding-top: 10px;
+  }
+  .dashaboard-menu button{
+    position: relative;
+    background-color: #e3e2e2;
+    height: 140px;
+    width: 140px;
+    border-radius: 105px;
+    font-size: 16px;
+    color: #000;
+    margin-top: 23px;
+    margin-bottom: 24px;
+  
+    margin-top: 23px;
+  }
+  .dashaboard-menu{
+    margin-bottom: 27px;
+  }
+  .dashaboard-menu button:hover{
+    background-color: #55aefa;
+    color: #fff;
+  }
+  
+  .dashaboard-menu button:focus{
+    background-color: #55aefa;
+    color: #fff;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .dashboardmenus>.flex-container > div {
+      width: 139px;
+      margin: 18px;
+    }
+  
+  }
+  
+  
+  /* -----------------------Dashboard end ---------------------------------- */
+  .dashpagewidth{
+    background-color: #fff;
+    margin: 25px 11px 25px 0px;
+    border-radius: 10px;
+  }
+  .postajob-head h3{
+    font-size: 25px;
+      font-weight: 600;
+  }
+  
+  
+  /* ---------------------Post a job start------------------------------------------ */
+  .postajob-head h3{
+    font-size: 25px;
+      font-weight: 600;
+  }
+  .postinput{
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #807777eb;
+    border-radius: 0;
+     width: 80%;
+     height: 50px;
+      padding: 0px 0px;
+      font-size: 15px;
+      color: #555;
+  
+  }
+  .postinput:focus{
+    outline: none !important;
+    box-shadow: none;
+    border-bottom: 1px solid #807777eb;
+  }
+  .post-job-form{
+    width: 80%;
+    
+    float: none;
+    margin: auto;
+  }
+  .desciptiontextarea{
+    width: 90%;
+    background-color: #F1F1F1;
+    resize: none;
+    border: none;
+    border-radius: 0;
+  }
+  .desciptiontextarea:focus{
+    outline: none !important;
+    box-shadow: none;
+    border-bottom: 1px solid #807777eb;
+    border: none;
+    border-radius: 0;
+  }
+  .cabs ul{
+    display: inline-flex;
+    list-style: none;
+    margin-left: -38px;
+  }
+  .cabs ul li{
+    margin-right: 20px;
+  }
+  .cabs p{
+    font-weight: 700;
+  }
+  .cabs ul li button{
+    width: 80px;
+    border: 1px solid #F1F1F1;
+    background-color: #F1F1F1;
+    border-radius: 21px;
+    color: #000;
+  }
+  .cabs ul li button:hover{
+    background-color: #55aefa;
+    color: #fff;
+  }
+  
+  .cabs ul li button:focus{
+    background-color: #55aefa;
+    color: #fff;
+  }
+  .useloactionfrom ul{
+    list-style: none;
+    display: inline-flex;
+    margin-left: -39px;
+  }
+  .useloactionfrom ul li{
+    margin-right: 14px;
+  }
+  .useloactionfrom ul li button{
+    border: 1px solid #F1F1F1;
+    background-color: #F1F1F1;
+    border-radius: 21px;
+    padding: 8px;
+    border: 0;
+    color: black;
+    font-size: 13px;
+  }
+  .useloactionfrom ul li button:hover{
+  background-color: #55aefa;
+  color: #fff;
+  }
+  
+  /* The container */
+  .container {
+        margin-left: 8px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    padding-top: 2px;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #d0cfcf;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #fff;
+    border: 1px solid #d0cfcf;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .postq{
+    width: 93%;
+  }
+  .mode-of-interview button{
+    background-color: #f1f1f1;
+    width: 140px;
+    height: 150px;
+    font-weight: 500;
+      color: #000;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .mode-of-interview button:hover{
+    background-color: #55aefa;
+    color: #fff;
+  }
+  .interview-mode-info{
+    position: absolute;
+    top: 29px;
+    right: 67px;
+  }
+  .hire{
+    color: grey;
+      font-weight: 400;
+  }
+  .post-add-more{
+    color: #55aefa;
+    cursor: pointer;
+  }
+  .myq-closeicon{
+    position: absolute;
+    top: 24px;
+      right: 65px;
+      cursor: pointer;
+  }
+  @media only screen and (max-width: 768px) {
+    .postinput {
+      width: 100%;
+      }
+    .desciptiontextarea{
+      width:100%;
+    } 
+    .post-job-form {
+      width: 100%;
+    }
+    .myq-closeicon {
+      position: absolute;
+      top: 24px;
+      right: 17px;
+    }
+    .interview-mode-info {
+      position: absolute;
+      top: 29px;
+      right: 92px;
+    }
+  }
+  /* ---------------------Post a job end------------------------------------------ */
+  
+  
+  
+  /* -----------------Job details start---------------------------------------------- */
+  .details-page-width{
+    width: 90%;
+    float: none;
+    margin: auto;
+  }
+  .details-job-type{
+    height: 73px;
+  }
+  .details-job-type p{
+  color: #000;
+  font-weight: 500;
+  }
+  .details-job-type h5{
+  color: grey;
+  font-size: 13px;
+  }
+  .job-details-job-description{
+    margin-top: 10px;
+  }
+  .job-details-job-description h4{
+  color: #636161;
+  }
+  .job-details-job-description p{
+  color: grey;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* --------------------- Job details end ----------------------------------------------- */
+  
+  
+  /* ---------------------Candidate Saved start------------------------------------ */
+  .saved-candiadte-details{
+   background-color: #87e5f12b;
+   border-radius: 20px;
+   margin: 10px 0px 10px 0px;
+  }
+  .saved-candiadte-details ul{
+    display: inline-flex;
+    list-style: none;
+    padding-top: 28px;
+      padding-bottom: 18px;
+  }
+  
+  .saved-candiadte-details .saved-pitcure{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 31px;
+  }
+  .candidatenamewidth{
+    width: 280px;
+    padding-left: 20px;
+  }
+  .candidatenamewidth h6{
+    font-size: 20px;
+    color: #55aefa;
+  }
+  .candidatenamewidth p{
+    color: grey;
+    margin-top: -6px;
+    font-size: 17px;
+  }
+  .saved-candiadte-details .glyphicon-home{
+    font-size: 25px;
+    padding-top: 21px;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* -----------------------Candiadte saved end--------------------------------- */
+  
+  
+  /* ---------------------Active Job start here----------------------------------- */
+  .active-people img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 38px;
+    cursor: pointer;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .flex-container > div {
+    width: 107px;
+    margin: 0px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #55aefa;
+  }
+  .inactive-people img{
+    opacity: 0.5;
+  }
+  .inactive-people p{
+    color: grey;
+  }
+  .active-peple-load-more span{
+    position: absolute;
+    top: 0px;
+    left: 24px;
+    background-color: #0a0a0a40;
+    width: 60px;
+    height: 60px;
+    border-radius: 38px;
+    padding-top: 12px;
+    cursor: pointer;
+  }
+  
+  .jobrequirements{
+    background-color: #55aefa4a;
+    width: 92%;
+    /* margin: auto; */
+    margin: 16px;
+    border-radius: 11px;
+    padding-bottom: 20px;
+  }
+  .requirement-heading{
+    padding: 20px 0px 0px 14px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #55aefa;
+  }
+  .postedon{
+    font-size: 16px;
+    font-weight: 400;
+    color: #585757;
+  }
+  .postedondate{
+  margin-top: -10px;
+  font-size: 11px;
+  font-weight: 600;
+  }
+  .postedondatea{
+    margin-top: -16px;
+    font-size: 11px;
+    font-weight: 600;
+    }
+  .totalapplicent{
+    font-size: 26px;
+    margin-top: -9px;
+    color: #55aefa;
+    font-weight: 600;
+  }
+  .dottedicon{
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    cursor: pointer;
+  }
+  .active-job-dropdown{
+    right: 41px;
+    position: absolute;
+  }
+  .active-job-dropdown-menu{
+    position: relative !important;
+    margin: 0px 12px 0px 0px;
+    min-width: 130px;
+  }
+  .active-job-dropdown-menu li{
+    font-size: 12px;
+  }
+  
+  .active-more-job-pop-close{
+    position: absolute;
+    right: -36px;
+    top: -21px;
+    cursor: pointer;
+  }
+  
+  /* ---------------------Active job end---------------------------------------------- */
+  
+  
+  /* ----------------------Applicants start here------------------------------------------ */
+  .viewchat button{
+    margin-right: 10px;
+    background-color: #f9f9f9;
+      border-radius: 18px;
+      font-size: 13px;
+  }
+  .viewchat button:hover{
+    background-color: #55aefa;
+    color: #fff;
+  }
+  .viewchat button:active{
+    background-color: #55aefa;
+    color: #fff;
+  }
+  .viewchat button:focus{
+    background-color: #55aefa;
+    color: #fff;
+  }
+  
+  .applicant-rounds a{
+    display: inline-block;
+    color: #000;
+    padding: 10px 0px 0px 10px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  .applicant-rounds a:hover{
+    text-decoration: none;
+    color: #55aefa;
+  }
+  .applicant-rounds a:active{
+    text-decoration: none;
+    color: #55aefa;;
+  }
+  .applicant-rounds a:focus{
+    text-decoration: none;
+    color: #55aefa;
+  }
+  
+  .applicant-profile-picture img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 38px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .applicant-candidate{
+    background-color: #55aefa4a;
+    width: 96%;
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .applicants-name{
+    padding-top: 19px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #55aefa;
+  }
+  .applicants-company{
+  margin-top: -10px;
+  font-weight: 500;
+  color: #5a5959;
+  }
+  .scheduled{
+    float: right;
+    font-size: 12px;
+      font-weight: 600;
+      padding-top: 3px;
+    color: #55aefa;
+    cursor: pointer;
+  }
+  .applicant-schidule ul{
+    list-style: none;
+    display: inline-flex;
+    margin-left: -35px;
+  }
+  .applicant-schidule ul li{
+    margin-right: 5px;
+    cursor: pointer;
+    color: #55aefa;
+  }
+  .applicant-schidule ul li i{
+    font-size: 20px;
+  }
+  .hh{
+    height: 80px;
+  }
+  .horizantal{
+    background-color: #55aefa;
+    height: 1px;
+    width: 100%;
+  }
+  .scheduled-time-date{
+    font-size: 9px;
+      padding-top: 10px;
+      font-weight: 600;
+      color: #55aefa;
+  }
+  /* ----------------------Applicants end here------------------------------------------ */
+  
+  
+  /* ----------------------------Notification start------------------------------- */
+  
+  .notification-data{
+    background-color: #03a9f42e;
+    width: 95%;
+    margin: 25px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 95px;
+  
+  }
+  .user-notication p{
+  font-size: 15px;
+  padding: 20px 0px 0px 0px;
+  color: #000;
+  font-weight: 500;
+  }
+  
+  .user-natifiaction-date{
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+  padding-top: 20px;
+  
+  }
+  .user-natification-time{
+    margin-top: -9px;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .dashpagewidth {
+      margin: 0px;
+    }
+    .notification-data{
+      width: 90%;
+      height: auto;
+      margin: 14px;
+    }
+    
+    .user-natification-time{
+      padding-bottom: 9px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ---------------------------- Notification End--------------------------------------- */
+  
+  
+  
+  /* -------------------Post and Search bar------------------------------------------- */
+  .searchpost{
+    margin: auto;
+    float: none;
+    position: relative;
+  }
+  .searchbar{
+      margin-top: 18px;
+      height: 43px;
+      border-radius: 25px;
+      background-color: #f1f1f1;
+      border: none;
+      border-top: none;
+      box-shadow: none;
+      padding-left: 17px;
+  }
+  .searchbar:focus{
+    outline: none !important;
+     box-shadow: none;
+     border-bottom: 1px solid #f1f1f1;
+  }
+  .seachicon{
+    position: absolute;
+    top: 14px;
+    right: 36px;
+    font-size: 18px;
+    color: grey;
+  }
+  .postbtn{
+    margin-top: 10px;
+  }
+  .postbtn ul{
+    list-style: none;
+    display: inline-flex;
+    position: relative;
+  }
+  .postbtn ul li{
+    margin-right: 15px;
+  }
+  .postbtn ul li button{
+    width: 89px;
+    border-radius: 31px;
+    color: #000;
+    font-size: 13px;
+    padding: 9px;
+    background-color: #F1F1F1;
+  }
+  .postbtn ul li button:hover{
+    background-color: #55aefa;
+    color: #fff;
+  }
+  .postbtn ul li button:focus{
+    background-color: #55aefa;
+    color: #fff;
+  }
+  
+  .post-use-picture{
+    height: 60px;
+    width: 60px;
+    float: right;
+    margin-top: 26px;
+    border-radius: 32px;
+    margin-right: -17px;
+      position: relative;
+      cursor: pointer;
+  }
+  .user-post-profile{
+    width: 85%;
+    margin-left: 8%;
+  }
+  .post-user-name h3{
+    font-size: 16px;
+      padding-top: 18px;
+      cursor: pointer;
+  }
+  .post-user-name button{
+    background-color: #fff;
+    border: 1px solid #55aefa;
+    border-radius: 18px;
+    font-size: 12px;
+    padding: 2px;
+    width: 77px;
+    color: #55aefa;
+    margin-top: -7px;
+    position: absolute;
+  }
+  .post-user-name button:hover{
+    background-color: #55aefa;
+    color: #fff;
+  }
+  
+  .post-user-date{
+    float: right;
+      padding-top: 36px;
+      padding-right: 45px;
+  }
+  
+  .post-user-date p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .post-user-date .posttime{
+    color: grey;
+  }
+  
+  .post-conents{
+    width: 70%;
+    margin-left: 16%;
+  }
+  .post-conent p{
+    font-size: 13px;
+    text-align: justify;
+    padding: 10px
+  }
+  .post-picture img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .postlikes ul{
+    display: inline-flex;
+    position: relative;
+    list-style: none;
+    margin-left: -30px;
+  }
+  .postlikes ul li{
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: grey;
+    cursor: pointer;
+  }
+  .post-comment-action ul{
+    display: inline-flex;
+    position: relative;
+    list-style: none;
+    margin-left: -30px;
+  }
+  
+  .post-comment-action ul li{
+    margin-right: 10px;
+    font-size: 15px;
+    color: #696868;
+    cursor: pointer;
+  }
+  .post-comment-action ul li:hover{
+    color: #55aefa;
+  }
+  
+  .commentbox{
+    margin-top: 18px;
+    height: 36px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    border: none;
+    border-top: none;
+    box-shadow: none;
+    padding-left: 17px;
+  }
+  .commentbox:focus{
+  outline: none !important;
+   box-shadow: none;
+   border-bottom: 1px solid #f1f1f1;
+  }
+  .postcommenticon{
+    position: absolute;
+      top: 28px;
+      right: 41px;
+      color: grey;
+      font-size: 17px;
+  }
+  .userpost-comments ul{
+    list-style: none;
+    margin-top: -22px;
+  }
+  
+  .commentor-name h6{
+    padding-top: 26px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .commentor-name p{
+    margin-top: -10px;
+    color: grey;
+    font-size: 13px;
+  }
+  .commenttime h6{
+    font-size: 13px;
+  }
+  .commentor-pics{
+    width: 50px;
+    height: 50px;
+    border-radius: 27px;
+    margin-top: 27px;
+    margin-left: 21px;
+  }
+  
+  .sendpost{
+    margin-bottom: 15px;
+  }
+  
+  .addmorepost{
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background-color: #55aefa;
+    padding: 12px 15px 12px 14px;
+    /* width: 50px; */
+    color: #fff;
+    font-size: 40px;
+    border-radius: 49px;
+    cursor: pointer;
+  }
+  .viewallcomments p{
+    padding-bottom: 20px;
+    color: #55aefa;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .postbtn ul li button {
+      width: 71px;
+      font-size:10px;
+    }
+    .postbtn ul {
+      margin-left: -14%;
+    }
+    .post-use-picture {
+      height: 50px;
+      width: 50px;
+      margin-top: 34px;
+    }
+    .post-user-date {
+      float: left;
+    }
+    .user-post-profile {
+      width:100%;
+      margin-left: 0;
+    }
+    .post-conents {
+      width: 100%;
+      margin-left: 0%;
+  }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ----------------------Post and Search bar end------------------------------------------------- */
+  .buildrourprofile .round{
+    width: 30px;
+    height: 30px;
+    background-color: #55aefa;
+  }
+  
+  
+  
+  
+  /* ------------------Let's Build your profile------------------------------------ */
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ------------------Let's Build your profile end------------------------------------ */
+  
+  
+  
+  
+  
+  
+  

@@ -222,7 +222,7 @@ class Post_a_Job extends Component{
                                    </div>
                                </div>
                                <div className="col-md-6 offset-md-6">
-                                  <label class="container">Willing to hire any candidate with<br />Special disability ?
+                                  <label class="md-container">Willing to hire any candidate with<br />Special disability ?
                                      <input type="checkbox"  />
                                      <span class="checkmark"></span>
                                   </label>
@@ -283,27 +283,27 @@ class Post_a_Job extends Component{
                                        </ul>
                                    </div>
                                    <div className="">
-                                      <label class="container hire">Intersted in part time
+                                      <label class="md-container hire">Intersted in part time
                                        <input type="checkbox"  />
                                      <span class="checkmark"></span>
                                   </label>
-                                  <label class="container hire">Ready to work on weekends ?
+                                  <label class="md-container hire">Ready to work on weekends ?
                                      <input type="checkbox"  />
                                      <span class="checkmark"></span>
                                   </label>
-                                  <label class="container hire">Flexible shift ?
+                                  <label class="md-container hire">Flexible shift ?
                                      <input type="checkbox"  />
                                      <span class="checkmark"></span>
                                   </label>
-                                  <label class="container hire">Ready to sign contract ?
+                                  <label class="md-container hire">Ready to sign contract ?
                                      <input type="checkbox"  />
                                      <span class="checkmark"></span>
                                   </label>
-                                  <label class="container hire">Ok to travel ?
+                                  <label class="md-container hire">Ok to travel ?
                                      <input type="checkbox"  />
                                      <span class="checkmark"></span>
                                   </label>
-                                  <label class="container hire">Intersted in sales ?
+                                  <label class="md-container hire">Intersted in sales ?
                                      <input type="checkbox"  />
                                      <span class="checkmark"></span>
                                   </label>
