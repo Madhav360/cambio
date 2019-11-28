@@ -17,7 +17,11 @@ class Cardview extends Component{
                              <Sidebar />
                          </div>
                          <div className="col-lg-9 col-md-9">
-                             <h1>gfghfh</h1>
+                            <div className="cardview">
+                                <ul>
+                                    <li>hgh</li>
+                                </ul>
+                            </div>
                          </div>
 
                      </div>

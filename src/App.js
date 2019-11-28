@@ -36,6 +36,9 @@ import Candidate_Saved from './Cadidate_Saved';
 import Notifications from './Notificatins';
 import ProfileSetting from './ProfileSetting';
 import Post from './Post';
+import JobDetails from './JobDetails';
+import ActiveJob from './ActiveJob';
+import Applicants from './Applicants';
 
 
 
@@ -82,6 +85,9 @@ class App extends Component {
             <Route exact path="/notifications" component={() =>(<Notifications />)} />
             <Route exact path="/profile-setting" component={() =>(<ProfileSetting />)} />
             <Route exact path="/post" component={() =>(<Post />)} />
+            <Route exact path="/job-details" component={() =>(<JobDetails />)} />
+            <Route exact path="/active-job" component={() =>(<ActiveJob />)} />
+            <Route exact path="/applicants" component={() =>(<Applicants />)} />
           </Switch>
       </BrowserRouter>
     );

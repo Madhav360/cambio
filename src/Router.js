@@ -43,6 +43,9 @@ import Candidate_Saved from "./Cadidate_Saved";
 import Notifications from "./Notificatins";
 import ProfileSetting from "./ProfileSetting";
 import Post from "./Post";
+import JobDetails from "./JobDetails";
+import ActiveJob from "./ActiveJob";
+import Applicants from "./Applicants";
 
 
 
@@ -217,6 +220,21 @@ const appRoute =[
 	path:"/Post",
 	isExactPath: true,
 	component: <Post />
+ },
+ {
+	path:"/JobDetails",
+	isExactPath: true,
+	component: <JobDetails />
+ },
+ {
+	path:"/ActiveJob",
+	isExactPath: true,
+	component: <ActiveJob />
+ },
+ {
+	path:"/Applicants",
+	isExactPath: true,
+	component: <Applicants />
  },
 ];
 

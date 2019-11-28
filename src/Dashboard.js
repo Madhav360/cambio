@@ -19,106 +19,92 @@ class Dashboard extends Component{
                       <Sidebar />
                 </div>
                 <div className="col-lg-9 col-md-9">
-                    <p>Back</p>
-                   <div class="row  mdv-singup-page"> 
+                    <p className="back">Back</p>
+                   <div class="row  dashpagewidth"> 
                      <div className="dashboard-head ">
                      
                          <h3 className="text-center">Dashboard</h3>
                      </div>
-                      <div class="col-md-2 col-xs-4">
-                          <div className="dashaboard-menu text-center">
-                              <Link to ="#">
-                                  <button className="btn">
-                                      Post a job
-                                  </button>
-                              </Link>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-xs-4">
-                          <div className="dashaboard-menu text-center">
-                              <Link to ="#">
-                                  <button className="btn">
-                                      Active Job
-                                  </button>
-                              </Link>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-xs-4">
-                          <div className="dashaboard-menu text-center">
-                              <Link to ="#">
-                                  <button className="btn">
-                                      All Job
-                                  </button>
-                              </Link>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-xs-4">
-                          <div className="dashaboard-menu text-center">
-                              <Link to ="#">
-                                  <button className="btn">
-                                      Expired Job
-                                  </button>
-                              </Link>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-xs-4">
-                          <div className="dashaboard-menu text-center">
-                              <Link to ="#">
-                                  <button className="btn">
-                                     Applicants
-                                  </button>
-                              </Link>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-xs-4">
-                          <div className="dashaboard-menu text-center">
-                              <Link to ="#">
-                                  <button className="btn">
-                                  Rescheduled<br /> Interviews
-                                  </button>
-                              </Link>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-xs-4">
-                          <div className="dashaboard-menu text-center">
-                              <Link to ="#">
-                                  <button className="btn">
-                                      Current <br />
+                     <div className="dashboardmenus">
+                          <div class="flex-container">
+                                  <div className="dashaboard-menuu text-center">
+                                          <Link to ="postajob">
+                                             <button className="btn">
+                                                Post a job
+                                             </button>
+                                         </Link>
+                                    </div>
+                                    <div className="dashaboard-menuu text-center">
+                                          <Link to ="active-job">
+                                             <button className="btn">
+                                                Active Job
+                                             </button>
+                                         </Link>
+                                    </div>
+                                    <div className="dashaboard-menuu text-center">
+                                          <Link to ="#">
+                                             <button className="btn">
+                                             All Job
+                                             </button>
+                                         </Link>
+                                    </div>
+                                    <div className="dashaboard-menuu text-center">
+                                          <Link to ="#">
+                                             <button className="btn">
+                                             Expired Job
+                                             </button>
+                                         </Link>
+                                    </div>
+                                    <div className="dashaboard-menuu text-center">
+                                          <Link to ="applicants">
+                                             <button className="btn">
+                                             Applicants
+                                             </button>
+                                         </Link>
+                                    </div>
+                                    <div className="dashaboard-menuu text-center">
+                                          <Link to ="#">
+                                             <button className="btn">
+                                             Rescheduled<br /> Interviews
+                                             </button>
+                                         </Link>
+                                    </div>
+                                    <div className="dashaboard-menuu text-center">
+                                          <Link to ="#">
+                                             <button className="btn">
+                                             Current <br />
+                                              Interviews
+                                             </button>
+                                         </Link>
+                                    </div>
+                                    <div className="dashaboard-menuu text-center">
+                                          <Link to ="#">
+                                             <button className="btn">
+                                             Complited <br />
                                       Interviews
-                                  </button>
-                              </Link>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-xs-4">
-                          <div className="dashaboard-menu text-center">
-                              <Link to ="#">
-                                  <button className="btn">
-                                  Upcomming <br />
+                                             </button>
+                                         </Link>
+                                    </div>
+                                    <div className="dashaboard-menuu text-center">
+                                          <Link to ="#">
+                                             <button className="btn">
+                                             Upcomming <br />
                                       Interviews
-                                  </button>
-                              </Link>
-                          </div>
-                      </div>   
-                      <div class="col-md-2 col-xs-4">
-                          <div className="dashaboard-menu text-center">
-                              <Link to ="#">
-                                  <button className="btn">
-                                  Complited <br />
+                                             </button>
+                                         </Link>
+                                    </div>
+                                    <div className="dashaboard-menuu text-center">
+                                          <Link to ="#">
+                                             <button className="btn">
+                                             All <br />
                                       Interviews
-                                  </button>
-                              </Link>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-xs-4">
-                          <div className="dashaboard-menu text-center">
-                              <Link to ="#">
-                                  <button className="btn">
-                                  All <br />
-                                      Interviews
-                                  </button>
-                              </Link>
-                          </div>
-                      </div>                        
+                                             </button>
+                                         </Link>
+                                    </div>
+                                
+                           </div>
+                           <div className="mg-20"></div>
+                     </div>                        
                    </div> 
                 </div>
             </div>

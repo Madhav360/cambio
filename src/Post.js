@@ -52,17 +52,17 @@ class Post extends Component{
                            </ul>
                        </div>
                    </div>
-                    <div className="col-xs-12 col-md-10 offset-md-2 user-post-profile">
-                        <div className="col-xs-4 col-md-2 text-center">
+                    <div className="col-xs-12 col-md-12 user-post-profile">
+                        <div className="col-xs-3 col-md-2 text-center">
                            <img src="image/icons/shikhar.jpg" className="img-responsive post-use-picture" />
                         </div>
-                        <div className="col-xs-8 col-md-6">
+                        <div className="col-xs-6 col-md-6">
                             <div className="post-user-name">
                                <h3>Niko Nova</h3>
                                <button className="btn">Follow</button>
                             </div>
                         </div>
-                        <div className="col-xs-12 col-md-4">
+                        <div className="col-xs-3 col-md-4">
                             <div className="post-user-date">
                                 <p>20th Sept <br/><span className="posttime">02:00pm</span></p>
                             </div>
@@ -105,12 +105,12 @@ class Post extends Component{
                             <div className="userpost-comments">
                                 <ul>
                                     <li>
-                                        <div className="col-sm-2 col-xs-2 col-md-2">
+                                        <div className="col-sm-3 col-xs-2 col-md-2">
                                            <div className="commentor-photo">
                                               <img src="image/icons/shikhar.jpg" className="img-responsive commentor-pics" />
                                            </div>
                                         </div>
-                                        <div className="col-xs-7 col-sm-7 col-md-7">
+                                        <div className="col-xs-6 col-sm-7 col-md-7">
                                             <div className="commentor-name">
                                                <h6>Emmanuel</h6>
                                                 <p>nice!</p>

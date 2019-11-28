@@ -47,15 +47,58 @@ class Signup extends Component{
                            <div className="col-lg-6">
                               <div className="h">
                               <input type='text' className="form-control signupinputs mrg" onChange={this.myChangeHandler} placeholder="First Name"/>
-                              <input type='text' className="form-control signupinputs mrg" onChange={this.myChangeHandler} placeholder="Phone Number"/>
-                              <input type='text' className="form-control signupinputs mrg" onChange={this.myChangeHandler} placeholder="Password"/>
+                              
+                             
+                              </div>
+                            </div>
+                            <div className="col-md-6">
+                              <div className="form-group">
+                                  <input type='text' 
+                                  className="form-control signupinputs" 
+                                  onChange={this.myChangeHandler} 
+                                  placeholder="Last Name"/>
+                              </div>
+                            </div>
+                            <div className="col-md-6">
+                              <div className="from-group">
+                                    <input type='text' 
+                                     className="form-control signupinputs mrg" 
+                                     onChange={this.myChangeHandler} 
+                                     placeholder="Phone Number"/>
+                              </div>
+                            </div>
+                            <div className="col-md-6">
+                              <div className="from-group">
+                                 <input type='text' 
+                                  className="form-control signupinputs" 
+                                  onChange={this.myChangeHandler} 
+                                  placeholder="Email Id"/>
+                              </div>
+                            </div>
+                            <div className="col-md-6">
+                              <div className="from-group">
+                                    <input type='text' 
+                                     className="form-control signupinputs mrg" 
+                                     onChange={this.myChangeHandler} 
+                                     placeholder="Password"/>
+                              </div>
+                            </div>
+                            <div className="col-md-6">
+                              <div className="from-group">
+                                <input type='text' 
+                                  className="form-control signupinputs" 
+                                  onChange={this.myChangeHandler} 
+                                  placeholder="Comfirm Password"/>
+                              </div>
+                            </div>
+                            <div className="col-md-6">
+                              <div className="from-group">
+                                
                               </div>
                             </div>
                             <div className="col-lg-6">
                                <div className="h">
-                                  <input type='text' className="form-control signupinputs" onChange={this.myChangeHandler} placeholder="Last Name"/>
-                                  <input type='text' className="form-control signupinputs" onChange={this.myChangeHandler} placeholder="Email Id"/>
-                                  <input type='text' className="form-control signupinputs" onChange={this.myChangeHandler} placeholder="Confirm Password"/>
+                                  
                                 </div>
                             </div>
                           </div>
