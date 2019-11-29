@@ -1672,6 +1672,17 @@ color: #fff;
 
 
 /* -----------------Job details start---------------------------------------------- */
+.postajob-head a{
+  float: right;
+    font-size: 16px;
+    padding-top: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #55aefa;
+}
+.postajob-head a:hover{
+  text-decoration: none;
+}
 .details-page-width{
   width: 90%;
   float: none;
@@ -1698,6 +1709,16 @@ color: #636161;
 color: grey;
 }
 
+.job-details-view-application-button button{
+  background-color: #55aefa;
+  color: #fff;
+  border-radius: 17px;
+  width: 200px;
+  margin-bottom: 22px;
+}
+.job-details-view-application-button button:hover{
+  color: #fff;
+}
 
 
 
@@ -1868,6 +1889,7 @@ font-weight: 600;
   background-color: #f9f9f9;
     border-radius: 18px;
     font-size: 13px;
+    font-weight: 600;
 }
 .viewchat button:hover{
   background-color: #55aefa;
@@ -1967,6 +1989,81 @@ color: #5a5959;
     color: #55aefa;
 }
 /* ----------------------Applicants end here------------------------------------------ */
+
+
+/* --------------------------Upgrade start here------------------------------------------ */
+
+.upgradewidth{
+  float: none;
+  margin: auto;
+}
+.upgrade-slider{
+  background-color: #55aefa6e;
+  border-radius: 14px;
+  margin: 14px;
+}
+.upgrade-slider img{
+margin-top: 15px;
+}
+.upgrade-slider h2{
+  font-size: 18px;
+  padding-bottom: 30px;
+  font-weight: 600;
+}
+
+.updrade-pricing >.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.updrade-pricing > .flex-container > div {
+  background-color: #f9f9f9;
+  width: 155px;
+  margin: 13px 0px 10px 17px;
+  text-align: center;
+  line-height: 10px;
+  height: 92px;
+  border-radius: 9px;
+}
+
+.pricing-data p{
+  font-size: 15px;
+  padding-top: 29px;
+  color: grey;
+}
+.pricing-data span{
+  color: #000;
+  font-size: 20px;
+  padding-left: 8px;
+}
+.pricing-data h5{
+color: grey;
+}
+.upgrade-pay-to-contineu button{
+  background-color: #55aefa;
+    border-radius: 18px;
+    padding: 8px;
+    width: 200px;
+    color: #fff;
+    margin: 10px 0px 10px 0px;
+}
+.upgrade-pay-to-contineu button:hover{
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .updrade-pricing > .flex-container > div {
+    background-color: #f9f9f9;
+    width: 129px;
+  }
+
+}
+
+
+
+
+/* ------------------------------Upgrade end------------------------------------------------ */
 
 
 /* ----------------------------Notification start------------------------------- */
@@ -2247,6 +2344,7 @@ outline: none !important;
   padding-bottom: 20px;
   color: #55aefa;
   cursor: pointer;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2276,7 +2374,126 @@ outline: none !important;
 
 }
 
+.feedpopupclose{
+  position: absolute;
+    top: -31px;
+    right: -39px;
+    font-size: 33px;
+    color: #55aefa;
+    cursor: pointer;
+}
+.feedpopupdialog{
+  margin-top: 10%;
+}
+.feedpostcontent h2{
+  font-size: 23px;
+    font-weight: 500;
+}
+.feddposttextarea{
+  width: 90%;
+  margin-left: 5%;
+  background-color: #08080817;
+  resize: none;
+  border-top: none;
+  border: 1px solid #F9F9F9;
+  border-radius: 0;
+  text-align: center;
+  text-transform: capitalize;
+}
 
+.feddposttextarea:focus{
+  outline: none !important;
+  box-shadow: none;
+  border: 1px solid #f1f1f1;
+ 
+}
+.mdv-company-iconss {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  font-size: 16px;
+  border-radius: 24px;
+}
+.feedphoto{
+  color: #55aefa;
+}
+
+.feed-submit-button button{
+  background-color: #55aefa;
+  color: #fff;
+  width: 154px;
+  border-radius: 18px;
+  margin-top: 11px;
+  margin-bottom: 12px;
+}
+.feed-submit-button button:hover{
+color: #fff;
+}
+.postcommentpopupdialog{
+  margin-top: 5%;
+  width: 416px;
+  height: 300px;
+}
+.usewidth{
+ height: 40px;
+
+}
+.imgwidth{
+  width: 20%;
+}
+.usewidth h6{
+  text-align: left;
+  font-size: 17px;
+  font-weight: 600;
+  color: #55aefa;
+}
+.usewidth p{
+  text-align: left;
+  font-size: 14px;
+  margin-top: -9px;
+  color: grey;
+}
+.usepopup-comments{
+  height: 350px;
+  overflow: auto;
+}
+.popuuuserpicture{
+  width: 50px;
+  height: 50px;
+  border-radius: 33px;
+}
+.usepopup-comments ul {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.usepopup-comments ul li{
+  height: 40px;
+}
+.usercommentwidth{
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.usewidth i{
+  color: grey;
+    font-size: 23px;
+    padding-top: 15px;
+    float: right;
+}
+.postsendiconpopup{
+  position: absolute;
+  right: 35px;
+  top: 85%;
+  font-size: 20px;
+  color: grey;
+  background-color: #f9f9f9;
+  padding: 9px;
+  border-radius: 17px;
+  cursor: pointer;
+}
+.popcommentbox{
+  width: 80%;
+}
 
 
 

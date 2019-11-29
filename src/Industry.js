@@ -70,7 +70,7 @@ class Industry extends Component{
                                <h5>Architecture</h5>
                             </button>
                          </div>
-                         <div className="col-md-4 text-center">
+                         <div className="col-md-4 col-md-2 text-center">
                              <button className="btn industry-job">
                                <img className="img-responsive" src="image/icons/animation.png" />
                                <h5>Animation</h5>
@@ -94,7 +94,7 @@ class Industry extends Component{
                                <h5>Construction</h5>
                             </button>
                          </div>
-                         <div className="roles-nxt-btn text-center">
+                         <div className="col-md-12 roles-nxt-btn text-center">
                            <Link to="/employeecategory"><button className="btn">Next</button></Link>
                            </div>
                    </div>  

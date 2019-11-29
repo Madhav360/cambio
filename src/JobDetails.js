@@ -24,7 +24,7 @@ class JobDetails extends Component{
                     <p className="back">Back</p>
                    <div class="row  dashpagewidth"> 
                      <div className="col-md-12 postajob-head ">
-                        <h5>hgvhg</h5>
+                         <Link to="#">Edit</Link>
                          <h3 className="text-center">Job Details</h3>
                      </div>
                      <div className="col-md-12 details-page-width">
@@ -152,6 +152,9 @@ class JobDetails extends Component{
                                    <p>Round 3</p>
                               
                                </div>
+                           </div>
+                           <div className="job-details-view-application-button text-center">
+                               <button className="btn">View Applicants</button>
                            </div>
                        </div>
                                                  

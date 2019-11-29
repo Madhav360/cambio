@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
 
-class Sidebar extends Component{
+class AccountInfo extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -109,58 +109,14 @@ handleNotiMouseOver() {
         return(
             <div className="fixedsidebar">
                 <div className="container-fluid">
-                    <div className="row">
-            
-                    <div className="">
-                    <div className="sidebar">
-                        <ul>
-                            <li><img src="image/icons/shikhar.jpg" className="img-responsive profile-pitcure" /></li>
-                            <li  className="side-myprofile">My Profile </li>
-                            <li className="side-icon"><img src="image/menuicon/chat.png" className="img-responsive chatimg" /></li>
-                        </ul>
+                    <div className="accountinfo">
+                        <Link to="back">Back to Home</Link>
                     </div>
-                    <div className="sidebarmenu">
-                        <ul>
-                            <li><Link to = "#">
-                                <img className="menu-icons menu-icons1" 
-                                 onMouseOver={this.handleMouseOver} 
-                                 onMouseOut={this.handleMouseOut} 
-                                 src={this.state.imgswipe}/> Swipe
-                                 </Link></li>
-                            <li><Link to="/">
-                                <img className="menu-icons menu-icons1" 
-                                onMouseOver={this.handleHomeMouseOver} 
-                                onMouseOut={this.handleHomeMouseOut} 
-                                src={this.state.imghome}/> Home
-                                </Link></li>
-                            <li><Link to="/candidatesave">
-                                <img className="menu-icons menu-icons1" 
-                                onMouseOver={this.handleSavedMouseOver} 
-                                onMouseOut={this.handleSavedMouseOut} 
-                                src={this.state.imgsaved}/> Saved</Link></li>
-                            <li><Link to ="/dashboard">
-                                <img className="menu-icons menu-icons1" 
-                                onMouseOver={this.handleDashMouseOver} 
-                                onMouseOut={this.handleDashMouseOut} 
-                                src={this.state.imgdash}/> Dashboard</Link>
-                                </li>
-                            <li><Link to="upgrade">
-                                <img className="menu-icons menu-icons1" 
-                                onMouseOver={this.handleUpgMouseOver} 
-                                onMouseOut={this.handleUpgMouseOut} 
-                                src={this.state.imgupg}/> Upgrade</Link></li>
-                            <li><Link to="/notifications">
-                                <img className="menu-icons menu-icons1" 
-                                onMouseOver={this.handleNotiMouseOver} 
-                                onMouseOut={this.handleNotiMouseOut} 
-                                src={this.state.imgnoti}/> Notification </Link> <span>10</span></li>
-                        </ul>
-                    </div>
+                    
                 </div>
-                    </div>
-                </div>
+                   
             </div>
         )
     }
 }
-export default Sidebar;
+export default AccountInfo;

@@ -39,6 +39,7 @@ import Post from './Post';
 import JobDetails from './JobDetails';
 import ActiveJob from './ActiveJob';
 import Applicants from './Applicants';
+import Upgdrade from "./Upgrade";
 
 
 
@@ -88,6 +89,8 @@ class App extends Component {
             <Route exact path="/job-details" component={() =>(<JobDetails />)} />
             <Route exact path="/active-job" component={() =>(<ActiveJob />)} />
             <Route exact path="/applicants" component={() =>(<Applicants />)} />
+            <Route exact path="/upgrade" component={() =>(<Upgdrade />)} />
+            
           </Switch>
       </BrowserRouter>
     );

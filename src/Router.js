@@ -46,6 +46,7 @@ import Post from "./Post";
 import JobDetails from "./JobDetails";
 import ActiveJob from "./ActiveJob";
 import Applicants from "./Applicants";
+import Upgdrade from "./Upgrade";
 
 
 
@@ -235,6 +236,11 @@ const appRoute =[
 	path:"/Applicants",
 	isExactPath: true,
 	component: <Applicants />
+ },
+ {
+	path:"/Upgrade",
+	isExactPath: true,
+	component: <Upgdrade />
  },
 ];
 

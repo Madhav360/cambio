@@ -124,7 +124,7 @@ class Post_a_Job extends Component{
                                      <input 
                                        type="text" 
                                        class="form-control postinput" 
-                                       placeholder="Enter From annual CTC(in IPA)" 
+                                       placeholder="Enter From annual CTC(in LPA)" 
                                        value={this.state.shift}
                                        onChange={this.ShiftHandler} />
                                    </div>

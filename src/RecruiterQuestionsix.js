@@ -48,7 +48,7 @@ class RecruiterQuestionsix extends Component{
                          
                          
                          <div className="col-md-12 qskip text-center">
-                           <Link to="#">SKIP</Link>
+                           <Link to="post">SKIP</Link>
                            </div>
                    </div>  
                  

@@ -24,7 +24,7 @@ class ActiveJob extends Component{
                     <p className="back">Back</p>
                    <div class="row  dashpagewidth"> 
                         <div className="col-md-12 postajob-head ">
-                           <h3 className="text-center">Active Job</h3>
+                           <h3 className="text-center">Active Jobs</h3>
                         </div>                            
                  
                    
@@ -142,7 +142,7 @@ class ActiveJob extends Component{
                                      <p className="postedondate">16th July 2019</p>
                                   </div>
                                   <div className="col-md-4">
-                                     <p className="postedon">Expaire on</p>
+                                     <p className="postedon">Expire on</p>
                                      <p className="postedondate">16th Aug 2019</p>
                                   </div>
                                   <div className="col-md-4">
@@ -173,7 +173,7 @@ class ActiveJob extends Component{
                                      <p className="postedondate">16th July 2019</p>
                                   </div>
                                   <div className="col-md-4">
-                                     <p className="postedon">Expaire on</p>
+                                     <p className="postedon">Expire on</p>
                                      <p className="postedondate">16th Aug 2019</p>
                                   </div>
                                   <div className="col-md-4">
@@ -203,7 +203,7 @@ class ActiveJob extends Component{
                                      <p className="postedondate">16th July 2019</p>
                                   </div>
                                   <div className="col-md-4">
-                                     <p className="postedon">Expaire on</p>
+                                     <p className="postedon">Expire on</p>
                                      <p className="postedondate">16th Aug 2019</p>
                                   </div>
                                   <div className="col-md-4">
@@ -233,7 +233,7 @@ class ActiveJob extends Component{
                                      <p className="postedondate">16th July 2019</p>
                                   </div>
                                   <div className="col-md-4">
-                                     <p className="postedon">Expaire on</p>
+                                     <p className="postedon">Expire on</p>
                                      <p className="postedondate">16th Aug 2019</p>
                                   </div>
                                   <div className="col-md-4">

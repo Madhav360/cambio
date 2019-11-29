@@ -152,7 +152,6 @@ class Post extends Component{
                                 </ul>
                             </div>
                         </div>
-
                         <div className="col-xs-12 col-sm-12 col-md-12">
                             <div className="userpost-comments">
                                 <ul>
@@ -178,9 +177,6 @@ class Post extends Component{
                                 </ul>
                             </div>
                         </div>
-
-
-
                         <div className="col-xs-12 col-sm-12 col-md-12 sendpost">
                             <div className="userpost-comments">
                                 <ul>
@@ -205,54 +201,173 @@ class Post extends Component{
                                     </li>
                                 </ul>
                             </div>
-                           
                         </div>
                         <div className="col-xs-12 col-sm-12 col-md-12">
-                            <div className="viewallcomments text-center" data-toggle="modal" data-target="#myModal">
-                                <p>View All Comments</p>
+                            <div className="viewallcomments text-center">
+                                <p data-toggle="modal" data-target="#myModalsx">View All Comments</p>
                             </div>
                             
-                            <i class='fas fa-plus addmorepost'></i>
+                            <i class='fas fa-plus addmorepost' data-toggle="modal" data-target="#postafeedpopup"></i>
                         </div>
 
+              {/* -------------Post Comments popup-------------- */}
 
+                  <div id="myModalsx" class="modal fade" role="dialog">
+                      <div class="row modal-dialog postcommentpopupdialog">
+                          <div class="modal-content">
+                               <div class="modal-body">
+                                   <i class="material-icons feedpopupclose" data-dismiss="modal">close</i>
+                                   <div className="feedpostcontent text-center">
+                                      <form>
+                                          <div className="row usepopup-comments">
+                                             <ul>
+                                                 <li className="gg">
+                                                     <div className="col-xs-3 usewidth imgwidth">
+                                                        <img src="image/icons/shikhar.jpg" 
+                                                         className="img-responsive popuuuserpicture" />
+                                                     </div>
+                                                     <div className="col-xs-6 usewidth usercommentwidth">
+                                                        <h6>Marcus Santos </h6>
+                                                         <p>cool !</p>
+                                                     </div>
+                                                     <div className="col-xs-3 usewidth">
+                                                         <i class='far fa-thumbs-up'></i>
+                                                     </div>
+                                                  </li>
+                                                  <hr />
+                                                  <li className="gg">
+                                                       <div className="col-xs-3 usewidth imgwidth">
+                                                          <img src="image/icons/shikhar.jpg" 
+                                                          className="img-responsive popuuuserpicture" />
+                                                        </div>
+                                                        <div className="col-xs-6 usewidth usercommentwidth">
+                                                           <h6>Marcus Santos </h6>
+                                                           <p>cool !</p>
+                                                        </div>
+                                                        <div className="col-xs-3 usewidth">
+                                                           <i class='fas fa-share'></i>
+                                                        </div>
+                                                    </li>
+                                                    <hr />
+                                                    <li className="gg">
+                                                         <div className="col-xs-3 usewidth imgwidth">
+                                                             <img src="image/icons/shikhar.jpg" 
+                                                             className="img-responsive popuuuserpicture" />
+                                                         </div>
+                                                         <div className="col-xs-6 usewidth usercommentwidth">
+                                                           <h6>Marcus Santos </h6>
+                                                             <p>cool !</p>
+                                                         </div>
+                                                         <div className="col-xs-3 usewidth">
+                                                             <i class='far fa-thumbs-up'></i>
+                                                         </div>
+                                                    </li>
+                                                    <hr />
+                                                    <li className="gg">
+                                                        <div className="col-xs-3 usewidth imgwidth">
+                                                             <img src="image/icons/shikhar.jpg" 
+                                                             className="img-responsive popuuuserpicture" />
+                                                        </div>
+                                                        <div className="col-xs-6 usewidth usercommentwidth">
+                                                            <h6>Marcus Santos </h6>
+                                                            <p>cool !</p>
+                                                        </div>
+                                                        <div className="col-xs-3 usewidth">
+                                                            <i class='far fa-thumbs-up'></i>
+                                                        </div>
+                                                     </li>
+                                                     <hr />
+                                                     <li className="gg">
+                                                        <div className="col-xs-3 usewidth imgwidth">
+                                                             <img src="image/icons/shikhar.jpg" 
+                                                             className="img-responsive popuuuserpicture" />
+                                                        </div>
+                                                        <div className="col-xs-6 usewidth usercommentwidth">
+                                                            <h6>Marcus Santos </h6>
+                                                            <p>cool !</p>
+                                                        </div>
+                                                        <div className="col-xs-3 usewidth">
+                                                            <i class='far fa-thumbs-up'></i>
+                                                        </div>
+                                                     </li>
+                                                     <hr />
+                                                     <li className="gg">
+                                                        <div className="col-xs-3 usewidth imgwidth">
+                                                             <img src="image/icons/shikhar.jpg" 
+                                                             className="img-responsive popuuuserpicture" />
+                                                        </div>
+                                                        <div className="col-xs-6 usewidth usercommentwidth">
+                                                            <h6>Marcus Santos </h6>
+                                                            <p>cool !</p>
+                                                        </div>
+                                                        <div className="col-xs-3 usewidth">
+                                                            <i class='far fa-thumbs-up'></i>
+                                                        </div>
+                                                     </li>
+                                                     <hr />
+                                              </ul>          
+                                         </div>
+                                         <div className="comment-popup-input">
+                                             <div class="form-group">
+                                                 <input 
+                                                   type="text" 
+                                                   className="form-control commentbox popcommentbox"
+                                                   placeholder="Write a Comments..."
+                                                  />
+                                                  <i class="glyphicon glyphicon-send postsendiconpopup"></i>
+                                             </div>
+                      
+                                          </div>     
+                                   </form>
+                              </div>
+                           </div>
+                       </div>
+                   </div>
+              </div>
 
-{/* --------------------------- */}
-<div id="myModalsx" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+{/* -----------------------------post comment popup end---------------------------------------- */}
 
-   
+{/* -----------------------------------Post a feed popup start here----------------------------------------- */}
+<div id="postafeedpopup" class="modal fade" role="dialog">
+  <div class="modal-dialog feedpopupdialog">
+
+  
     <div class="modal-content">
       
       <div class="modal-body">
-      <div className="col-xs-12 col-sm-12 col-md-12">
-                            <div className="userpost-comments">
-                                <ul>
-                                    <li>
-                                        <div className="col-sm-2 col-xs-2 col-md-2">
-                                           <div className="commentor-photo">
-                                              <img src="image/icons/shikhar.jpg" className="img-responsive commentor-pics" />
-                                           </div>
-                                        </div>
-                                        <div className="col-xs-7 col-sm-7 col-md-7">
-                                            <div className="commentor-name">
-                                               <h6>Emmanuel</h6>
-                                                <p>nice!</p>
-                                            </div>
-                                        </div>
-                                        <div className="col-xs-3 col-sm-3 col-md-3">
-                                             <div className="commenttime commentor-name">
-                                                 <h6>30 Dec</h6>
-                                                 <p>2:00 pm</p>
-                                             </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-      </div>
-      <div class="modal-footer">
-     
+        <i class="material-icons feedpopupclose" data-dismiss="modal">close</i>
+        <div className="feedpostcontent text-center">
+            <h2>Feed a Post</h2>
+            <form>
+               <div className="form-group">
+                 <textarea 
+                    className="form-control feddposttextarea" 
+                    rows="5"
+                    placeholder="Type what do you want to post" 
+                    id="comment" />
+                </div>
+          
+           <div className="feedphotoandvideo">
+           <div class="upload-btn-wrapper">
+                <button class="btn btn mdv-company-iconss" 
+                        onChange={this.handleChange}>
+                        <img src="image/icons/photo.png" /> 
+                </button><span className="feedphoto">Photo</span>
+                 <input type="file" onChange={this.handleChange}/>
+            </div>
+            <div class="upload-btn-wrapper">
+                <button class="btn btn mdv-company-iconss" 
+                        onChange={this.handleChange}>
+                        <img src="image/icons/video.png" /> 
+                </button><span className="feedphoto">video</span>
+                 <input type="file" onChange={this.handleChange}/>
+            </div>
+            <div className="feed-submit-button text-center">
+                <button className="btn">Post</button>
+            </div>
+           </div>
+           </form>
+        </div>
       </div>
     </div>
 
@@ -260,6 +375,7 @@ class Post extends Component{
 </div>
 
 
+{/* -----------------------------------Post a feed popup end here----------------------------------------- */}
 
 
 
