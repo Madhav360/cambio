@@ -2531,16 +2531,241 @@ color: #fff;
 
 
 
-/* ------------------Let's Build your profile------------------------------------ */
+/* ------------------Let's profile setting ------------------------------------ */
 
+.profile-setting-user-details{
+  background-color: #000;
+  height: 200px;
+  float: none;
+  margin: auto;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
 
+.profile-pics img{
+  width: 80px;
+  height: 80px;
+  border-radius: 48px;
+  border: 2px solid #fff;
+  margin-top: 35px;
 
+}
+.profile-setting-video-icon img{
+  width: 40px;
+  margin-top: 58px;
+  margin-left: -15px;
+}
+.profile-setting-share-icon img{
+  width: 40px;
+  margin-top: 58px;
+}
+.profile-pics p{ 
+  margin: 0;
+  color: #fff;
+}
+.profile-pics p:nth-child(2){
+font-weight: 700;
+}
+.profile-pics p:nth-child(3){
+ font-size: 12px;
+}
+.profile-pics p:nth-child(4){
+  font-size: 10px;
+  
+}
+.profile-pics p:nth-child(5){
+  font-size: 12px;
+  color: #55aefa
+}
 
+.profile-setting-post-details{
+  float: none;
+  margin: auto;
+}
+.profile-setting-candidate-placed img{
+  margin-top: 10px;
+}
+.profile-setting-candidate-placed p{
+  font-size: 11px;
+    font-weight: 600;
+    color: grey;
+}
+.profile-setting-candidate-placed h6{
+  margin-top: -7px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.profile-setting-candidate-desciption{
+ width: 90%;
+ margin-left: 5%;
+}
+.profile-setting-candidate-desciption P{
+  font-size: 12px;
+}
+.profile-setting-candidate-desciption i{
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.profile-setting-blue-lines> div{
+  display:inline-block;
+  height: 9px;
+  width: 80px;
+  background-color: #55aefa;
+  margin-right: 5px;
+}
+.profile-setting-company-details{
+  width: 90%;
+  margin-left: 5%;
+}
+.company-preference h6{
+  color: #55aefa;
+}
+.company-preference p{
+  color: #fff;
+    background-color: #55aefa;
+    display: inline-block;
+    padding: 7px 21px 7px 22px;
+    border-radius: 19px;
+    border: 1px solid #55aefa;
+}
+.company-preference i{
+  position: absolute;
+  right: 0;
+  top: 45px;
+  cursor: pointer;
+}
+.profile-setting-form-details{
+  width: 45%;
+  margin-left: 5%;
+  height: 80px;
+}
+.profile-setting-form-details p{
+  color: grey;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+}
+.profile-setting-form-details h4{
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 600
+}
+.profile-summart-edit{
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #807777eb;
+  border-radius: 0;
+  padding: 0px 0px;
+  font-size: 15px;
+  color: #555;
+}
+.profile-summart-edit:focus{
+  outline: none !important;
+   box-shadow: none;
+   border-bottom: 1px solid #807777eb;
+}
+.profile-setting-member-table{
+  width:88%;
+  margin-left: 7%;
+}
+.profile-setting-member-table table{
+  border: 0;
+}
+.profile-setting-member-table table>thead>tr>th{
+  border: 0;
+}
+.profile-setting-member-table>.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+border: 0;
+}
+.profile-setting-upload-documents{
+  background-color: #55aefa54;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 11px;
+    height: 270px;
+  
+}
+.profile-setting-upload-documents p{
+    text-align: center;
+    padding-top: 21px;
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #55aefa;
+}
+.profile-setting-upload-documents> .camera-gallary{
+  height: 150px;
+  border: 1px dotted #000;
+  background-color: #fff;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 20px;
 
+}
+.profile-setting-upload-documents> .camera-gallary ul{
+  display: inline-flex;
+  list-style: none;
+}
+.profile-setting-upload-documents> .camera-gallary ul li{
+  margin-right: 55px;
+  margin-top: 46px
+}
+.camerra{
+  font-size: 30px;
+  cursor: pointer;
+  color: #a7a7a7
+}
+.profilesetting-file{
+  width: 34px;
+  cursor: pointer;
+}
+.profile-setting-menu{
+  padding-top: 30px;
+  color: grey;
+  display: inline-grid;
+  line-height: 24px;
+}
+.profile-setting-menu a{
+  color: grey;
+}
+.profile-setting-menu a:hover{
+ color: red; 
+ text-decoration: none;
+}
+.profile-setting-menu a:active{
+  color: red; 
+  text-decoration: none;
+ }
+ .profile-setting-menu a:focus{
+  color: red; 
+  text-decoration: none;
+ }
+.profile-setting-menu h5{
+  color: #55aefa;
+  font-size: 20px;
+  
+  padding-bottom: 20px;
+ }
+ .add-morre h4{
+   color:#55aefa;
+   cursor: pointer;
+ }
+ @media only screen and (max-width: 768px) {
+  .profile-setting-form-details {
+   width: 100%;
+  }
+  .profile-setting-action{
+    display: inline-flex;
+  }
+  .profile-setting-candidate-desciption i {
+    position: absolute;
+    top: 46%;
+  }
 
-
-
-/* ------------------Let's Build your profile end------------------------------------ */
+ }
+/* ------------------Let's profile setting end------------------------------------ */
 
 
 

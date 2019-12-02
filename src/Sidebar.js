@@ -115,7 +115,7 @@ handleNotiMouseOver() {
                     <div className="sidebar">
                         <ul>
                             <li><img src="image/icons/shikhar.jpg" className="img-responsive profile-pitcure" /></li>
-                            <li  className="side-myprofile">My Profile </li>
+                            <li  className="side-myprofile"><Link to="profile-setting">My Profile</Link> </li>
                             <li className="side-icon"><img src="image/menuicon/chat.png" className="img-responsive chatimg" /></li>
                         </ul>
                     </div>
