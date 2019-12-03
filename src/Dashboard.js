@@ -37,21 +37,21 @@ class Dashboard extends Component{
                                     <div className="dashaboard-menuu text-center">
                                           <Link to ="active-job">
                                              <button className="btn">
-                                                Active Job
+                                                Active Jobs
                                              </button>
                                          </Link>
                                     </div>
                                     <div className="dashaboard-menuu text-center">
                                           <Link to ="#">
                                              <button className="btn">
-                                             All Job
+                                             All Jobs
                                              </button>
                                          </Link>
                                     </div>
                                     <div className="dashaboard-menuu text-center">
                                           <Link to ="#">
                                              <button className="btn">
-                                             Expired Job
+                                             Expired Jobs
                                              </button>
                                          </Link>
                                     </div>
@@ -88,7 +88,7 @@ class Dashboard extends Component{
                                     <div className="dashaboard-menuu text-center">
                                           <Link to ="#">
                                              <button className="btn">
-                                             Upcomming <br />
+                                             Upcoming <br />
                                       Interviews
                                              </button>
                                          </Link>

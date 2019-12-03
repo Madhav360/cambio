@@ -108,11 +108,30 @@ handleNotiMouseOver() {
     render(){
         return(
             <div className="fixedsidebar">
-                <div className="container-fluid">
+                <div className="container-fluid account-info-back">
                     <div className="accountinfo">
-                        <Link to="back">Back to Home</Link>
+                        <Link to="/dashboard">Back to Home</Link>
                     </div>
-                    
+                    <div className="col-md-12">
+                       <div className="account-info-menu">
+                          <h2>Account Info</h2>
+                          <ul>
+                             <li><Link to="#">Proﬁle Settings</Link></li>
+                             <li><Link to="#">Privacy Policy</Link></li>
+                             <li><Link to="#">Terms of usage</Link></li>
+                             <li><Link to="#">My Circle</Link></li>
+                             <li><Link to="/help">Help</Link></li>
+                             <li><Link to="#">Proﬁle Settings</Link></li>
+                             <li><Link to="#">Support</Link></li>
+                             <li><Link to="#">Logout</Link></li>
+                             <li><Link to="#">Swap your Role</Link></li>
+                             <li><Link to="#">Job Alert</Link></li>
+                             <li><Link to="#">Delete Account</Link></li>
+                             <li><Link to="#">Refer this App</Link></li>
+                             
+                          </ul>
+                       </div>
+                    </div>
                 </div>
                    
             </div>

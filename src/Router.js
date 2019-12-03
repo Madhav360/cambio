@@ -47,6 +47,9 @@ import JobDetails from "./JobDetails";
 import ActiveJob from "./ActiveJob";
 import Applicants from "./Applicants";
 import Upgdrade from "./Upgrade";
+import Help from "./Help";
+import Support from "./Support";
+import AccountInfo from "./AccountInfo";
 
 
 
@@ -241,6 +244,21 @@ const appRoute =[
 	path:"/Upgrade",
 	isExactPath: true,
 	component: <Upgdrade />
+ },
+ {
+	path:"/help",
+	isExactPath: true,
+	component: <Help />
+ },
+ {
+	path:"/support",
+	isExactPath: true,
+	component: <Support />
+ },
+ {
+	path:"/accountinfo",
+	isExactPath: true,
+	component: <AccountInfo />
  },
 ];
 

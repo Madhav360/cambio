@@ -2767,6 +2767,123 @@ border: 0;
  }
 /* ------------------Let's profile setting end------------------------------------ */
 
+/* ----------------------------Help start here --------------------------------- */
+.help-plus-icon{
+  float: right;
+  color: #000;
+  font-weight: 100;
+}
+.help-quetion{
+  width: 80%;
+  margin-left: 10%;
+  background-color: #55aefa54;
+  height: 45px;
+  padding: 13px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.hepl-anws{
+  width: 75%;
+  margin-left: 13%;
+  padding-top: 10px;
+}
+.help-height{
+  height: 480px;
+}
+
+/* ----------------------------Help End here-------------------------------------- */
+
+
+/* ------------------------------Support start here---------------------------------- */
+.support-img img{
+  width: 200px;
+}
+.support-inputs-width{
+  width: 70%;
+  margin-left: 15%;
+  
+}
+.form-back-color{
+  background-color: #55aefa45;
+  padding: 26px;
+  border-radius: 15px;
+}
+.support-calling{
+  float: none;
+  margin: auto;
+}
+.support-call{
+  border: 2px solid #55aefa;
+  border-radius: 9px;
+  padding: 10px 0px 10px 0px;
+  margin: 20px 0px 20px 0px;
+  position: relative;
+}
+.support-call i{
+  color: #55aefa;
+}
+.support-call p{
+  color: #55aefa;
+  font-weight: 600;
+}
+.support-select-cat-inputs{
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid grey;
+  border-radius: 0;
+background-color: #55aefa00;
+  height: 50px;
+  padding: 0px 0px;
+  font-size: 15px;
+  color: #555;
+}
+.support-select-cat-inputs:focus{
+  outline: none !important;
+   box-shadow: none;
+   border-bottom: 1px solid grey;
+}
+.support-massage-input{
+  background-color: #fff;
+  resize: none;
+  border: none;
+  border-radius: 0;
+}
+.support-massage-input:focus{
+  outline: none !important;
+  box-shadow: none;
+  border-bottom: 1px solid #807777eb;
+  border: none;
+  border-radius: 0;
+}
+.submit-form-button img{
+  cursor: pointer;
+}
+/* ---------------------------------Support end here------------------------------------ */
+
+
+/* ---------------------------------Account Info start here------------------------------- */
+.account-info-back{
+  background-color: #fff;
+}
+.account-info-menu h2{
+  color: #000;
+  text-align: center;
+    font-weight: 600;
+}
+.account-info-menu ul{
+list-style: none;
+}
+.account-info-menu ul li a{
+  color: grey;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+
+/* -----------------------------------Account Info end here --------------------------------- */
+
 
 
 

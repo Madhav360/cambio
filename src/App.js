@@ -40,6 +40,9 @@ import JobDetails from './JobDetails';
 import ActiveJob from './ActiveJob';
 import Applicants from './Applicants';
 import Upgdrade from "./Upgrade";
+import Help from './Help';
+import Support from './Support';
+import AccountInfo from './AccountInfo';
 
 
 
@@ -90,6 +93,9 @@ class App extends Component {
             <Route exact path="/active-job" component={() =>(<ActiveJob />)} />
             <Route exact path="/applicants" component={() =>(<Applicants />)} />
             <Route exact path="/upgrade" component={() =>(<Upgdrade />)} />
+            <Route exact path="/help" component={() =>(<Help />)} />
+            <Route exact path="/support" component={() =>(<Support />)} />
+            <Route exact path="/account-info" component={() =>(<AccountInfo />)} />
             
           </Switch>
       </BrowserRouter>
