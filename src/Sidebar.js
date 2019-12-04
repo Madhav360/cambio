@@ -121,7 +121,7 @@ handleNotiMouseOver() {
                     </div>
                     <div className="sidebarmenu">
                         <ul>
-                            <li><Link to = "#">
+                            <li><Link to = "/cardview">
                                 <img className="menu-icons menu-icons1" 
                                  onMouseOver={this.handleMouseOver} 
                                  onMouseOut={this.handleMouseOut} 

@@ -50,6 +50,7 @@ import Upgdrade from "./Upgrade";
 import Help from "./Help";
 import Support from "./Support";
 import AccountInfo from "./AccountInfo";
+import Message from "./Message";
 
 
 
@@ -259,6 +260,11 @@ const appRoute =[
 	path:"/accountinfo",
 	isExactPath: true,
 	component: <AccountInfo />
+ },
+ {
+	path:"/message",
+	isExactPath: true,
+	component: <Message />
  },
 ];
 

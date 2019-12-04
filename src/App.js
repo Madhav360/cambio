@@ -43,6 +43,7 @@ import Upgdrade from "./Upgrade";
 import Help from './Help';
 import Support from './Support';
 import AccountInfo from './AccountInfo';
+import Message from './Message';
 
 
 
@@ -96,6 +97,8 @@ class App extends Component {
             <Route exact path="/help" component={() =>(<Help />)} />
             <Route exact path="/support" component={() =>(<Support />)} />
             <Route exact path="/account-info" component={() =>(<AccountInfo />)} />
+            <Route exact path="/message" component={() =>(<Message />)} />
+            
             
           </Switch>
       </BrowserRouter>

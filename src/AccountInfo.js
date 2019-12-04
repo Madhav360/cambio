@@ -116,18 +116,17 @@ handleNotiMouseOver() {
                        <div className="account-info-menu">
                           <h2>Account Info</h2>
                           <ul>
-                             <li><Link to="#">Proﬁle Settings</Link></li>
-                             <li><Link to="#">Privacy Policy</Link></li>
-                             <li><Link to="#">Terms of usage</Link></li>
-                             <li><Link to="#">My Circle</Link></li>
-                             <li><Link to="/help">Help</Link></li>
-                             <li><Link to="#">Proﬁle Settings</Link></li>
-                             <li><Link to="#">Support</Link></li>
-                             <li><Link to="#">Logout</Link></li>
-                             <li><Link to="#">Swap your Role</Link></li>
-                             <li><Link to="#">Job Alert</Link></li>
-                             <li><Link to="#">Delete Account</Link></li>
-                             <li><Link to="#">Refer this App</Link></li>
+                             <li><Link to="#"><img src="image/menuicon/profile-setting.png" /> <span>Proﬁle Settings</span></Link></li>
+                             <li><Link to="#"><img src="image/menuicon/privacy-policy.png" /> <span>Privacy Policy</span></Link></li>
+                             <li><Link to="#"><img src="image/menuicon/privacy-policy.png" /> <span>Terms of usage</span></Link></li>
+                             <li><Link to="#"><img src="image/menuicon/my-circle.png" /> <span>My Circle</span></Link></li>
+                             <li><Link to="/help"><img src="image/menuicon/privacy-policy.png" /> <span>Help</span></Link></li>
+                             <li><Link to="#"><img src="image/menuicon/help.png" /> <span>Support</span></Link></li>
+                             <li><Link to="#"><img src="image/menuicon/logout.png" /> <span>Logout</span></Link></li>
+                             <li><Link to="#"><span>Swap your Role</span></Link></li>
+                             <li><Link to="#"><span>Job Alert</span></Link></li>
+                             <li><Link to="#"><span>Delete Account</span></Link></li>
+                             <li><Link to="#"><img src="image/menuicon/share1.png" /> <span>Refer this App</span></Link></li>
                              
                           </ul>
                        </div>

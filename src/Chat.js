@@ -13,10 +13,103 @@ class Chat extends Component{
     render(){
         return(
             <div>
-                <div className="col-md-3">
-                  <Sidebar />
-                </div>
-                <div className="col-md-9">
+                <div className="container-fluid chatt">
+                    <div className="row">
+                        <div className="col-md-12">
+                          <div className="chating-activer">
+                            <p>Back</p>
+                             <div class="flex-container text-center">
+                                <div className="more-active">
+                                  <img src="image/icons/shikhar.jpg" /><p>John</p>
+                                  <span>+20</span>
+                                </div>
+                                <div>
+                                   <img src="image/icons/shikhar.jpg" /><p>John</p>
+                                </div>
+                                <div>
+                                  <img src="image/icons/shikhar.jpg" /><p>John</p>
+                                </div>
+                                <div>
+                                   <img src="image/icons/shikhar.jpg" /><p>John</p>
+                                </div>
+                                <div>
+                                   <img src="image/icons/shikhar.jpg" /><p>John</p>
+                                </div>  
+                            </div>
+                            <div className="onversationslist">
+                              <img src="image/menuicon/bullet-list.png" />
+                              <p>Conversations ( Unread )</p>
+                           </div>
+                            <div className="col-xs-12 chatting-section">
+                                <div className="col-xs-2 chat-with-people">
+                                   <img src="image/icons/shikhar.jpg" />
+                                </div>
+                                <div className="col-xs-7 chatting-person-name">
+                                     <h4>John Karl</h4>
+                                     <p>have a good day !</p>
+                                </div>
+                                <div className="col-xs-3 chatting-persion-time">
+                                    <h6>Today</h6>
+                                    <p>2:00pm</p>
+                                </div>
+                            </div>
+                            <div className="col-xs-12 chatting-section">
+                                <div className="col-xs-2 chat-with-people">
+                                   <img src="image/icons/shikhar.jpg" />
+                                </div>
+                                <div className="col-xs-7 chatting-person-name">
+                                     <h4>John Karl</h4>
+                                     <p>have a good day !</p>
+                                </div>
+                                <div className="col-xs-3 chatting-persion-time">
+                                    <h6>Today</h6>
+                                    <p>2:00pm</p>
+                                </div>
+                            </div>
+                            <div className="col-xs-12 chatting-section">
+                                <div className="col-xs-2 chat-with-people">
+                                   <img src="image/icons/shikhar.jpg" />
+                                </div>
+                                <div className="col-xs-7 chatting-person-name">
+                                     <h4>John Karl</h4>
+                                     <p>have a good day !</p>
+                                </div>
+                                <div className="col-xs-3 chatting-persion-time">
+                                    <h6>Today</h6>
+                                    <p>2:00pm</p>
+                                </div>
+                            </div>
+                            <div className="col-xs-12 chatting-section">
+                                <div className="col-xs-2 chat-with-people">
+                                   <img src="image/icons/shikhar.jpg" />
+                                </div>
+                                <div className="col-xs-7 chatting-person-name">
+                                     <h4>John Karl</h4>
+                                     <p>have a good day !</p>
+                                </div>
+                                <div className="col-xs-3 chatting-persion-time">
+                                    <h6>Today</h6>
+                                    <p>2:00pm</p>
+                                </div>
+                            </div>
+                            <div className="col-xs-12 chatting-section">
+                                <div className="col-xs-2 chat-with-people">
+                                   <img src="image/icons/shikhar.jpg" />
+                                </div>
+                                <div className="col-xs-7 chatting-person-name">
+                                     <h4>John Karl</h4>
+                                     <p>have a good day !</p>
+                                </div>
+                                <div className="col-xs-3 chatting-persion-time">
+                                    <h6>Today</h6>
+                                    <p>2:00pm</p>
+                                </div>
+                            </div>
+                         
+                          </div>
+                          
+                        </div>
+                    </div>
                 </div>
             </div>
         );
