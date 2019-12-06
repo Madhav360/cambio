@@ -781,6 +781,9 @@ width: 200px;
 
 
 /* ---------------------- Role------------------------ */
+.role-height{
+  height: 450px;
+}
 .rolemain h2{
   color: #000;
     font-weight: 700;

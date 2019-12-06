@@ -16,7 +16,7 @@ class Role extends Component{
            <Header />
            <div className="container">
                <div className="row">
-                   <div className="col-lg-12 mdv-singup-page">
+                   <div className="col-lg-12 mdv-singup-page role-height">
                          <div className="rolemain text-center">
                            <h2>Hey There</h2>
                            <p>Signup to continue</p>
