@@ -56,9 +56,9 @@ class Setnewpassword extends Component{
                              
                          </div>
                          <div className="col-md-12 company-skip-btn text-center">
-                               {/* <buttom className="btn company-skip">Next</buttom><br /> */}
+                             <Link to="/login">  <buttom className="btn company-skip">Next</buttom><br /></Link>
 
-                              <input className="btn company-skip acc-save" type="submit" value="Next" /><br />
+                             
                               
                          </div>
                          </form>
