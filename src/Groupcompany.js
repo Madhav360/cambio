@@ -14,35 +14,42 @@ class Groupcompany extends Component{
         this.state = {
           member_emil_id_cambio_id : '',
           member_phone_no: '',
-          menber_name:'',
+          member_name:'',
           member_specialization: '',
-          mamber_designation: '',
-          value: ''
+          member_designation: '',
         };
-        // this.onChangeMemberEmail = this.onChangeMemberEmail.bind(this);
-        // this.onChangeMemberPhoneNo = this.onChangeMemberPhoneNo.bind(this);
-        // this.onChangeMemberSpecialization = this.onChangeMemberSpecialization.bind(this);
-        // this.onChangeMemberDesignation = this.onChangeMemberDesignation.bind(this);
-        // this.onChangeMemberName = this.onChangeMemberName.bind(this);
-        this.handleChange = this.handleChange.bind(this);
+        
+        this.CambioEmailHandler = this.CambioEmailHandler.bind(this);
+        this.onChangeMemberPhoneNo = this.onChangeMemberPhoneNo.bind(this);
+        this.onChangeMemberSpecialization = this.onChangeMemberSpecialization.bind(this);
+        this.onChangeMemberDesignation = this.onChangeMemberDesignation.bind(this);
+        this.onChangeMemberName = this.onChangeMemberName.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         
       }
     
-    
-      handleChange(event) {
-        this.setState(
-          {value: event.value},
-        
+  
+      CambioEmailHandler(event) {
+        this.setState({member_emil_id_cambio_id: event.target.value});
+      }
 
-          );
+      onChangeMemberPhoneNo(event) {
+        this.setState({ member_phone_no: event.target.value});
+      }
+    
+      onChangeMemberSpecialization(event) {
+        this.setState({ member_specialization: event.target.value});
+      }
+    
+      onChangeMemberDesignation(event) {
+        this.setState({member_designation: event.target.value});
+      }
+    
+      onChangeMemberName(event) {
+        this.setState({member_name: event.target.value});
       }
     
       handleSubmit(event) {
-        alert(
-          'Member Email Id: ' + this.value
-          
-          );
         event.preventDefault();
       }
     render(){
@@ -74,7 +81,7 @@ class Groupcompany extends Component{
                                       placeholder="Member Email Id/Cambio Id" 
                                       type="text" 
                                       value={this.state.member_emil_id_cambio_id} 
-                                      onChange={this.handleChange} 
+                                      onChange={this.CambioEmailHandler} 
                                     />
                                   
                                </div>
@@ -99,7 +106,7 @@ class Groupcompany extends Component{
                                <div className="form-group col-md-6">
                                    <input 
                                      className="form-control company-inputs" 
-                                     placeholder="Meber Designation" 
+                                     placeholder="Member Designation" 
                                      type="text" 
                                      value={this.state.mamber_designation} 
                                      onChange={this.onChangeMemberDesignation} 
@@ -108,7 +115,7 @@ class Groupcompany extends Component{
                                <div className="form-group col-md-6">
                                    <input 
                                      className="form-control company-inputs mdv-first-input" 
-                                     placeholder="Company Industry Location / Address" 
+                                     placeholder="Member Specialization" 
                                      type="text" 
                                      value={this.state.member_specialization} 
                                      onChange={this.onChangeMemberSpecialization} 

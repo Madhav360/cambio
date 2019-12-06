@@ -12,18 +12,48 @@ class CandidateAlert extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            volume: 0
+          designation : '',
+          qualification : '',
+          shift : '',
+          loaction : '',
+          type_of_employment : '',
+          empolyment_category : '',
+          industry_category : '',
           }
-    
-        
-    
-        this.handleChange = this.handleChange.bind(this);
+
+
+        this.DesignationHandler = this.DesignationHandler.bind(this);
+        this.QualificationHandler = this.QualificationHandler.bind(this);
+        this.ShiftHandler = this.ShiftHandler.bind(this);
+        this.LocationHandler = this.LocationHandler.bind(this);
+        this.TypeOfEmploymentHandler = this.TypeOfEmploymentHandler.bind(this);
+        this.EmploymentCategoryHandler = this.EmploymentCategoryHandler.bind(this);
+        this.IndustryCategoryHandler = this.IndustryCategoryHandler.bind(this);
+      
         this.handleSubmit = this.handleSubmit.bind(this);
       }
     
     
-      handleChange(event) {
-        this.setState({value: event.target.value});
+      DesignationHandler(event) {
+        this.setState({designation: event.target.value});
+      }
+      QualificationHandler(event) {
+        this.setState({qualification: event.target.value});
+      }
+      ShiftHandler(event) {
+        this.setState({shift: event.target.value});
+      }
+      LocationHandler(event) {
+        this.setState({loaction: event.target.value});
+      }
+      TypeOfEmploymentHandler(event) {
+        this.setState({type_of_employment: event.target.value});
+      }
+      EmploymentCategoryHandler(event) {
+        this.setState({empolyment_category: event.target.value});
+      }
+      IndustryCategoryHandler(event) {
+        this.setState({industry_category: event.target.value});
       }
     
       handleSubmit(event) {
@@ -62,8 +92,8 @@ class CandidateAlert extends Component{
                                       className="form-control mdv-first-input company-inputs" 
                                       placeholder="Designation" 
                                       type="text" 
-                                      value={this.state.value} 
-                                      onChange={this.handleChange} 
+                                      value={this.state.designation} 
+                                      onChange={this.DesignationHandler} 
                                     />
                                </div>
                                <div className="form-group col-md-6">
@@ -71,8 +101,8 @@ class CandidateAlert extends Component{
                                      className="form-control company-inputs" 
                                      placeholder="Qualiﬁcation" 
                                      type="text" 
-                                     value={this.state.value} 
-                                     onChange={this.handleChange} 
+                                     value={this.state.qualification} 
+                                     onChange={this.QualificationHandler} 
                                     />
                                 </div>
                                 <div className="form-group col-md-6">
@@ -80,8 +110,8 @@ class CandidateAlert extends Component{
                                       className="form-control mdv-first-input company-inputs mvd-mrg" 
                                       placeholder="Shift" 
                                       type="text" 
-                                      value={this.state.value} 
-                                      onChange={this.handleChange} 
+                                      value={this.state.shift} 
+                                      onChange={this.ShiftHandler} 
                                     />
                                </div>
                                <div className="form-group col-md-6 condalert">
@@ -93,8 +123,8 @@ class CandidateAlert extends Component{
                                      className="form-control company-inputs" 
                                      placeholder="Location" 
                                      type="text" 
-                                     value={this.state.value} 
-                                     onChange={this.handleChange} 
+                                     value={this.state.loaction} 
+                                     onChange={this.LocationHandler} 
                                     />
                                 </div>
                                 <div className="form-group col-md-6">
@@ -102,8 +132,8 @@ class CandidateAlert extends Component{
                                       className="form-control mdv-first-input company-inputs" 
                                       placeholder="Type Of Employment" 
                                       type="text" 
-                                      value={this.state.value} 
-                                      onChange={this.handleChange} 
+                                      value={this.state.type_of_employment} 
+                                      onChange={this.TypeOfEmploymentHandler} 
                                     />
                                </div>
                                <div className="form-group col-md-6">
@@ -111,8 +141,8 @@ class CandidateAlert extends Component{
                                      className="form-control company-inputs" 
                                      placeholder="Employment Category" 
                                      type="text" 
-                                     value={this.state.value} 
-                                     onChange={this.handleChange} 
+                                     value={this.state.empolyment_category} 
+                                     onChange={this.EmploymentCategoryHandler} 
                                     />
                                 </div>
                                 <div className="form-group col-md-6">
@@ -120,8 +150,8 @@ class CandidateAlert extends Component{
                                       className="form-control mdv-first-input company-inputs" 
                                       placeholder="Industry Category" 
                                       type="text" 
-                                      value={this.state.value} 
-                                      onChange={this.handleChange} 
+                                      value={this.state.industry_category} 
+                                      onChange={this.IndustryCategoryHandler} 
                                     />
                                </div>
                                <div className="form-group col-md-6">

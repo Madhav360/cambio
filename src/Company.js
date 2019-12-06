@@ -11,16 +11,47 @@ class Company extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            
+            your_designation: '',
+            how_old_comapany: '',
+            company_website: '',
+            company_loaction: '',
+            office_location: '',
+            company_branches: '',
+            about_yourself: '',
+
         };
-    
-        
-    
-        this.handleChange = this.handleChange.bind(this);
+        this.YourDesignationHandler = this.YourDesignationHandler.bind(this);
+        this.HowOldCompanyHandler = this.HowOldCompanyHandler.bind(this);
+        this.ComplanyWebsiteHandler = this.ComplanyWebsiteHandler.bind(this);
+        this.CompanyLoactionHandler = this.CompanyLoactionHandler.bind(this);
+        this.OfficeLocationHandler = this.OfficeLocationHandler.bind(this);
+        this.CompanyBranchesHandler = this.CompanyBranchesHandler.bind(this);
+        this.AboutYourSelfHandler = this.AboutYourSelfHandler.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
       }
     
     
+      YourDesignationHandler(event) {
+        this.setState({your_designation: event.target.value});
+      }
+      HowOldCompanyHandler(event) {
+        this.setState({how_old_comapany: event.target.value});
+      }
+      ComplanyWebsiteHandler(event) {
+        this.setState({company_website: event.target.value});
+      }
+     CompanyLoactionHandler(event) {
+        this.setState({company_loaction: event.target.value});
+      }
+      OfficeLocationHandler(event) {
+        this.setState({office_location: event.target.value});
+      }
+      CompanyBranchesHandler(event) {
+        this.setState({company_branches: event.target.value});
+      }
+      AboutYourSelfHandler(event) {
+        this.setState({about_yourself: event.target.value});
+      }
       handleChange(event) {
         this.setState({value: event.target.value});
       }
@@ -57,8 +88,8 @@ class Company extends Component{
                                       className="form-control mdv-first-input company-inputs" 
                                       placeholder="Your Designation" 
                                       type="text" 
-                                      value={this.state.value} 
-                                      onChange={this.handleChange} 
+                                      value={this.state.your_designation} 
+                                      onChange={this.YourDesignationHandler} 
                                     />
                                </div>
                                <div className="form-group col-md-6">
@@ -74,8 +105,8 @@ class Company extends Component{
                                      className="form-control company-inputs mdv-first-input" 
                                      placeholder="How old is the company" 
                                      type="text" 
-                                     value={this.state.value} 
-                                     onChange={this.handleChange} 
+                                     value={this.state.how_old_comapany} 
+                                     onChange={this.HowOldCompanyHandler} 
                                     />
                                </div>
                                <div className="form-group col-md-6">
@@ -83,8 +114,8 @@ class Company extends Component{
                                      className="form-control company-inputs" 
                                      placeholder="Company Website" 
                                      type="text" 
-                                     value={this.state.value} 
-                                     onChange={this.handleChange} 
+                                     value={this.state.company_website} 
+                                     onChange={this.ComplanyWebsiteHandler} 
                                     />
                                </div>
                                <div className="form-group col-md-6">
@@ -92,8 +123,8 @@ class Company extends Component{
                                      className="form-control company-inputs mdv-first-input mvd-mrg" 
                                      placeholder="Company Industry Location / Address" 
                                      type="text" 
-                                     value={this.state.value} 
-                                     onChange={this.handleChange} 
+                                     value={this.state.company_loaction} 
+                                     onChange={this.CompanyLoactionHandler} 
                                     />
                                </div>
                                <div className="form-group company-use-gps col-md-6">
@@ -105,8 +136,8 @@ class Company extends Component{
                                       className="form-control company-inputs" 
                                       placeholder="Enter Office Location" 
                                       type="text" 
-                                      value={this.state.value} 
-                                      onChange={this.handleChange} 
+                                      value={this.state.office_location} 
+                                      onChange={this.OfficeLocationHandler} 
                                     />
                                </div>
                                <div className="form-group col-md-10 offset-md-4">
@@ -114,8 +145,8 @@ class Company extends Component{
                                      className="form-control company-braches-inputs  mdv-first-input" 
                                      placeholder="Company Branches" 
                                      type="text" 
-                                     value={this.state.value} 
-                                     onChange={this.handleChange} 
+                                     value={this.state.company_branches} 
+                                     onChange={this.CompanyBranchesHandler} 
                                     />
 
 {/* <MultiSelectReact 
@@ -135,8 +166,8 @@ class Company extends Component{
                                      className="form-control company-textarea mdv-first-input" 
                                      placeholder="Please write yourself in 250 words" 
                                      type="text" 
-                                     value={this.state.value} 
-                                     onChange={this.handleChange} 
+                                     value={this.state.about_yourself} 
+                                     onChange={this.AboutYourSelfHandler} 
                                     />
                                </div>
                                <div className="form-group col-md-6">

@@ -9,10 +9,27 @@ class Signup extends Component{
         super(props);
         this.state = {
           isGoing: true,
-          numberOfGuests: 2
+          numberOfGuests: 2,
+          last_name: '',
+          first_name: '',
+          password: '',
+          comfirm_password: '',
+          company_email: '',
+          company_name: '',
+          phone_no: '',
+         
         };
-    
+       
+       console.log(this.state.phone_no);
         this.handleInputChange = this.handleInputChange.bind(this);
+        this.LastNameHandler = this.LastNameHandler.bind(this);
+        this.FirstNameHandler = this.FirstNameHandler.bind(this);
+        this.PasswordHandler = this.PasswordHandler.bind(this);
+        this.ConfirmPasswordHandler = this.ConfirmPasswordHandler.bind(this);
+        this.CompanyNameHandler = this.CompanyNameHandler.bind(this);
+        this.CompanyEmailHandler = this.CompanyEmailHandler.bind(this);
+        this.PhoneNoHandler = this.PhoneNoHandler.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
       }
     
       handleInputChange(event) {
@@ -24,6 +41,38 @@ class Signup extends Component{
           [name]: value
         });
       }
+
+      LastNameHandler(event) {
+        this.setState({last_name: event.target.value});
+      }
+      
+      FirstNameHandler(event) {
+        this.setState({first_name: event.target.value});
+      }
+      
+      PasswordHandler(event) {
+        this.setState({password: event.target.value});
+      }
+      
+      ConfirmPasswordHandler(event) {
+        this.setState({comfirm_password: event.target.value});
+      }
+      
+      CompanyEmailHandler(event) {
+        this.setState({company_email: event.target.value});
+      }
+      CompanyNameHandler(event) {
+        this.setState({company_name: event.target.value});
+      }
+      PhoneNoHandler(event) {
+        this.setState({phone_no: event.target.value});
+      }
+
+        handleSubmit(event) {
+          console.log(this.state.phone_no)
+          event.preventDefault();
+        }
+      
     render(){
 	return(
        <div>
@@ -42,11 +91,15 @@ class Signup extends Component{
                                <li><img className="img-responsive" src="image/phone.png" /></li>
                             </ul>
                         </div>
-                        <form>
+                        <form onSubmit={this.handleSubmit}>
                           <div className="mdv-signup-form">
                            <div className="col-lg-6">
                               <div className="h">
-                              <input type='text' className="form-control signupinputs mrg" onChange={this.myChangeHandler} placeholder="First Name"/>
+                              <input type='text' 
+                                     className="form-control signupinputs mrg" 
+                                     onChange={this.FirstNameHandler}
+                                     value={this.first_name} 
+                                     placeholder="First Name"/>
                               
                              
                               </div>
@@ -55,7 +108,8 @@ class Signup extends Component{
                               <div className="form-group">
                                   <input type='text' 
                                   className="form-control signupinputs" 
-                                  onChange={this.myChangeHandler} 
+                                  onChange={this.LastNameHandler} 
+                                  value={this.state.last_name}
                                   placeholder="Last Name"/>
                               </div>
                             </div>
@@ -64,7 +118,8 @@ class Signup extends Component{
                               <div className="from-group">
                                     <input type='text' 
                                      className="form-control signupinputs mrg" 
-                                     onChange={this.myChangeHandler} 
+                                     onChange={this.CompanyNameHandler} 
+                                     value={this.company_name}
                                      placeholder="Company Name"/>
                               </div>
                             </div>
@@ -82,7 +137,8 @@ class Signup extends Component{
                               <div className="from-group">
                                     <input type='text' 
                                      className="form-control signupinputs mrg" 
-                                     onChange={this.myChangeHandler} 
+                                     onChange={this.CompanyEmailHandler} 
+                                     value={this.company_email}
                                      placeholder="Your Company email ID"/>
                               </div>
                             </div>
@@ -90,7 +146,8 @@ class Signup extends Component{
                               <div className="from-group">
                                  <input type='text' 
                                   className="form-control signupinputs" 
-                                  onChange={this.myChangeHandler} 
+                                  onChange={this.PhoneNoHandler} 
+                                  value={this.phone_no}
                                   placeholder="Phone Number"/>
                               </div>
                             </div>
@@ -116,7 +173,8 @@ class Signup extends Component{
                               <div className="from-group">
                                  <input type='text' 
                                   className="form-control signupinputs" 
-                                  onChange={this.myChangeHandler} 
+                                  onChange={this.PasswordHandler} 
+                                  value={this.password}
                                   placeholder="Password"/>
                               </div>
                             </div>
@@ -124,15 +182,17 @@ class Signup extends Component{
                               <div className="from-group">
                                  <input type='text' 
                                   className="form-control signupinputs" 
-                                  onChange={this.myChangeHandler} 
+                                  onChange={this.ConfirmPasswordHandler} 
+                                  value={this.comfirm_password}
                                   placeholder="Comfirm Password"/>
                               </div>
                             </div>
-                        </form>
-                        <div class="col-md-12 form-group text-center">
+                            <div class="col-md-12 form-group text-center">
                             
-                            <Link to="/Role"><input type="submit" className="btn mdv-signup-btn" value="Submit" /></Link>
+                            <Link to="/role"> <input type="submit" className="btn mdv-signup-btn" value="Submit" /></Link>
                         </div>
+                        </form>
+                      
                         <div class="col-md-12 form-group signup-text">
                            A Already User ? <Link to="/Login">Signup</Link>
                            
