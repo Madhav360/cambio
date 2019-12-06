@@ -34,20 +34,21 @@ class Bio extends Component{
                          </div>
                          <div className="company text-center">
                             <ul>
-                               <li> <button className="btn mdv-company-icons"><i className='fas fa-camera'></i></button></li>
-                               <li> <div class="upload-btn-wrapper">
+                               <li> <button className="btn mdv-company-icons basic-active"><i className='fas fa-camera'></i></button></li>
+                               <li> <button className="btn mdv-company-icons"><i className='fas fa-video'></i></button></li>
+                               {/* <li> <div class="upload-btn-wrapper">
                                         <button class="btn btn mdv-company-icons" 
                                            onChange={this.handleChange}>
                                            <i className='fas fa-upload'></i></button>
                                            <input type="file" onChange={this.handleChange}/>
                                      </div>
-                                </li>
+                                </li> */}
                             </ul>
                           
                             <div className="employee-profile-pic" >
                                <p>Profile Pic</p>
                               
-                               <img className="img-responsive" placeholder="upload picture" src={this.state.file}/>
+                               <img className="img-responsive" placeholder="upload picture" src="image/icons/shikhar.jpg"/>
                               
                             </div>
                             <div className="col-md-8 offset-md-4 col-centered form-group  text-center">
@@ -61,8 +62,8 @@ class Bio extends Component{
                             </div>
                
                             <div className="col-md-12 company-skip-btn text-center">
-                               <buttom className="btn company-skip">Next</buttom><br />
-                               <Link to="#">Skip</Link>
+                               <Link to="/bio2"> <buttom className="btn company-skip">Next</buttom><br /></Link>
+                               <Link to="/bio2">Skip</Link>
                            </div>
                         </div>
                      </div>    

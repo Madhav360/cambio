@@ -736,25 +736,7 @@ width: 200px;
   text-align: center;
     padding-bottom: 14px;
 }
-.signup-upload-id{
-  height: 100px;
-  width: 50%;
-  margin-left: 47%;
-  background-color: #f9f9f9;
-}
-.signup-upload-id ul{
-  list-style: none;
-  display: inline-flex;
-  margin-right: 40px;
-  margin-top: 14px;
-  color: grey
-}
-.signup-upload-title label{
-  padding-left: 28% !important;
-  display: block;
-  padding: 8px 0px 4px 0px;
-  color: #55aefa;
-}
+
 @media only screen and (max-width: 768px) {
 
   .mrg {
@@ -762,14 +744,6 @@ width: 200px;
   }
   .signupinputs{
    width: 100%;
-  }
-  .signup-upload-id{
-    width: 100%;
-    margin-left: 0px;
-  }
-  .signup-upload-title label{
-    padding-left: 0% !important;
-    text-align: left;
   }
 
 }
@@ -786,9 +760,6 @@ width: 200px;
     font-weight: 700;
     font-family: Montserrat;
     padding-top: 11px
-}
-.kk{
-  font-size: 20px;
 }
 .rolemain p{
   color: #808080c7;
@@ -840,8 +811,7 @@ width: 200px;
   color: #000;
     font-weight: 700;
     font-family: Montserrat;
-    padding-top: 11px;
-    font-size: 20px;
+    padding-top: 11px
 }
 .roles-btn:hover{
   color: #fff;
@@ -1068,16 +1038,15 @@ width: 200px;
   background-color: #e3e2e2;
   font-size: 16px;
   border-radius: 24px;
- 
 
 }
 
 
-.basic-active{
+.mdv-company-icons:hover{
   color: #fff;
   background-color: #55aefa;
 }
-.basic-active:hover{
+.mdv-company-icons:focus{
   color: #fff;
   background-color: #55aefa;
 }
@@ -1224,43 +1193,7 @@ width: 200px;
   border-radius: 10px;
 padding: 2px;
 }
-.company-nxt-skip{
-  display: grid;
-}
-.company-nxt-skip button{
-  background-color: #55aefa;
-  color: #fff;
-  width: 197px;
-  margin: 20px;
-  padding: 10px;
-  font-weight: 500;
-  text-transform: capitalize;
-  border-radius: 20px;
-}
-.company-nxt-skip button:hover{
-  color: #fff;
-}
-.company-nxt-skip a{
-  color: #55aefa;
-  font-size: 20px;
-  
-}
-.company-nxt-skip a:hover{
-  text-decoration: none;
-}
-.alert-nxt button{
-  background-color: #55aefa;
-  color: #fff;
-  width: 197px;
-  margin: 20px;
-  padding: 10px;
-  font-weight: 500;
-  text-transform: capitalize;
-  border-radius: 20px;
-}
-.alert-nxt button:hover{
-  color: #fff;
-}
+
 /* -----------------------company end------------------ */
 
 
@@ -1281,10 +1214,10 @@ padding: 2px;
 .col-centered textarea{
   height: 137px !important;
   resize: none;
-  border: 1px solid #f9f9f9;
+  border: 1px solid #e3e2e2;
   border-radius: 0;
  
-  background-color: #f9f9f9;
+  background-color: #e3e2e2;
   
 }
 .col-centered textarea:focus{
@@ -1394,7 +1327,7 @@ position: absolute;
 
 .bio2-camera-section{
   height: 120px;
-  background-color: #f9f9f9;
+  background-color: #d2cfcf;
 }
 .bio2-camera-section ul{
   padding-top: 35px;
@@ -1409,10 +1342,7 @@ position: absolute;
 font-size: 15px;
 color: grey;
 }
-.bio2-file{
-  width: 45px;
-  margin-top: -7px;
-}
+
 
 /* -------------------- dashboard start here-------------------------- */
 .back{
@@ -1836,37 +1766,7 @@ color: grey;
 
 }
 
-/* -----------------------------Employee Build profile---------------------- */
-.emp-build-profile-width{
-  margin: 50px auto;
-  float: none;
-}
-.employer-tabs{
-  display: grid;
-  line-height: 100px;
-}
-.employer-tabs button{
-  background-color: #f9f9f9;
-    height: 49px;
-    width: 177px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #000;
-    border-radius: 45px;
-}
-.employer-tabs button:hover{
-  background-color: #55aefa;
-  color: #fff;
-}
-.employer-tabs button:focus{
-  background-color: #55aefa;
-  color: #fff;
-}
-.emp-buid-pro-height{
-  height: 450px;
-}
 
-/* ------------------------------Employee Build profile end------------------ */
 
 
 
@@ -3099,11 +2999,6 @@ list-style: none;
 
 
 /* ------------------------Swipe start here------------------------------------------ */
-
-.swipe-title a:nth-child(1){
-  color: #55aefa;
-  font-weight: 600;
-}
 .swipe-title a{
   font-size: 30px;
     padding-right: 32px;
@@ -3122,7 +3017,9 @@ list-style: none;
     text-decoration: none;
 }
 .swipe-title a:focus{
-
+  font-size: 30px;
+    font-weight: 600;
+    color: #55aefa;
     text-decoration: none;
 }
 
@@ -3240,94 +3137,9 @@ border: 0;
 /* ----------------------Swipe end here------------------------------------------- */
 
 
-
-
-/* ---------------------------------------------------------------------------------------------- */
-/* ----------------------------Candidate start from here----------------------------------------- */
-/* ---------------------------------------------------------------------------------------------- */
-
-/* --------------Candidate Lets buid Profile start------------------------- */
-.main-root{
-  background-color: #fff;
-  border-radius: 12px;
-  margin: 20px 0px 20px;
-}
-.main-root h2{
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: -6;
-}
-.main-root h4{
-  font-size: 19px;
-    color: grey;
-}
-.tabs{
-  margin: auto;
-  float: none;
-}
-.rounded-dot{
-  width: 20px;
-  height: 20px;
-  background-color: red;
-}
-.roundedd btn{
+.madhavraj{
   color: red;
 }
-.candidate-basic-root{
-  margin: auto;
-  float: none;
-}
 
-.candidate-basic-root ul{
-  list-style: none;
-  display: inline-flex;
-}
 
-.candidate-basic-root ul li{
-  margin-right: 20px;
-}
-.candidate-basic-root ul li{
-  background-color: #f9f9f9;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  padding-top: 13px;
-}
-.candidate-basic-root ul li:hover{
-  background-color:#55aefa;
-  color: #fff;
-  display: inline-block;
-  cursor: pointer;
-}
-.candidate-basic-root ul li a:hover{
-  background-color:#55aefa;
-  color: #fff;
-}
-.basic-details p{
-  color: #55aefa;
-  text-align: center;
-  padding-top: 50px;
-  font-size: 20px;
-  padding-bottom: 20px;
-  font-weight: 600;
-}
-.candidate-basic-date .select-custom{
-border: none;
-transition: none !important;
-box-shadow: 0;
-border: 1px solid #55aefa;
-border-radius: 15px;
-height: 41px;
-font-weight: 700;
-color: #55aefa;
 
-}
-.candidate-basic-date ::-ms-expand {
-  display: none;
-}
-
-.candidate-basic-date select::-ms-expand {	display: none; }
-.candidate-basic-date select{
-    -webkit-appearance: none;
-    appearance: none;
-}

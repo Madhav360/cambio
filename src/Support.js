@@ -1,5 +1,5 @@
 import React, {Component } from 'react';
-import Sidebar from './Sidebar';
+import AccountInfo from './AccountInfo'
 import { Link } from 'react-router-dom';
 
 
@@ -18,7 +18,7 @@ class Support extends Component{
             <div>
               
                 <div className="col-lg-3 col-md-3 col-sm-12 col-12">
-                      <Sidebar />
+                      <AccountInfo />
                 </div>
                 <div className="col-lg-9 col-md-9">
                     <p className="back">Back</p>

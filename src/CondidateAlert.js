@@ -45,9 +45,9 @@ class CandidateAlert extends Component{
                          </div>
                          <div className="company text-center">
                             <ul>
-                               <li> <Link to="/company"><button className="btn mdv-company-icons"><i className='far fa-building'></i></button></Link></li>
-                               <li> <Link to="/group"><button className="btn mdv-company-icons"><i className='fas  fa-users'></i></button></Link></li>
-                               <li><button className="btn mdv-company-icons"><i className='far  fa-bell'></i> </button></li>
+                               <li><button className="btn mdv-company-icons"><i className='far fa-building'></i></button></li>
+                               <li><button className="btn mdv-company-icons"><i className='fas  fa-users'></i></button></li>
+                               <li><button className="btn mdv-company-icons basic-active" type="text"><i className='far  fa-bell'></i> </button></li>
                             </ul>
                             <p>Basic</p>
                             <p>This will allow you to get notified on any<br />
@@ -128,7 +128,11 @@ class CandidateAlert extends Component{
       
                                 </div>
                                
-                                
+                                <div className="col-md-12">
+                                  <div className="alert-nxt text-center">
+                                     <Link to="/employee-lets-build-profile"><button className="btn" type="submit">Save</button> </Link>
+                                  </div>
+                                </div>
                                
                             </div>  
                                                   

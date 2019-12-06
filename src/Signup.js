@@ -59,12 +59,31 @@ class Signup extends Component{
                                   placeholder="Last Name"/>
                               </div>
                             </div>
+                           
                             <div className="col-md-6">
                               <div className="from-group">
                                     <input type='text' 
                                      className="form-control signupinputs mrg" 
                                      onChange={this.myChangeHandler} 
-                                     placeholder="Phone Number"/>
+                                     placeholder="Company Name"/>
+                              </div>
+                            </div>
+                            <div className="col-md-6">
+                              <div className="from-group">
+                                  <select class="form-control signupinputs" id="sel1">
+                                     <option>Industry Type</option>
+                                     <option>2</option>
+                                     <option>3</option>
+                                     <option>4</option>
+                                  </select>
+                              </div>
+                            </div>
+                            <div className="col-md-6">
+                              <div className="from-group">
+                                    <input type='text' 
+                                     className="form-control signupinputs mrg" 
+                                     onChange={this.myChangeHandler} 
+                                     placeholder="Your Company email ID"/>
                               </div>
                             </div>
                             <div className="col-md-6">
@@ -72,43 +91,49 @@ class Signup extends Component{
                                  <input type='text' 
                                   className="form-control signupinputs" 
                                   onChange={this.myChangeHandler} 
-                                  placeholder="Email Id"/>
+                                  placeholder="Phone Number"/>
+                              </div>
+                            </div>
+                           </div>
+                           <div className="col-md-6 signup-upload-title">
+                             <label>Upload Company ID Card</label>
+                             <div className="signup-upload-id">
+                             <ul>
+                               <li> <i className="btn mdv-company-icon"><i className='fas fa-camera'></i></i></li>
+                             
+                              
+                                <li> <div class="upload-btn-wrapper">
+                                        <i class="btn btn mdv-company-icon" 
+                                           onChange={this.handleChange}>
+                                           <img src="image/icons/file.png" className="bio2-file" /> </i>
+                                           <input type="file" onChange={this.handleChange}/>
+                                     </div>
+                                </li>
+                            </ul>
+                             </div>
+                           </div>
+                           <div className="col-md-6">
+                              <div className="from-group">
+                                 <input type='text' 
+                                  className="form-control signupinputs" 
+                                  onChange={this.myChangeHandler} 
+                                  placeholder="Password"/>
                               </div>
                             </div>
                             <div className="col-md-6">
                               <div className="from-group">
-                                    <input type='text' 
-                                     className="form-control signupinputs mrg" 
-                                     onChange={this.myChangeHandler} 
-                                     placeholder="Password"/>
-                              </div>
-                            </div>
-                            <div className="col-md-6">
-                              <div className="from-group">
-                                <input type='text' 
+                                 <input type='text' 
                                   className="form-control signupinputs" 
                                   onChange={this.myChangeHandler} 
                                   placeholder="Comfirm Password"/>
                               </div>
                             </div>
-                            <div className="col-md-6">
-                              <div className="from-group">
-                                
-                              </div>
-                            </div>
-                            <div className="col-lg-6">
-                               <div className="h">
-                                  
-                                </div>
-                            </div>
-                          </div>
-                          
                         </form>
-                        <div class="form-group text-center">
+                        <div class="col-md-12 form-group text-center">
                             
                             <Link to="/Role"><input type="submit" className="btn mdv-signup-btn" value="Submit" /></Link>
                         </div>
-                        <div class="form-group signup-text">
+                        <div class="col-md-12 form-group signup-text">
                            A Already User ? <Link to="/Login">Signup</Link>
                            
                         </div>

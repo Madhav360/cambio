@@ -26,24 +26,34 @@ class RecruiterQuestiontwo extends Component{
                            </h4>
                          </div>
                          <div className="col-md-6 text-center">
+                            <Link to="/recruiterquestionthree">
                             <button className="btn qbtn">
-                            Personality and communication skills
+                               Personality and communication skills
                             </button>
+                            </Link>
                          </div>
                          <div className="col-md-6 text-center">
+                            <Link to="/recruiterquestionthree">
                             <button className="btn qbtn">
                             Presentation and appearance
                             </button>
+                            </Link>
+                           
                          </div>
                          <div className="col-md-6 text-center">
+                             <Link to="/recruiterquestionthree">
                              <button className="btn qbtn">
                              Relevant experience and qualification
                             </button>
+                             </Link>    
                          </div>
                          <div className="col-md-6 text-center">
+                             <Link to="/recruiterquestionthree">
                              <button className="btn qbtn">
                              Loyalty and trustworthiness
                             </button>
+                             </Link>
+                            
                          </div>
                          
                          

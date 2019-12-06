@@ -60,9 +60,9 @@ class Groupcompany extends Component{
                          </div>
                          <div className="company text-center">
                             <ul>
-                               <li><Link to="/company"><button className="btn mdv-company-icons"><i className='far fa-building'></i></button></Link> </li>
-                               <li> <button className="btn mdv-company-icons"><i className='fas  fa-users'></i></button></li>
-                               <li><Link to="/condidatealert"><button className="btn mdv-company-icons"><i className='far  fa-bell'></i> </button></Link></li>
+                               <li><button className="btn mdv-company-icons"><i className='far fa-building'></i></button></li>
+                               <li> <button className="btn mdv-company-icons basic-active"><i className='fas  fa-users'></i></button></li>
+                               <li><button className="btn mdv-company-icons"><i className='far  fa-bell'></i> </button></li>
                             </ul>
                             <p>Add a Member</p>
                          </div>
@@ -115,8 +115,8 @@ class Groupcompany extends Component{
                                     />
                                </div>
                                <div className="col-md-12 company-skip-btn text-center">
-                               <buttom className="btn company-skip">Next</buttom><br />
-                               <Link to="#">Skip</Link>
+                                <Link to="/condidatealert"><buttom className="btn company-skip">Next</buttom><br /></Link>
+                               <Link to="/condidatealert">Skip</Link>
                            </div>
                                </div> 
                        </form>

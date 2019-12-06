@@ -35,7 +35,7 @@ class Bio2 extends Component{
                          <div className="company2 text-center">
                             <ul>
                                <li> <button className="btn mdv-company-icons"><i className='fas fa-camera'></i></button></li>
-                               <li> <button className="btn mdv-company-icons"><i className='fas fa-video'></i></button></li>
+                               <li> <button className="btn mdv-company-icons basic-active"><i className='fas fa-video'></i></button></li>
                               
                                {/* <li> <div class="upload-btn-wrapper">
                                         <button class="btn btn mdv-company-icons" 
@@ -58,7 +58,7 @@ class Bio2 extends Component{
                                 <li> <div class="upload-btn-wrapper">
                                         <i class="btn btn mdv-company-icon" 
                                            onChange={this.handleChange}>
-                                           <i className='fas fa-upload'></i></i>
+                                           <img src="image/icons/file.png" className="bio2-file" /> </i>
                                            <input type="file" onChange={this.handleChange}/>
                                      </div>
                                 </li>
@@ -67,8 +67,8 @@ class Bio2 extends Component{
                             </div>
                
                             <div className="col-md-12 company-skip-btn text-center">
-                               <buttom className="btn company-skip">Next</buttom><br />
-                               <Link to="#">Skip</Link>
+                               <Link to="/accountrecovery"><buttom className="btn company-skip">Next</buttom></Link><br />
+                               <Link to="/accountrecovery">Skip</Link>
                            </div>
                         </div>
                      </div>    

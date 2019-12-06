@@ -29,29 +29,26 @@ class Role extends Component{
                          <div className="roles">
                              <ul>
                                  <li className="condidates">
-                                    <button className="btn condidate-roles-btn">
-                                        <Link to="#"><p>A <br /><span className="roles-btn">Candidate</span> </p>
-                                        </Link>
-                                    </button>  
+                                 <Link to="#"><button className="btn condidate-roles-btn">
+                                        <p>A <br /><span className="roles-btn">Candidate</span> </p>
+                                        
+                                    </button>  </Link>
                                  </li>
                                  <li className="condidates">
-                                    <button className="btn condidate-roles-btn">
-                                        <Link to="#"><p>An <br /><span className="roles-btn">Employer</span> </p>
-                                        </Link>
-                                    </button>
+                                    <Link to="/ProfileVisibility" className="kk"><button className="btn condidate-roles-btn">
+                                        <p>An <br /><span className="roles-btn">Employer</span> </p>
+                                       
+                                    </button> </Link>
                                  </li>
                                  <li className="condidates">
-                                    <button className="btn condidate-roles-btn">
-                                        <Link to="#"><p>Social <br /><span className="roles-btn">Networking</span> </p>
-                                        </Link>
-                                    </button>
+                                 <Link to="#"><button className="btn condidate-roles-btn">
+                                        <p>Social <br /><span className="roles-btn">Networking</span> </p>
+                                       
+                                    </button> </Link>
                                  </li>
                              </ul>
                            </div>
 
-                           <div className="roles-nxt-btn text-center">
-                           <Link to="/ProfileVisibility"><button className="btn">Next</button></Link>
-                           </div>
                      
                    </div>  
                            

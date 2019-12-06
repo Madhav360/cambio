@@ -44,6 +44,9 @@ import Help from './Help';
 import Support from './Support';
 import AccountInfo from './AccountInfo';
 import Message from './Message';
+import Candidate_Build_Profile from './Component/Candidate/Candidare-Build-Profile';
+import Basic from './Component/Candidate/Basic';
+import EmpLetsBuildProfile from './EmployeeLetsBuildProfile';
 
 
 
@@ -98,6 +101,9 @@ class App extends Component {
             <Route exact path="/support" component={() =>(<Support />)} />
             <Route exact path="/account-info" component={() =>(<AccountInfo />)} />
             <Route exact path="/message" component={() =>(<Message />)} />
+            <Route exact path="/lets-build-profile" component={() =>(<Candidate_Build_Profile />)} />
+            <Route exact path="/basic" component={() =>(<Basic />)} />
+            <Route exact path="/employee-lets-build-profile" component={() =>(<EmpLetsBuildProfile />)} />
             
             
           </Switch>

@@ -44,9 +44,9 @@ class Company extends Component{
                          </div>
                          <div className="company text-center">
                             <ul>
-                               <li> <button className="btn mdv-company-icons"><i className='far fa-building'></i></button></li>
-                               <li> <Link to="/group"><button className="btn mdv-company-icons"><i className='fas  fa-users'></i></button></Link></li>
-                               <li><Link to="/condidatealert"><button className="btn mdv-company-icons"><i className='far  fa-bell'></i> </button></Link></li>
+                               <li> <button className="btn mdv-company-icons basic-active"><i className='far fa-building'></i></button></li>
+                               <li><button className="btn mdv-company-icons"><i className='fas  fa-users'></i></button></li>
+                               <li><button className="btn mdv-company-icons"><i className='far  fa-bell'></i> </button></li>
                             </ul>
                             <p>Basic</p>
                          </div>
@@ -149,7 +149,12 @@ class Company extends Component{
                                    </div>
                                </div>
                            </div>
-                           
+                           <div className="col-md-12">
+                               <div className="company-nxt-skip text-center">
+                                   <Link to="/group"><button className="btn">next</button> </Link>
+                                   <Link to="/group">SKIP</Link>
+                               </div>
+                           </div>
                        </form>
                    </div>  
                     

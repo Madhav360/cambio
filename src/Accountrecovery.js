@@ -50,8 +50,8 @@ class Accountrecovery extends Component{
                              
                          </div>
                          <div className="col-md-12 company-skip-btn text-center">
-                               {/* <buttom className="btn company-skip">Next</buttom><br /> */}
-                               <input className="btn company-skip acc-save" type="submit" value="Save" /><br />
+                              <Link to="/cardview"> <buttom className="btn company-skip">Next</buttom><br /></Link>
+                             
                               
                          </div>
                          </form>

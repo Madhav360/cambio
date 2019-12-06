@@ -51,6 +51,9 @@ import Help from "./Help";
 import Support from "./Support";
 import AccountInfo from "./AccountInfo";
 import Message from "./Message";
+import Candidate_Build_Profile from "./Component/Candidate/Candidare-Build-Profile";
+import Basic from "./Component/Candidate/Basic";
+import EmpLetsBuildProfile from "./EmployeeLetsBuildProfile";
 
 
 
@@ -265,6 +268,21 @@ const appRoute =[
 	path:"/message",
 	isExactPath: true,
 	component: <Message />
+ },
+ {
+	path:"/lets-build-profile",
+	isExactPath: true,
+	component: <Candidate_Build_Profile />
+ },
+ {
+	path:"/basic",
+	isExactPath: true,
+	component: <Basic />
+ },
+ {
+	path:"/employee-lets-build-profile",
+	isExactPath: true,
+	component: <EmpLetsBuildProfile />
  },
 ];
 

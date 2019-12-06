@@ -1,6 +1,7 @@
 import React, {Component } from 'react';
 import Sidebar from './Sidebar';
 import { Link } from 'react-router-dom';
+import Calendar from 'react-calendar';
 
 
 
@@ -13,6 +14,7 @@ class Post_a_Job extends Component{
             job_description : '',
             qualiﬁcation : '',
             exp : '',
+            date: new Date(),
         }
     }
 
@@ -38,7 +40,7 @@ class Post_a_Job extends Component{
         })
     }
 
-
+    onChange = date => this.setState({ date })
     render(){
         return(
             <div>
@@ -253,11 +255,81 @@ class Post_a_Job extends Component{
                                <div className="col-md-6">
                                   <div class="form-group">
                                      <label>Last day to apply</label>
+                                     <Calendar
+                                       onChange={this.onChange}
+                                       value={this.state.date}
+                                     />
                                  </div>
                                </div>
                                <div className="col-md-6">
                                   <div class="form-group">
                                      <label>Last day of post</label>
+                                     <div className="col-xs-12">
+                                     <div className="col-xs-4">
+                                        <div class="form-group">
+                                           <select class="form-control" id="sel1">
+                                              <option>1</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                              <option>4</option>
+                                              <option>5</option>
+                                              <option>6</option>
+                                              <option>7</option>
+                                              <option>8</option>
+                                              <option>9</option>
+                                              <option>10</option>
+                                              <option>11</option>
+                                              <option>12</option>
+                                              <option>13</option>
+                                              <option>14</option>
+                                              <option>15</option>
+                                              <option>16</option>
+                                              <option>17</option>
+                                              <option>18</option>
+                                              <option>19</option>
+                                              <option>20</option>
+                                              <option>21</option>
+                                              <option>22</option>
+                                              <option>23</option>
+                                              <option>24</option>
+                                              <option>25</option>
+                                              <option>26</option>
+                                              <option>27</option>
+                                              <option>28</option>
+                                              <option>29</option>
+                                              <option>30</option>
+                                              <option>31</option>
+                                            </select>
+                                        </div>
+                                     </div>
+                                     <div className="col-xs-4">
+                                        <div class="form-group">
+                                           <select class="form-control" id="sel1">
+                                              <option>Jan</option>
+                                              <option>Feb</option>
+                                              <option>Mar</option>
+                                              <option>Apr</option>
+                                              <option>May</option>
+                                              <option>Jun</option>
+                                              <option>July</option>
+                                              <option>Aug</option>
+                                              <option>Sep</option>
+                                              <option>Oct</option>
+                                              <option>Nov</option>
+                                              <option>Dec</option>
+                                            </select>
+                                        </div>
+                                     </div>
+                                     <div className="col-xs-4">
+                                        <div class="form-group">
+                                           <select class="form-control" id="sel1">
+                                              <option>2019</option>
+                                              <option>2020</option>
+                                              <option>2021</option>
+                                            </select>
+                                        </div>
+                                     </div>
+                                     </div>
                                  </div>
                                </div>
                                <div className="col-md-12">

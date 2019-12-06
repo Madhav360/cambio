@@ -26,7 +26,7 @@ class Post_a_Job extends Component{
                 <div className="col-lg-9 col-md-9">
                     
                      <div className="swipe-title text-center">
-                       <Link to="#" className="active">Cardview</Link> 
+                       <Link to="#" className="cardviewactive">Cardview</Link> 
                        <Link to="#">Mapview</Link>  
                      </div> 
                      <section>

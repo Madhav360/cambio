@@ -122,7 +122,7 @@ handleNotiMouseOver() {
                              <li><Link to="#"><img src="image/menuicon/my-circle.png" /> <span>My Circle</span></Link></li>
                              <li><Link to="/help"><img src="image/menuicon/privacy-policy.png" /> <span>Help</span></Link></li>
                              <li><Link to="/support"><img src="image/menuicon/help.png" /> <span>Support</span></Link></li>
-                             <li><Link to="/login"><img src="image/menuicon/logout.png" /> <span>Logout</span></Link></li>
+                             <li><Link to="#"><img src="image/menuicon/logout.png" /> <span>Logout</span></Link></li>
                              <li><Link to="#"><span>Swap your Role</span></Link></li>
                              <li><Link to="#"><span>Job Alert</span></Link></li>
                              <li><Link to="#"><span>Delete Account</span></Link></li>
