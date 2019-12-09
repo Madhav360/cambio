@@ -947,6 +947,7 @@ width: 200px;
 .industry-job img{
   margin: auto;
   height: 50px;
+  margin-top: 23px;
   
 }
 .industrymain h2{
@@ -1107,6 +1108,12 @@ width: 200px;
   font-size: 15px;
   color: #555;
 }
+.cm-popup{
+  width: 100%;
+}
+.company-page-height{
+  height: 500px;
+}
 .company-braches-inputs{
   border: none;
   box-shadow: none;
@@ -1263,6 +1270,23 @@ padding: 2px;
 }
 .alert-nxt button:hover{
   color: #fff;
+}
+.add-a-member-table>.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 0;
+}
+.member-table{
+  margin: auto;
+  float: none;
+}
+.material-icons{
+  cursor: pointer;
+}
+.company p{
+  color: #55aefa !important;
+  cursor: pointer;
 }
 /* -----------------------company end------------------ */
 
@@ -1718,6 +1742,17 @@ color: #fff;
   top: 24px;
     right: 65px;
     cursor: pointer;
+}
+.post-sumbit-btn button{
+  width: 185px;
+    padding: 12px;
+    border-radius: 26px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #55aefa;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 @media only screen and (max-width: 768px) {
   .postinput {
@@ -3333,4 +3368,48 @@ color: #55aefa;
 .candidate-basic-date select{
     -webkit-appearance: none;
     appearance: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#search {
+  width:90%;
+}
+
+.searchicon {
+  color:#5CB85C;
+}
+
+.items-collection{
+  margin:20px 0 0 0;
+}
+.items-collection label.btn-default.active{
+  background-color:#55aefa42;
+  color:#000;
+}
+.items-collection label.btn-default{
+  width:90%;
+  border:1px solid #f9f9f9;
+  margin:5px; 
+  border-radius: 17px;
+  color: #000
+}
+.items-collection label .itemcontent{
+  width:100%;
+}
+.items-collection .btn-group{
+  width:90%
 }

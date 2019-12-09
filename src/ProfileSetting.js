@@ -317,7 +317,7 @@ render(){
                                      </tr>
                                  </tbody>
                             </table>
-                            <div className="text-center add-morre"><h4>Add More</h4></div>
+                            <div className="text-center add-morre"><h4 data-toggle="modal" data-target="#myModal">Add More</h4></div>
                             </div>
                          </div>
                          <div className="col-md-12">
@@ -335,6 +335,22 @@ render(){
                                  </div>
                              </div>
                          </div>
+                         {/* ---------------------Add More Member's popup-------------------- */}
+                         <div id="myModal" class="modal fade" role="dialog">
+                             <div class="modal-dialog">
+                               <div class="modal-content">
+                                   <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                   </div>
+                                   <div class="modal-body">
+                                     <p>Some text in the modal.</p>
+                                   </div>
+                                </div>
+                             </div>
+                         </div>
+
+
+                         {/* -------------------Add More Member end popup------------- */}
                          <div className="col-md-12 text-center">
                              <div className="text-center profile-setting-menu">
                                  <Link to ="#">Candidate Alert</Link>

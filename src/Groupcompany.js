@@ -12,48 +12,94 @@ class Groupcompany extends Component{
     constructor(props) {
         super(props);
         this.state = {
-          member_emil_id_cambio_id : '',
-          member_phone_no: '',
-          member_name:'',
-          member_specialization: '',
-          member_designation: '',
+          act: 0,
+          index: '',
+          datas: []
         };
         
-        this.CambioEmailHandler = this.CambioEmailHandler.bind(this);
-        this.onChangeMemberPhoneNo = this.onChangeMemberPhoneNo.bind(this);
-        this.onChangeMemberSpecialization = this.onChangeMemberSpecialization.bind(this);
-        this.onChangeMemberDesignation = this.onChangeMemberDesignation.bind(this);
-        this.onChangeMemberName = this.onChangeMemberName.bind(this);
+       
+
+       
         this.handleSubmit = this.handleSubmit.bind(this);
         
       }
     
   
-      CambioEmailHandler(event) {
-        this.setState({member_emil_id_cambio_id: event.target.value});
+
+      componentDidMount(){
+        this.refs.name.focus();
+      }
+    
+      fSubmit = (e) =>{
+        e.preventDefault();
+        console.log('try');
+    
+        let datas = this.state.datas;
+        let name = this.refs.name.value;
+        let designation = this.refs.designation.value;
+        let member_emil_id_cambio_id = this.refs.member_emil_id_cambio_id.value;
+        let member_phone_no = this.refs.member_phone_no.value;
+        let member_specialization = this.member_specialization;
+    
+        if(this.state.act === 0){   //new
+          let data = {
+            name, designation,member_emil_id_cambio_id,member_phone_no,member_specialization,
+          }
+          datas.push(data);
+        }else{                      //update
+          let index = this.state.index;
+          datas[index].name = name;
+          datas[index].designation = designation;
+          datas[index].member_emil_id_cambio_id = member_emil_id_cambio_id;
+          datas[index].member_phone_no = member_phone_no;
+          datas[index].member_specialization = member_specialization;
+        }    
+    
+        this.setState({
+          datas: datas,
+          act: 0
+        });
+    
+        this.refs.myForm.reset();
+        this.refs.name.focus();
+      }
+    
+      fRemove = (i) => {
+        let datas = this.state.datas;
+        datas.splice(i,1);
+        this.setState({
+          datas: datas
+        });
+    
+        this.refs.myForm.reset();
+        this.refs.name.focus();
+      }
+    
+      fEdit = (i) => {
+        let data = this.state.datas[i];
+        this.refs.name.value = data.name;
+        this.refs.designation.value = data.designation;
+        this.refs.member_emil_id_cambio_id.value = data.member_emil_id_cambio_id;
+        this.refs.member_phone_no.value = data.member_phone_no;
+        this.refs.member_specialization.value = data.member_specialization;
+    
+        this.setState({
+          act: 1,
+          index: i
+        });
+    
+        this.refs.name.focus();
       }
 
-      onChangeMemberPhoneNo(event) {
-        this.setState({ member_phone_no: event.target.value});
-      }
-    
-      onChangeMemberSpecialization(event) {
-        this.setState({ member_specialization: event.target.value});
-      }
-    
-      onChangeMemberDesignation(event) {
-        this.setState({member_designation: event.target.value});
-      }
-    
-      onChangeMemberName(event) {
-        this.setState({member_name: event.target.value});
-      }
-    
+      
+
+     
       handleSubmit(event) {
         event.preventDefault();
       }
+
     render(){
-      
+      let datas = this.state.datas;
 
 
 	return(
@@ -61,7 +107,7 @@ class Groupcompany extends Component{
            <Header />
            <div className="container">
                <div className="row">
-                   <div className="col-lg-12 mdv-singup-page">
+                   <div className="col-lg-12 mdv-singup-page company-page-height">
                          <div className="  text-center">
                            <h2>Company</h2>
                          </div>
@@ -71,64 +117,104 @@ class Groupcompany extends Component{
                                <li> <button className="btn mdv-company-icons basic-active"><i className='fas  fa-users'></i></button></li>
                                <li><button className="btn mdv-company-icons"><i className='far  fa-bell'></i> </button></li>
                             </ul>
-                            <p>Add a Member</p>
+                            <p data-toggle="modal" data-target="#add-member-popup" className="add-member-open-popup">Add a Member</p>
                          </div>
-                        <form onSubmit={this.handleSubmit}>
+                         <div className="col-md-6 offset-md-6 member-table">
+                           <div className="add-a-member-table">
+                          
+                               <table class="table">
+                                  <tbody>
+                                  {datas.map((data, i) =>
+                                    <tr key={i}>
+                                      <td className="col-xs-1">{data.name}</td>
+                                      <td className="col-xs-5">{data.designation}</td>
+                                      <td className="col-xs-4">{i+1}</td>
+                                      <td className="col-xs-1"><i onClick={()=>this.fRemove(i)} class="material-icons">delete</i></td>
+                                      <td className="col-xs-1"><i onClick={()=>this.fEdit(i)} class="material-icons" data-toggle="modal" data-target="#add-member-popup">edit</i></td>
+                                    </tr>
+                                       )}
+                                  </tbody>
+                                </table>
+                               
+                           </div>
+                         
+                         </div>
+                         <div className="col-md-12 company-skip-btn text-center">
+                               
+                               <Link to="/condidatealert">Skip</Link>
+                           </div>
+                   </div>  
+                    {/* -------------------------Add Member popup start here------------------------------ */}
+
+                    <div id="add-member-popup" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                             <div class="row modal-content">
+                                 <div class="model-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                 </div>
+                                 <div class="modal-body">
+                                 <form ref="myForm" onSubmit={this.handleSubmit}>
                            <div className="form-row company-form">
                                <div className="form-group col-md-6">
                                    <input 
-                                      className="form-control mdv-first-input company-inputs" 
+                                      className="form-control mdv-first-input company-inputs cm-popup" 
                                       placeholder="Member Email Id/Cambio Id" 
                                       type="text" 
-                                      value={this.state.member_emil_id_cambio_id} 
-                                      onChange={this.CambioEmailHandler} 
+                                      ref="member_emil_id_cambio_id"
+                                      maxLength="5"
+                                    
                                     />
                                   
                                </div>
                                <div className="form-group col-md-6">
                                    <input 
-                                     className="form-control company-inputs" 
+                                     className="form-control company-inputs cm-popup" 
                                      placeholder="Member Phone Number" 
-                                     type="text" 
-                                     value={this.state.member_phone_no} 
-                                     onChange={this.onChangeMemberPhoneNo} 
+                                     type="number" 
+                                     ref="member_phone_no"
+                                     max="10"
+                                    
                                     />
                                </div>
                                 <div className="form-group col-md-6">
                                    <input 
-                                     className="form-control company-inputs mdv-first-input" 
+                                     className="form-control company-inputs mdv-first-input cm-popup" 
                                      placeholder="Member Name" 
+                                     ref="name"
                                      type="text" 
-                                     value={this.state.menber_name} 
-                                     onChange={this.onChangeMemberName} 
+                                 
                                     />
                                </div>
                                <div className="form-group col-md-6">
                                    <input 
-                                     className="form-control company-inputs" 
+                                     className="form-control company-inputs cm-popup" 
                                      placeholder="Member Designation" 
                                      type="text" 
-                                     value={this.state.mamber_designation} 
-                                     onChange={this.onChangeMemberDesignation} 
+                                     ref="designation"
+                                   
                                     />
                                </div>
                                <div className="form-group col-md-6">
                                    <input 
-                                     className="form-control company-inputs mdv-first-input" 
+                                     className="form-control company-inputs mdv-first-input cm-popup" 
                                      placeholder="Member Specialization" 
                                      type="text" 
-                                     value={this.state.member_specialization} 
-                                     onChange={this.onChangeMemberSpecialization} 
+                                     ref="member_specialization"
+                                    
                                     />
                                </div>
                                <div className="col-md-12 company-skip-btn text-center">
-                                <Link to="/condidatealert"><buttom className="btn company-skip">Next</buttom><br /></Link>
-                               <Link to="/condidatealert">Skip</Link>
+                                <buttom onClick={(e)=>this.fSubmit(e)}  className="btn company-skip">Add</buttom><br />
+                              
                            </div>
                                </div> 
                        </form>
-                   </div>  
-                    
+                                 </div>
+                             </div>
+                          </div>
+                        </div>
+
+                  {/* ----------------------------Add Member End here -------------------------------------- */}
                  
                </div>
            </div>
