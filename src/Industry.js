@@ -202,8 +202,8 @@ class Industry extends Component{
                     </div>
                 </div>
                 <div className="col-md-12 roles-nxt-btn text-center">
-                           <Link to="/employeecategory"><button className="btn">Next</button></Link>
-                           </div>
+                  <Link to="/employeecategory"><button className="btn">Next</button></Link>
+                </div>
             </div>
         </div>
     </div>

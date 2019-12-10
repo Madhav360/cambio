@@ -26,7 +26,7 @@ class EnableLocation extends Component{
                           <img className="img-responsive" src="image/location.png" />
                         </div>
                         <div className="roles-nxt-btn text-center">
-                           <Link to="/industry"><button className="btn">Allow Location</button></Link>
+                           <Link to="/signup"><button className="btn">Allow Location</button></Link>
                            </div>
                         </div> 
                       

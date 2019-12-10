@@ -189,12 +189,12 @@ class Signup extends Component{
                             </div>
                             <div class="col-md-12 form-group text-center">
                             
-                            <Link to="/role"> <input type="submit" className="btn mdv-signup-btn" value="Submit" /></Link>
+                            <Link to="/industry"> <input type="submit" className="btn mdv-signup-btn" value="Submit" /></Link>
                         </div>
                         </form>
                       
                         <div class="col-md-12 form-group signup-text">
-                           A Already User ? <Link to="/Login">Signup</Link>
+                           A Already User ? <Link to="/Login">Login</Link>
                            
                         </div>
                    </div>  

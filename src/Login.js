@@ -94,7 +94,7 @@ export default class Login extends React.Component{
                             
                         </div>
                         <div class="form-group login-text">
-                           A New User ? <Link to="/Signup">Signup</Link>
+                           A New User ? <Link to="/role">Signup</Link>
                            
                         </div>
                     </form>
