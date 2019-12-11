@@ -21,6 +21,14 @@ class Industry extends Component{
             }).show();
         });
       }
+
+      componentWillMount(){
+        $('.single-checkbox').on('change', function() {
+            if($('.single-checkbox:checked').length > 2) {
+                this.checked = false;
+            }
+         });
+      }
     render(){
 	return(
        <div>
@@ -36,10 +44,10 @@ class Industry extends Component{
 
                 <div class="items col-xs-6 col-sm-3 col-md-2 col-lg-2">
                     <div class="info-block block-info clearfix">
-                        <div data-toggle="buttons" class="btn-group bizmoduleselect">
-                            <label class="btn btn-default industry-job">
+                        <div data-toggle="buttons" class="btn-group bizmoduleselect single-checkbox">
+                            <label class="btn btn-default industry-job single-checkbo">
                                 <div class="itemcontent">
-                                    <input type="checkbox" name="var_id[]" autocomplete="off" value="" />
+                                    <input type="checkbox" className="single-checkbox" />
                                     <img className="img-responsive industryimg" src="image/icons/shopping-cart.png" />
                                     <h5>E-commerce</h5>
                                 </div>
@@ -50,10 +58,10 @@ class Industry extends Component{
 
                 <div class="items col-xs-6 col-sm-3 col-md-2 col-lg-2">
                     <div class="info-block block-info clearfix">
-                        <div data-toggle="buttons" class="btn-group bizmoduleselect">
-                            <label class="btn btn-default industry-job">
+                        <div data-toggle="buttons" class="btn-group bizmoduleselect single-checkbox">
+                            <label class="btn btn-default industry-job single-checkbo">
                                 <div class="itemcontent">
-                                    <input type="checkbox" name="var_id[]" autocomplete="off" value="" />
+                                    <input type="checkbox"  className="single-checkbox" />
                                     <img className="img-responsive" src="image/icons/fmcg.png" />
                                      <h5>FMCG</h5>
                                 </div>
@@ -64,10 +72,10 @@ class Industry extends Component{
 
                 <div class="items col-xs-6 col-sm-3 col-md-2 col-lg-2">
                     <div class="info-block block-info clearfix">
-                        <div data-toggle="buttons" class="btn-group bizmoduleselect">
-                            <label class="btn btn-default industry-job">
+                        <div data-toggle="buttons" class="btn-group bizmoduleselect single-checkbox">
+                            <label class="btn btn-default industry-job single-checkbo">
                                 <div class="itemcontent">
-                                    <input type="checkbox" name="var_id[]" autocomplete="off" value="" />
+                                    <input type="checkbox" className="single-checkbox" value="" />
                                     <img className="img-responsive" src="image/icons/hospital-buildings.png" />
                                     <h5>Hospitality</h5>
                                 </div>

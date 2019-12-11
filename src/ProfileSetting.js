@@ -21,6 +21,9 @@ class ProfileSetting extends Component{
             type_of_company : 'Service',
             how_old_company : '5 Years',
             company_website : 'www.yourlink.com',
+            act: 0,
+            index: '',
+            datas: []
 
         
         };
@@ -70,12 +73,70 @@ class ProfileSetting extends Component{
       CompanyWebsiteHandle(event) {
         this.setState({company_website: event.target.value});
       }
+
+      
+      componentDidMount(){
+        this.refs.name.focus();
+      }
+    
+      fSubmit = (e) =>{
+        e.preventDefault();
+        console.log('try');
+    
+        let datas = this.state.datas;
+        let name = this.refs.name.value;
+        let member_designation = this.refs.member_designation.value;
+        let panel = this.refs.panel.value;
+    
+        if(this.state.act === 0){   //new
+          let data = {
+            name, member_designation,panel,
+          }
+          datas.push(data);
+        }else{                      //update
+          let index = this.state.index;
+          datas[index].name = name;
+          datas[index].member_designation = member_designation;
+          datas[index].panel = panel;
+        }    
+        this.setState({
+          datas: datas,
+          act: 0
+        });
+    
+        this.refs.myForm.reset();
+        this.refs.name.focus();
+      }
+    
+      fRemove = (i) => {
+        let datas = this.state.datas;
+        datas.splice(i,1);
+        this.setState({
+          datas: datas
+        });
+    
+        this.refs.myForm.reset();
+        this.refs.name.focus();
+      }
+    
+      fEdit = (i) => {
+        let data = this.state.datas[i];
+        this.refs.name.value = data.name;
+        this.refs.member_designation.value = data.member_designation;
+        this.refs.panel.value = data.panel;
+        this.setState({
+          act: 1,
+          index: i
+        });
+    
+        this.refs.name.focus();
+      }
     
       handleSubmit(event) {
         event.preventDefault();
       }
 render(){
-
+    let datas = this.state.datas;
     return(
         <div>
             <div className="col-lg-3 col-md-3 col-sm-12 col-12">
@@ -303,21 +364,17 @@ render(){
                                     </tr>
                                 </thead>
                                 <tbody>
+                                {datas.map((data, i) =>
                                        <tr>
-                                           <td scope="row">S.Rajesh</td>
-                                           <td>Manager</td>
-                                           <td>1</td>
-                                           <td className="profile-setting-action"><i class="material-icons" data-toggle="modal" data-target="#">edit</i>     <i class="material-icons">delete</i></td>
+                                           <td scope="row">{data.name}</td>
+                                           <td>{data.member_designation}</td>
+                                           <td>{data.panel}</td>
+                                           <td className="profile-setting-action"><i class="material-icons"  onClick={()=>this.fEdit(i)} data-toggle="modal" data-target="#add-member">edit</i>     <i class="material-icons"  onClick={()=>this.fRemove(i)}>delete</i></td>
                                         </tr>
-                                     <tr>
-                                        <td scope="row">Rohan</td>
-                                        <td>HR</td>
-                                        <td>2</td>
-                                        <td className="profile-setting-action"><i class="material-icons" data-toggle="modal" data-target="#">edit</i>     <i class="material-icons">delete</i></td>
-                                     </tr>
+                                 )}
                                  </tbody>
                             </table>
-                            <div className="text-center add-morre"><h4 data-toggle="modal" data-target="#myModal">Add More</h4></div>
+                            <div className="text-center add-morre"><h4 data-toggle="modal" data-target="#add-member">Add More</h4></div>
                             </div>
                          </div>
                          <div className="col-md-12">
@@ -336,14 +393,45 @@ render(){
                              </div>
                          </div>
                          {/* ---------------------Add More Member's popup-------------------- */}
-                         <div id="myModal" class="modal fade" role="dialog">
+                         <div id="add-member" class="modal fade" role="dialog">
                              <div class="modal-dialog">
-                               <div class="modal-content">
+                               <div class="row modal-content">
                                    <div class="modal-header">
                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
                                    </div>
                                    <div class="modal-body">
-                                     <p>Some text in the modal.</p>
+                                       <form ref="myForm" onSubmit={this.handleSubmit}>
+                                          <div className="form-row company-form">
+                                              <div className="form-group col-md-6">
+                                                  <input 
+                                                    className="form-control mdv-first-input company-inputs cm-popup" 
+                                                    placeholder="Member Name" 
+                                                    type="text" 
+                                                    ref="name"
+                                                 />    
+                                              </div>
+                                              <div className="form-group col-md-6">
+                                                  <input 
+                                                     className="form-control company-inputs cm-popup" 
+                                                     placeholder="Member Designtion" 
+                                                     type="text" 
+                                                     ref="member_designation"
+                                                  />
+                                             </div>
+                                             <div className="form-group col-md-6">
+                                                 <input 
+                                                    className="form-control company-inputs mdv-first-input cm-popup" 
+                                                    placeholder="Panel" 
+                                                    ref="panel"
+                                                    type="Number" 
+                                                 />
+                                             </div>
+                                            
+                                           <div className="col-md-12 company-skip-btn text-center">
+                                              <buttom onClick={(e)=>this.fSubmit(e)}  className="btn company-skip">Add</buttom><br />
+                                           </div>
+                                         </div> 
+                                     </form>
                                    </div>
                                 </div>
                              </div>
@@ -356,7 +444,7 @@ render(){
                                  <Link to ="#">Candidate Alert</Link>
                                  <Link to ="#">Change Password</Link>
                                  <Link to ="#">Proﬁle Visibility</Link>
-                                 <Link to ="#">Account Recovery</Link>
+                                 <Link to ="#">Account Delete</Link>
                                  <Link to ="#">Account Recovery</Link>
                                <h5>Logout</h5>
                              </div>

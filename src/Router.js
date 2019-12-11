@@ -54,6 +54,21 @@ import Message from "./Message";
 import Candidate_Build_Profile from "./Component/Candidate/Candidare-Build-Profile";
 import Basic from "./Component/Candidate/Basic";
 import EmpLetsBuildProfile from "./EmployeeLetsBuildProfile";
+import CandidateSignup from './Component/Candidate/Sign-up';
+import StudentQuestionone from "./Component/Candidate/StudentQuestionone";
+import StudentQuestiontwo from "./Component/Candidate/StudentQuestiontwo";
+import StudentQuestionthree from "./Component/Candidate/StudentQuestionthree";
+import StudentQuestionfour from "./Component/Candidate/StudentQuestionfour";
+import StudentQuestionfive from "./Component/Candidate/StudentQuestionfive";
+import StudentQuestionsix from "./Component/Candidate/StudentQuestionsix";
+import CandidateExperience from "./Component/Candidate/Candidate-Experience";
+import CandidateBio from "./Component/Candidate/Candidate-Bio";
+import CandidateGender from "./Component/Candidate/CandidateGender";
+import CandidateLang from "./Component/Candidate/Candidate-Lang";
+import MarriageStatus from "./Component/Candidate/MarriageStatus";
+import Candidateheight from "./Component/Candidate/CandidateHeight";
+import CandidateWeight from "./Component/Candidate/CandidateWeight";
+import CandidateAbled from "./Component/Candidate/CandidateAbled";
 
 
 
@@ -284,7 +299,85 @@ const appRoute =[
 	isExactPath: true,
 	component: <EmpLetsBuildProfile />
  },
+ {
+	path:"/sign-up",
+	isExactPath: true,
+	component: <Signup />
+ },
+ {
+	path:"/studentquestionone",
+	isExactPath: true,
+	component: <StudentQuestionone />
+ },
+ {
+	path:"/studentquestionsix",
+	isExactPath: true,
+	component: <StudentQuestionsix />
+ },
+ {
+	path:"/studentquestionfive",
+	isExactPath: true,
+	component: <StudentQuestionfive />
+ },
+ {
+	path:"/studentquestionfour",
+	isExactPath: true,
+	component: <StudentQuestionfour />
+ },
+ {
+	path:"/studentquestionthree",
+	isExactPath: true,
+	component: <StudentQuestionthree />
+ },
+ {
+	path:"/studentquestiontwo",
+	isExactPath: true,
+	component: <StudentQuestiontwo />
+ },
+ {
+	path:"/candidate-experience",
+	isExactPath: true,
+	component: <CandidateExperience />
+ },
+ {
+	path:"/candidate-bio",
+	isExactPath: true,
+	component: <CandidateBio />
+ },
+ {
+	path:"/candidate-gender",
+	isExactPath: true,
+	component: <CandidateGender />
+ },
+ {
+	path:"/candidate-lang",
+	isExactPath: true,
+	component: <CandidateLang />
+ },
+ {
+	path:"/marriage-status",
+	isExactPath: true,
+	component: <MarriageStatus />
+ },
+ {
+	path:"/height",
+	isExactPath: true,
+	component: <Candidateheight />
+ },
+ {
+	path:"/weight",
+	isExactPath: true,
+	component: <CandidateWeight />
+ },
+ {
+	path:"/abled",
+	isExactPath: true,
+	component: <CandidateAbled />
+ },
 ];
+
+
+
 
 //HashRouter  also apply # 
 

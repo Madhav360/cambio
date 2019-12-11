@@ -17,10 +17,10 @@ class Basic extends Component{
                             <h2 className="text-center">Basic</h2>
                             <div className="col-md-5 offset-md-7 candidate-basic-root text-center">
                                 <ul>
-                                    <li><Link to="#"><i class='far fa-user'></i></Link></li>
-                                    <li><Link to="#"><i class='far fa-user'></i></Link></li>
-                                    <li><Link to="#"><i class='far fa-user'></i></Link></li>
-                                    <li><Link to="#"><i class='far fa-user'></i></Link></li>
+                                    <li><img src="image/student-icon/basic-blue.png" /></li>
+                                    <li><img src="image/student-icon/gender-black.png" /></li>
+                                    <li><img src="image/student-icon/basic3.png" /></li>
+                                    <li><img src="image/student-icon/basic4.png" /></li>
                                 </ul>
                             </div>
                             <div className="col-md-5 offset-md-7 candidate-basic-root basic-details">
@@ -86,6 +86,16 @@ class Basic extends Component{
                                                
                                            </select>
                                        </div>
+                                      </div>
+                                  </div>
+                                  <div className="col-md-12">
+                                      <div className="basic-nxr-btn text-center">
+                                          <Link to="/candidate-gender"><button className="btn">Next</button></Link>
+                                      </div>
+                                  </div>
+                                  <div className="col-md-12">
+                                      <div className="basic-skip text-center">
+                                      <Link to="/candidate-gender">Skip</Link>
                                       </div>
                                   </div>
                             </div>

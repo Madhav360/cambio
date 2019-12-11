@@ -3285,6 +3285,9 @@ border: 0;
 /* ---------------------------------------------------------------------------------------------- */
 
 /* --------------Candidate Lets buid Profile start------------------------- */
+.basic-page-height{
+  height: 450px;
+}
 .main-root{
   background-color: #fff;
   border-radius: 12px;
@@ -3303,11 +3306,34 @@ border: 0;
   margin: auto;
   float: none;
 }
-.rounded-dot{
-  width: 20px;
-  height: 20px;
-  background-color: red;
+.roundedd button{
+  background-color: #f9f9f9;
+    margin-top: 45px;
+    height: 56px;
+    width: 227px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 13px;
+    font-weight: 600;
 }
+.student-progress{
+  width: 5px;
+    height: 45px;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin-left: 153px;
+}
+.actived-progress{
+  background-color: #55aefa;
+}
+.activeded button{
+background-color: #55aefa;
+color: #fff;
+}
+.activeded button:hover{
+  background-color: #55aefa;
+  color: #fff;
+  }
 .roundedd btn{
   color: red;
 }
@@ -3319,28 +3345,16 @@ border: 0;
 .candidate-basic-root ul{
   list-style: none;
   display: inline-flex;
+  margin-right: 40px;
+}
+.candidate-basic-root ul li{
+  margin-right: 10px;
 }
 
-.candidate-basic-root ul li{
-  margin-right: 20px;
+.candidate-basic-root img{
+  width:45px;
 }
-.candidate-basic-root ul li{
-  background-color: #f9f9f9;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  padding-top: 13px;
-}
-.candidate-basic-root ul li:hover{
-  background-color:#55aefa;
-  color: #fff;
-  display: inline-block;
-  cursor: pointer;
-}
-.candidate-basic-root ul li a:hover{
-  background-color:#55aefa;
-  color: #fff;
-}
+
 .basic-details p{
   color: #55aefa;
   text-align: center;
@@ -3349,6 +3363,26 @@ border: 0;
   padding-bottom: 20px;
   font-weight: 600;
 }
+.gender-options{
+  display: flex;
+  margin-left: 73px;
+}
+.gender-options button{
+  margin-right: 40px;
+  height: 46px;
+  width: 123px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: 600
+}
+.gender-options button:hover{ 
+ color: #fff;
+ background-color:#55aefa;
+}
+.gender-options button:focus{ 
+  color: #fff;
+  background-color:#55aefa;
+ }
 .candidate-basic-date .select-custom{
 border: none;
 transition: none !important;
@@ -3371,18 +3405,85 @@ color: #55aefa;
 }
 
 
+.basic-nxr-btn button{
+  margin: 28px 0px 33px 0px;
+    height: 45px;
+    width: 200px;
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #55aefa;
+    color: #fff;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.basic-nxr-btn button:hover{
+    background-color: #55aefa;
+    color: #fff;
+}
+.basic-skip a{
+  color: #2196F3;
+  font-size: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+.basic-skip a:hover{
+  text-decoration: none;
+  color: #2196F3;
+}
+/* ------------------------------------------ */
+.marrige-status button{
+  background-color: #f9f9f9;
+  margin-right: 11px;
+  padding: 10px;
+  width: 100px;
+  border-radius: 24px;
+  font-weight: 500;
+  color: #000;
+}
+.marrige-status button:hover{
+  background-color : #55aefa;
+  color: #fff;
+}
+.marrige-status button:focus{
+  background-color: #55aefa;
+  color: #fff;
+}
+.weight-input{
+  margin-top: 23px;
+  width: 85px;
+  height: 73px;
+  left: 50%;
+  right: 46%;
+  position: relative;
+  margin-left: -48px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 0px;
+  border: none;
+}
+.abled-buttons button{
+  background-color: #f9f9f9;
+  color: #000;
+  margin: 0px 10px 10px 10px;
+  width: 120px;
+  border-radius: 18px;
+  padding: 9px;
+  font-weight: 600;
+}
+.abled-input{
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #807777eb;
+  border-radius: 0;
+  width: 50%;
+  margin-left: 25%;
+  height: 50px;
+  padding: 0px 0px;
+  font-size: 15px;
+  color: #555;
+}
+/* ________________________________________________ */
 
 
 #search {
@@ -3407,9 +3508,22 @@ color: #55aefa;
   border-radius: 17px;
   color: #000
 }
+.items-collection label.btn-default:focus{
+  outline: none;
+  border: none;
+}
 .items-collection label .itemcontent{
   width:100%;
 }
 .items-collection .btn-group{
   width:90%
 }
+
+
+/* ------------------------Candidate Basic  start ------------------- */
+
+
+
+
+
+/* -----------------------Candidate Basic end---------------------------- */

@@ -45,8 +45,23 @@ import Support from './Support';
 import AccountInfo from './AccountInfo';
 import Message from './Message';
 import Candidate_Build_Profile from './Component/Candidate/Candidare-Build-Profile';
+import CandidateSignup from './Component/Candidate/Sign-up';
 import Basic from './Component/Candidate/Basic';
 import EmpLetsBuildProfile from './EmployeeLetsBuildProfile';
+import StudentQuestionone from "./Component/Candidate/StudentQuestionone";
+import StudentQuestiontwo from "./Component/Candidate/StudentQuestiontwo";
+import StudentQuestionthree from "./Component/Candidate/StudentQuestionthree";
+import StudentQuestionfour from "./Component/Candidate/StudentQuestionfour";
+import StudentQuestionfive from "./Component/Candidate/StudentQuestionfive";
+import StudentQuestionsix from "./Component/Candidate/StudentQuestionsix";
+import CandidateExperience from './Component/Candidate/Candidate-Experience';
+import CandidateBio from './Component/Candidate/Candidate-Bio';
+import CandidateGender from './Component/Candidate/CandidateGender';
+import CandidateLang from './Component/Candidate/Candidate-Lang';
+import MarriageStatus from './Component/Candidate/MarriageStatus';
+import Candidateheight from './Component/Candidate/CandidateHeight';
+import CandidateWeight from './Component/Candidate/CandidateWeight';
+import CandidateAbled from './Component/Candidate/CandidateAbled';
 
 
 
@@ -104,8 +119,21 @@ class App extends Component {
             <Route exact path="/lets-build-profile" component={() =>(<Candidate_Build_Profile />)} />
             <Route exact path="/basic" component={() =>(<Basic />)} />
             <Route exact path="/employee-lets-build-profile" component={() =>(<EmpLetsBuildProfile />)} />
-            
-            
+            <Route exact path="/sign-up" component={() =>(<CandidateSignup />)} />
+            <Route exact path="/studentquestionone" component={() =>(<StudentQuestionone />)} />
+            <Route exact path="/studentquestiontwo" component={() =>(<StudentQuestiontwo />)} />
+            <Route exact path="/studentquestionthree" component={() =>(<StudentQuestionthree />)} />
+            <Route exact path="/studentquestionfour" component={() =>(<StudentQuestionfour />)} />
+            <Route exact path="/studentquestionfive" component={() =>(<StudentQuestionfive />)} />
+            <Route exact path="/studentquestionsix" component={() =>(<StudentQuestionsix />)} />
+            <Route exact path="/candidate-experience" component={() =>(<CandidateExperience />)} />
+            <Route exact path="/candidate-bio" component={() =>(<CandidateBio />)} />
+            <Route exact path="/candidate-gender" component={() =>(<CandidateGender />)} />
+            <Route exact path="/candidate-lang" component={() =>(<CandidateLang />)} />
+            <Route exact path="/marriage-status" component={() =>(<MarriageStatus />)} />
+            <Route exact path="/height" component={() =>(<Candidateheight />)} />
+            <Route exact path="/weight" component={() =>(<CandidateWeight />)} />
+            <Route exact path="/abled" component={() =>(<CandidateAbled />)} />
           </Switch>
       </BrowserRouter>
     );

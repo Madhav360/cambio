@@ -11,10 +11,17 @@ class Bio extends Component{
     constructor(props){
         super(props);
         this.state = {
-          file: null
+          file: null,
+          write_yourself: '',
         }
-      
+        
+        this.WriteYourSelfHandler = this.WriteYourSelfHandler.bind(this)
         this.handleChange = this.handleChange.bind(this)
+      }
+      WriteYourSelfHandler(event){
+        this.setState({
+          write_yourself:event.target.value
+        })
       }
 
       handleChange(event) {
@@ -56,7 +63,9 @@ class Bio extends Component{
                                 <textarea 
                                      className="form-control employee-about-input" 
                                      placeholder="Please write yourself in 250 words" 
-                                     type="text" 
+                                     type="text"
+                                     value={this.state.write_yourself}
+                                     onChange={this.WriteYourSelfHandler} 
                                      
                                     />
                             </div>
