@@ -35,7 +35,7 @@ class CandidateBio extends Component{
                                        </div>
                                        <div className="roundedd activeded">
                                          
-                                           <Link to="#"><button className="btn">Bio</button></Link>
+                                           <Link to="/profile-picture"><button className="btn">Bio</button></Link>
                                        </div>
                                    </div>
                                    </div>

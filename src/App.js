@@ -62,6 +62,9 @@ import MarriageStatus from './Component/Candidate/MarriageStatus';
 import Candidateheight from './Component/Candidate/CandidateHeight';
 import CandidateWeight from './Component/Candidate/CandidateWeight';
 import CandidateAbled from './Component/Candidate/CandidateAbled';
+import HighestQualification from './Component/Candidate/HighestQualification';
+import CurrentExperience from './Component/Candidate/CurrentExperience';
+import CandidateProfilePic from './Component/Candidate/Candidate-Profile-Pic';
 
 
 
@@ -134,6 +137,9 @@ class App extends Component {
             <Route exact path="/height" component={() =>(<Candidateheight />)} />
             <Route exact path="/weight" component={() =>(<CandidateWeight />)} />
             <Route exact path="/abled" component={() =>(<CandidateAbled />)} />
+            <Route exact path="/highest-qualification" component={() =>(<HighestQualification />)} />
+            <Route exact path="/current-experience" component={() =>(<CurrentExperience />)} />
+            <Route exact path="/profile-picture" component={() =>(<CandidateProfilePic />)} />
           </Switch>
       </BrowserRouter>
     );

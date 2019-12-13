@@ -69,6 +69,9 @@ import MarriageStatus from "./Component/Candidate/MarriageStatus";
 import Candidateheight from "./Component/Candidate/CandidateHeight";
 import CandidateWeight from "./Component/Candidate/CandidateWeight";
 import CandidateAbled from "./Component/Candidate/CandidateAbled";
+import HighestQualification from "./Component/Candidate/HighestQualification";
+import CurrentExperience from "./Component/Candidate/CurrentExperience";
+import CandidateProfilePic from "./Component/Candidate/Candidate-Profile-Pic";
 
 
 
@@ -373,6 +376,21 @@ const appRoute =[
 	path:"/abled",
 	isExactPath: true,
 	component: <CandidateAbled />
+ },
+ {
+	path:"/highest-qualification",
+	isExactPath: true,
+	component: <HighestQualification />
+ },
+ {
+	path:"/current-experience",
+	isExactPath: true,
+	component: <CurrentExperience />
+ },
+ {
+	path:"/profile-picture",
+	isExactPath: true,
+	component: <CandidateProfilePic />
  },
 ];
 

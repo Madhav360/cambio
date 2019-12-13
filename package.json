@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.7.2",
     "jquery": "^3.4.1",
     "multi-select-react": "^0.1.8",
     "react": "^16.8.6",

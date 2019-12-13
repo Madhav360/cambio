@@ -26,11 +26,11 @@ class CandidateExperience extends Component{
                                    <div className="col-xs-12 text-center">
                                    <div className="profile-build-tabs">
                                        <div className="roundedd activeded">
-                                           <Link to="#"><button className="btn">Basic</button></Link>
+                                           <Link to="/basic"><button className="btn">Basic</button></Link>
                                            <div className="student-progress actived-progress"></div>
                                        </div>
                                        <div className="roundedd activeded">
-                                           <Link to="#"><button className="btn">Education & Experience</button></Link>
+                                           <Link to="/highest-qualification"><button className="btn">Education & Experience</button></Link>
                                            <div className="student-progress"></div>
                                        </div>
                                        <div className="roundedd">
