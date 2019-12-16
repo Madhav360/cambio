@@ -40,7 +40,7 @@ class CandidateProfilePic extends Component{
                                           <img src="image/icons/shikhar.jpg" />
                                       </div>
                                   </div>
-                                  <div><p>Other Pics</p></div>
+                                  <div className="bio-other"><p>Other Pics</p></div>
                                   <div className="col-md-6">
                                      <div class="upload-btn-wrapper bio-others-pics">
                                            <img src="image/menuicon/file.png" className="profilesetting-file" />
@@ -56,12 +56,12 @@ class CandidateProfilePic extends Component{
                             </div>
                             <div className="col-md-12">
                                <div className="basic-nxr-btn text-center">
-                                    <Link to="/candidate-bio"> <button className="btn">Next</button></Link>
+                                    <Link to="/upload-adhar"> <button className="btn">Next</button></Link>
                                </div>
                             </div>
                             <div className="col-md-12">
                                 <div className="basic-skip text-center">
-                                  <Link to="/candidate-bio">Skip</Link>
+                                  <Link to="/upload-adhar">Skip</Link>
                                  </div>
                             </div>
                         </div>

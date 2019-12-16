@@ -65,6 +65,9 @@ import CandidateAbled from './Component/Candidate/CandidateAbled';
 import HighestQualification from './Component/Candidate/HighestQualification';
 import CurrentExperience from './Component/Candidate/CurrentExperience';
 import CandidateProfilePic from './Component/Candidate/Candidate-Profile-Pic';
+import CandidateAdharUpload from './Component/Candidate/UploadAdhar';
+import CandidateAbout from './Component/Candidate/CandidateAbout';
+import CandidateVideoResume from './Component/Candidate/CandidateVideoResume';
 
 
 
@@ -140,6 +143,9 @@ class App extends Component {
             <Route exact path="/highest-qualification" component={() =>(<HighestQualification />)} />
             <Route exact path="/current-experience" component={() =>(<CurrentExperience />)} />
             <Route exact path="/profile-picture" component={() =>(<CandidateProfilePic />)} />
+            <Route exact path="/upload-adhar" component={() =>(<CandidateAdharUpload />)} />
+            <Route exact path="/about-you" component={() =>(<CandidateAbout />)} />
+            <Route exact path="/video-resume" component={() =>(<CandidateVideoResume />)} />
           </Switch>
       </BrowserRouter>
     );

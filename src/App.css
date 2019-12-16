@@ -137,6 +137,13 @@ body{
   padding-top: 26px;
   color: #fff;
 }
+.side-myprofile a{
+  color: #fff;
+  font-weight: 700;
+}
+.side-myprofile a:hover{
+  text-decoration: none;
+}
 .sidebar .side-icon{
   padding-left: 25px;
   padding-top: 26px;
@@ -1796,12 +1803,12 @@ color: #fff;
   float: none;
   margin: auto;
 }
-.details-job-type{
-  height: 73px;
-}
+
 .details-job-type p{
 color: #000;
 font-weight: 500;
+font-size: 17px;
+margin-top: -8px;
 }
 .details-job-type h5{
 color: grey;
@@ -2126,6 +2133,42 @@ color: #5a5959;
     font-weight: 600;
     color: #55aefa;
 }
+ /* ----------------------Schedule popup----------------------------- */
+.schedule-close-pop i{
+  position: absolute;
+  right: -34px;
+  top: -23px;
+  font-size: 31px;
+  font-weight: 800;
+  color: #55aefa;
+}
+.schedulepop-dialog{
+  margin-top:5%;
+}
+.schedule-modal-body h3{
+  text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+.select-interview-date{
+    border: 0;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+.popup-mode-interview button{
+  height: 100px;
+  margin: 10px 0px 20px;
+}
+.Schedule-btn button{
+  background-color: #55aefa;
+  color: #fff;
+  margin: 20px 0px 20px;
+}
+ /* ----------------------Schedule popup----------------------------- */
+
+
 /* ----------------------Applicants end here------------------------------------------ */
 
 
@@ -3363,6 +3406,7 @@ color: #fff;
   padding-bottom: 20px;
   font-weight: 600;
 }
+
 .gender-options{
   display: flex;
   margin-left: 73px;
@@ -3552,6 +3596,92 @@ color: #55aefa;
     width: 80%;
     border: 1px dotted #717070;
     padding-top: 32px
+}
+.basic-details h6{
+  color: grey;
+  font-size: 17px;
+  margin-top: -24px;
+  font-weight: 300
+}
+.upload-adhar-section{
+  margin: auto;
+  float: none;
+  background-color: #f9f9f9;
+  margin-top: 25px;
+}
+.upload-adhar-section ul{
+  display: inline-flex;
+  list-style: none;
+  margin-left: 24px;
+  height: 118px;
+  margin-top: 34px;
+}
+.upload-adhar-section ul li{
+  margin-right: 50px;
+    margin-top: 9px;
+    color: gray;
+}
+.candidate-about-us label{
+  color: #55aefa;
+  font-size: 18px;
+}
+.candidate-about-input{
+  height: 70px;
+  background-color: #f9f9f9;
+  border: 0;
+  resize: none;
+  border-radius: 0px;
+}
+.candidate-about-section{
+  margin: auto;
+  float: none;
+}
+.social-responsibility p{
+  font-size: 18px;
+  color: #55aefa;
+  font-weight: 700;
+}
+.social-responsibility button{
+  background-color: #f9f9f9;
+  height: 57px;
+  width: 366px;
+  margin: 5px 0px 10px;
+  border-radius: 16px;
+    font-weight: 500;
+}
+.social-responsibility button:hover{
+  background-color: #55aefa;
+  color: #fff;
+}
+.social-responsibility button:focus{
+  background-color: #55aefa;
+  color: #fff;
+}
+.resume-heading h6{
+  font-size: 17px;
+  color: #55aefa;
+  font-weight: 700;
+}
+.resume-heading p{
+  color: grey;
+    font-size: 15px;
+    font-weight: 400
+}
+.video-resume ul{
+  list-style: none;
+  display: inline-flex;
+}
+.video-resume{
+  background-color: #f9f9f9;
+  height: 150px;
+}
+.video-resume ul li{
+  margin-right: 20px;
+  margin-top: 40px;
+  color: grey;
+}
+.video-resumee{
+  margin-top: 31px;
 }
 /* ________________________________________________ */
 

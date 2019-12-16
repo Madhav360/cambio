@@ -72,6 +72,10 @@ import CandidateAbled from "./Component/Candidate/CandidateAbled";
 import HighestQualification from "./Component/Candidate/HighestQualification";
 import CurrentExperience from "./Component/Candidate/CurrentExperience";
 import CandidateProfilePic from "./Component/Candidate/Candidate-Profile-Pic";
+import CandidateAdharUpload from "./Component/Candidate/UploadAdhar";
+import CandidateAbout from "./Component/Candidate/CandidateAbout";
+import CandidateVideoResume from "./Component/Candidate/CandidateVideoResume";
+
 
 
 
@@ -391,6 +395,21 @@ const appRoute =[
 	path:"/profile-picture",
 	isExactPath: true,
 	component: <CandidateProfilePic />
+ },
+ {
+	path:"/upload-adhar",
+	isExactPath: true,
+	component: <CandidateAdharUpload />
+ },
+ {
+	path:"/about-you",
+	isExactPath: true,
+	component: <CandidateAbout />
+ },
+ {
+	path:"/video-resume",
+	isExactPath: true,
+	component: <CandidateVideoResume />
  },
 ];
 

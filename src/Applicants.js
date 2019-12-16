@@ -1,18 +1,36 @@
 import React, {Component } from 'react';
 import Sidebar from './Sidebar';
 import { Link } from 'react-router-dom';
-
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import TimePicker from 'react-time-picker';
 
 
 class Applicants extends Component{
     constructor(props){
         super(props)
-       
+        this.state={
+            startDate: new Date(),
+            time: '10:00',
+            est_duration: '',
+        }
+
+        this.EstDurationHandler = this.EstDurationHandler.bind(this);
     }
+    
+    EstDurationHandler(event){
+        this.setState(
+            {est_duration:event.target.value}
+        )
+    }
+    handleChange = date => {
+        this.setState({
+          startDate: date
+        });
+      };
 
-   
-
-
+    onChange = date => this.setState({ date })
+    onTime = time => this.setState({ time })
     render(){
         return(
             <div>
@@ -174,15 +192,82 @@ class Applicants extends Component{
                   {/* -----------------schedule popup start here-------------------------- */}
 
                   <div id="schedulepopup" class="modal fade" role="dialog">
-                      <div class="modal-dialog">
-                          <div class="modal-content">
-                               <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <div class="row modal-dialog schedulepop-dialog">
+                          <div class="row modal-content">
+                               <div class="schedule-close-pop">
+                                   <i class="material-icons close" data-dismiss="modal">close</i>
                                </div>
-                               <div class="modal-body">
-                                 <p>Schedule an interview</p>
+                               <div class="modal-body schedule-modal-body">
+                                 <h3>Schedule an interview</h3>
                                 </div>
-                            </div>
+                                <div className="col-sm-6">
+                                   <div class="form-group">
+                                       <label >Select interview date</label><br />
+                                           <div className="">
+                                               <DatePicker
+                                               className="select-interview-date"
+                                               selected={this.state.startDate}
+                                               onChange={this.handleChange}
+                                               />
+                                           </div>
+                                        </div>
+                                </div>
+                                   <div className="col-sm-6">
+                                   <div class="form-group">
+                                        <label >Select interview Time</label><br />
+                                           <div className="">
+                                              <TimePicker
+                                                 className="select-interview-date"
+                                                 onChange={this.onTime}
+                                                 value={this.state.time}
+                                               />
+                                            </div>
+                                    </div>
+                                  </div>
+                                   <div className="col-sm-6">
+                                       <div class="form-group">
+                                           <select class="form-control" id="sel1">
+                                              <option>1</option>
+                                              <option>2</option>
+                                              <option>3</option>
+                                               <option>4</option>
+                                           </select>
+                                       </div>
+                                    </div>
+                                    <div className="col-sm-6">
+                                       <div className="form=group">
+                                           <input 
+                                             className="form-control"
+                                             type="text"
+                                             value={this.state.est_duration}
+                                             onChange={this.EstDurationHandler}
+                                             />
+                                       </div>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <p>Mode of Interview</p>
+                                    </div>
+                                    <div className="col-md-4 popup-mode-interview">
+                                        <button className="btn">
+                                            <img src="image/icons/smartinterview.png" /><br />Smart Interview
+                                        </button>
+                                    </div>
+                                    <div className="col-md-4 popup-mode-interview">
+                                        <button className="btn">
+                                            <img src="image/icons/traditionalinterview.png" /><br />Traditional Interview
+                                        </button>
+                                    </div>
+                                    <div className="col-md-4 popup-mode-interview">
+                                        <button className="btn">
+                                            <img src="image/icons/bothinterview.png" /><br />Both Interview
+                                        </button>
+                                    </div>
+                                    <div className="col-md-12 text-center Schedule-btn">
+                                        <button className="btn">Schedule</button>
+                                    </div>
+                                </div>
+                               
+                             
                         </div>
                     </div>
 
@@ -255,7 +340,7 @@ class Applicants extends Component{
                    {/* --------------------profile applicant end--------------------- */}
 
                                       {/* --------------applicant profile---------------------- */}
-                                      <div className="col-xs-12 col-md-4">
+                      <div className="col-xs-12 col-md-4">
                        <div className="row applicant-candidate">
                            <div className="col-xs-3 col-md-3 hh">
                               <div className="applicant-profile-picture">

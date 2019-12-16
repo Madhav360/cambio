@@ -53,73 +53,73 @@ class JobDetails extends Component{
                                <h4>Job Descriptions</h4>
                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed</p>
                            </div>
-                           <div className="col-md-3">
+                           <div className="col-md-6">
                                <div className="details-job-type">
                                    <h5>Job Type</h5>
                                    <p>2 months</p>
                                </div>
                            </div>
-                           <div className="col-md-3">
+                           <div className="col-md-6">
                                <div className="details-job-type">
                                    <h5>Qualification</h5>
                                    <p>Post Graduate</p>
                                </div>
                            </div>
-                           <div className="col-md-3">
+                           <div className="col-md-6">
                                <div className="details-job-type">
                                    <h5>Experience</h5>
                                    <p>2 months</p>
                                </div>
                            </div>
-                           <div className="col-md-3">
+                           <div className="col-md-6">
                                <div className="details-job-type">
                                    <h5>Shift</h5>
                                    <p>Day shift</p>
                                </div>
                            </div>
-                           <div className="col-md-3">
+                           <div className="col-md-6">
                                <div className="details-job-type">
                                    <h5>Salary</h5>
                                    <p>2.2 PLA</p>
                                </div>
                            </div>
-                           <div className="col-md-3">
+                           <div className="col-md-6">
                                <div className="details-job-type">
                                    <h5>Company Loaction</h5>
                                    <p>HSR Layout</p>
                                </div>
                            </div>
-                           <div className="col-md-3">
+                           <div className="col-md-6">
                                <div className="details-job-type">
                                    <h5>Job Type</h5>
                                    <p>2 months</p>
                                </div>
                            </div>
-                           <div className="col-md-3">
+                           <div className="col-md-6">
                                <div className="details-job-type">
                                    <h5>Cab</h5>
                                    <p>Yes</p>
                                </div>
                            </div>
-                           <div className="col-md-3">
+                           <div className="col-md-6">
                                <div className="details-job-type">
                                    <h5>Notice Period</h5>
                                    <p>2 Days</p>
                                </div>
                            </div>
-                           <div className="col-md-3">
+                           <div className="col-md-6">
                                <div className="details-job-type">
                                    <h5>Job Role/Designation</h5>
                                    <p>Full Time</p>
                                </div>
                            </div>
-                           <div className="col-md-3">
+                           <div className="col-md-6">
                                <div className="details-job-type">
                                    <h5>Number of Postions</h5>
                                    <p>2</p>
                                </div>
                            </div>
-                           <div className="col-md-3">
+                           <div className="col-md-6">
                                <div className="details-job-type">
                                    <h5>Gender</h5>
                                    <p>Male</p>
