@@ -1382,7 +1382,7 @@ padding: 2px;
 /* ---------------------------home page------------------ */
 .carousel.carousel-slider {
 position: absolute;
-  height: 550px;
+  height: 500px;
 }
 .carousel .slide .legend {
   transition: all .5s ease-in-out;
@@ -3239,15 +3239,42 @@ list-style: none;
 }
 .your-chat{
   width: 75%;
+  padding: 0px;
 }
 .your-chat p{
-  background-color: #55aefa;
+  background-color: #fff;
   margin: 7px 0px 0px 0px;
   border-radius: 22px;
-  color: #fff;
+  color: #000;
   padding: 9px;
   display: inline-block;
   float: right;
+  margin-right: -48px;
+}
+.chating-back{
+  color: #55aefa;
+  font-weight: 700;
+  cursor: pointer;
+}
+.your-picture{
+  float: right;
+}
+.chatting-page-height{
+  height: 500px;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .chating-section {
+    margin-left: 11px;
+  }
+  .your-chat {
+    position: relative;
+    padding: 0;
+}
+.your-chat p {
+    margin-right: -39px;
+}
 }
 /* -------------------------Chat end here----------------------------------------- */
 

@@ -3,10 +3,7 @@ import {Component} from 'react';
 import Header from './common/Header';
 import { Link } from 'react-router-dom';
 
-
-
-
-class EmpLetsBuildProfile extends Component{
+class EmployeeBio extends Component{
     constructor(props) {
         super(props);
     
@@ -29,10 +26,10 @@ class EmpLetsBuildProfile extends Component{
                                    <div className="profile-build-tabs">
                                        <div className="roundedd activeded">
                                            <Link to="/company"><button className="btn">Company</button></Link>
-                                           <div className="student-progress"></div>
+                                           <div className="student-progress actived-progress"></div>
                                        </div>
-                                       <div className="roundedd">
-                                           <Link to="#"><button className="btn">Bio</button></Link>
+                                       <div className="roundedd activeded">
+                                           <Link to="/bio"><button className="btn">Bio</button></Link>
                                            
                                        </div>
                                    </div>
@@ -51,4 +48,4 @@ class EmpLetsBuildProfile extends Component{
     }
 }
 
-export default EmpLetsBuildProfile;
+export default EmployeeBio;

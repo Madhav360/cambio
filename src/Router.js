@@ -75,6 +75,7 @@ import CandidateProfilePic from "./Component/Candidate/Candidate-Profile-Pic";
 import CandidateAdharUpload from "./Component/Candidate/UploadAdhar";
 import CandidateAbout from "./Component/Candidate/CandidateAbout";
 import CandidateVideoResume from "./Component/Candidate/CandidateVideoResume";
+import EmployeeBio from "./EmployeeBio";
 
 
 
@@ -410,6 +411,11 @@ const appRoute =[
 	path:"/video-resume",
 	isExactPath: true,
 	component: <CandidateVideoResume />
+ },
+ {
+	path:"/employee-bio",
+	isExactPath: true,
+	component: <EmployeeBio />
  },
 ];
 

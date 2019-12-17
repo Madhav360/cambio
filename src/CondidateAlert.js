@@ -160,7 +160,7 @@ class CandidateAlert extends Component{
                                
                                 <div className="col-md-12">
                                   <div className="alert-nxt text-center">
-                                     <Link to="/employee-lets-build-profile"><button className="btn" type="submit">Save</button> </Link>
+                                     <Link to="/employee-bio"><button className="btn" type="submit">Save</button> </Link>
                                   </div>
                                 </div>
                                

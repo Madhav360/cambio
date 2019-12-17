@@ -8,6 +8,12 @@ import Sidebar from './Sidebar'
 class Chat extends Component{
     constructor (props){
         super(props);
+        this.state={
+            time:'2:00pm',
+            person_name:'Rahul',
+            person_msg:'Have a good day',
+            day:'Today'
+        }
     }
 
     render(){
@@ -17,7 +23,7 @@ class Chat extends Component{
                     <div className="row">
                         <div className="col-md-12">
                           <div className="chating-activer">
-                            <p>Back</p>
+                            <p className="chating-back">Back</p>
                              <div class="flex-container text-center">
                                 <div className="more-active">
                                   <img src="image/icons/shikhar.jpg" /><p>John</p>
@@ -45,12 +51,12 @@ class Chat extends Component{
                                    <img src="image/icons/shikhar.jpg" />
                                 </div>
                                 <div className="col-xs-7 chatting-person-name">
-                                     <h4>John Karl</h4>
-                                     <p>have a good day !</p>
+                                     <h4>{this.state.person_name}</h4>
+                                     <p>{this.state.person_msg}</p>
                                 </div>
                                 <div className="col-xs-3 chatting-persion-time">
-                                    <h6>Today</h6>
-                                    <p>2:00pm</p>
+                                    <h6>{this.state.day}</h6>
+                                    <p>{this.state.time}</p>
                                 </div>
                             </div>
                             <div className="col-xs-12 chatting-section">
@@ -58,12 +64,12 @@ class Chat extends Component{
                                    <img src="image/icons/shikhar.jpg" />
                                 </div>
                                 <div className="col-xs-7 chatting-person-name">
-                                     <h4>John Karl</h4>
-                                     <p>have a good day !</p>
+                                     <h4>{this.state.person_name}</h4>
+                                     <p>{this.state.person_msg}</p>
                                 </div>
                                 <div className="col-xs-3 chatting-persion-time">
-                                    <h6>Today</h6>
-                                    <p>2:00pm</p>
+                                    <h6>{this.state.day}</h6>
+                                    <p>{this.state.time}</p>
                                 </div>
                             </div>
                             <div className="col-xs-12 chatting-section">
@@ -71,12 +77,12 @@ class Chat extends Component{
                                    <img src="image/icons/shikhar.jpg" />
                                 </div>
                                 <div className="col-xs-7 chatting-person-name">
-                                     <h4>John Karl</h4>
-                                     <p>have a good day !</p>
+                                     <h4>{this.state.person_name}</h4>
+                                     <p>{this.state.person_msg}</p>
                                 </div>
                                 <div className="col-xs-3 chatting-persion-time">
-                                    <h6>Today</h6>
-                                    <p>2:00pm</p>
+                                    <h6>{this.state.day}</h6>
+                                    <p>{this.state.time}</p>
                                 </div>
                             </div>
                             <div className="col-xs-12 chatting-section">
@@ -84,28 +90,15 @@ class Chat extends Component{
                                    <img src="image/icons/shikhar.jpg" />
                                 </div>
                                 <div className="col-xs-7 chatting-person-name">
-                                     <h4>John Karl</h4>
-                                     <p>have a good day !</p>
+                                     <h4>{this.state.person_name}</h4>
+                                     <p>{this.state.person_msg}</p>
                                 </div>
                                 <div className="col-xs-3 chatting-persion-time">
-                                    <h6>Today</h6>
-                                    <p>2:00pm</p>
+                                    <h6>{this.state.day}</h6>
+                                    <p>{this.state.time}</p>
                                 </div>
                             </div>
-                            <div className="col-xs-12 chatting-section">
-                                <div className="col-xs-2 chat-with-people">
-                                   <img src="image/icons/shikhar.jpg" />
-                                </div>
-                                <div className="col-xs-7 chatting-person-name">
-                                     <h4>John Karl</h4>
-                                     <p>have a good day !</p>
-                                </div>
-                                <div className="col-xs-3 chatting-persion-time">
-                                    <h6>Today</h6>
-                                    <p>2:00pm</p>
-                                </div>
-                            </div>
-                         
+                                                     
                           </div>
                           
                         </div>

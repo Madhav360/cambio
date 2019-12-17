@@ -68,6 +68,7 @@ import CandidateProfilePic from './Component/Candidate/Candidate-Profile-Pic';
 import CandidateAdharUpload from './Component/Candidate/UploadAdhar';
 import CandidateAbout from './Component/Candidate/CandidateAbout';
 import CandidateVideoResume from './Component/Candidate/CandidateVideoResume';
+import EmployeeBio from './EmployeeBio';
 
 
 
@@ -146,6 +147,7 @@ class App extends Component {
             <Route exact path="/upload-adhar" component={() =>(<CandidateAdharUpload />)} />
             <Route exact path="/about-you" component={() =>(<CandidateAbout />)} />
             <Route exact path="/video-resume" component={() =>(<CandidateVideoResume />)} />
+            <Route exact path="/employee-bio" component={() =>(<EmployeeBio />)} />
           </Switch>
       </BrowserRouter>
     );
