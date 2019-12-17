@@ -226,8 +226,8 @@ class Applicants extends Component{
                                   </div>
                                    <div className="col-sm-6">
                                        <div class="form-group">
-                                           <select class="form-control" id="sel1">
-                                              <option>1</option>
+                                           <select class="form-control select-interview-rounds-input" id="sel1">
+                                              <option>Select Interview Round</option>
                                               <option>2</option>
                                               <option>3</option>
                                                <option>4</option>
@@ -237,7 +237,8 @@ class Applicants extends Component{
                                     <div className="col-sm-6">
                                        <div className="form=group">
                                            <input 
-                                             className="form-control"
+                                             className="form-control select-interview-rounds-input"
+                                             placeholder="Estimated Interview Duration(in mins)"
                                              type="text"
                                              value={this.state.est_duration}
                                              onChange={this.EstDurationHandler}
@@ -245,21 +246,21 @@ class Applicants extends Component{
                                        </div>
                                     </div>
                                     <div className="col-md-12">
-                                        <p>Mode of Interview</p>
+                                        <label>Mode of Interview</label>
                                     </div>
-                                    <div className="col-md-4 popup-mode-interview">
+                                    <div className="col-md-4 popup-mode-interview text-center">
                                         <button className="btn">
                                             <img src="image/icons/smartinterview.png" /><br />Smart Interview
                                         </button>
                                     </div>
-                                    <div className="col-md-4 popup-mode-interview">
+                                    <div className="col-md-4 popup-mode-interview text-center">
                                         <button className="btn">
-                                            <img src="image/icons/traditionalinterview.png" /><br />Traditional Interview
+                                            <img src="image/icons/traditionalinterview.png" /><br />Traditional<br /> Interview
                                         </button>
                                     </div>
-                                    <div className="col-md-4 popup-mode-interview">
+                                    <div className="col-md-4 popup-mode-interview text-center">
                                         <button className="btn">
-                                            <img src="image/icons/bothinterview.png" /><br />Both Interview
+                                            <img src="image/icons/bothinterview.png" /><br />Both
                                         </button>
                                     </div>
                                     <div className="col-md-12 text-center Schedule-btn">

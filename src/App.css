@@ -2158,13 +2158,43 @@ color: #5a5959;
     font-weight: 500;
 }
 .popup-mode-interview button{
-  height: 100px;
+  height: 145px;
+  width: 147px;
   margin: 10px 0px 20px;
+  background-color: #f9f9f9;
+  color: #000;
+}
+.popup-mode-interview button:hover{
+  background-color: #55aefa;
+  color: #fff;
+}
+
+.select-interview-rounds-input{
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #807777eb;
+  border-radius: 0;
+  padding: 0px 0px;
+  font-size: 12px;
+  color: #555;
+}
+.select-interview-rounds-input:focus{
+  outline: none !important;
+   box-shadow: none;
+   border-bottom: 1px solid #807777eb;
+}
+.popup-mode-interview button:focus{
+  background-color: #55aefa;
+  color: #fff;
 }
 .Schedule-btn button{
   background-color: #55aefa;
   color: #fff;
   margin: 20px 0px 20px;
+}
+.react-time-picker__wrapper {
+  display: flex;
+  border: 0 !important;
 }
  /* ----------------------Schedule popup----------------------------- */
 
@@ -3174,8 +3204,51 @@ list-style: none;
   color: #fff;
   display: block;
 }
-
-
+.message{
+  background-color: #2196f370;
+  margin-top: -20px;
+}
+.message h3{
+  text-align: center;
+  font-weight: 700;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.chattt{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.chat-use-image img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #2196F3;
+}
+.chating-section{
+  padding: 0px;
+  margin-left: -12px;
+  width: 75%;
+}
+.chating-section p{
+  background-color: #55aefa;
+  margin: 7px 0px 0px 0px;
+  border-radius: 22px;
+  color: #fff;
+  padding: 9px;
+  display: inline-block;
+}
+.your-chat{
+  width: 75%;
+}
+.your-chat p{
+  background-color: #55aefa;
+  margin: 7px 0px 0px 0px;
+  border-radius: 22px;
+  color: #fff;
+  padding: 9px;
+  display: inline-block;
+  float: right;
+}
 /* -------------------------Chat end here----------------------------------------- */
 
 

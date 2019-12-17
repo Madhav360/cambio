@@ -127,7 +127,7 @@ handleNotiMouseOver() {
                                  onMouseOut={this.handleMouseOut} 
                                  src={this.state.imgswipe}/> Swipe
                                  </Link></li>
-                            <li><Link to="/">
+                            <li><Link to="/post">
                                 <img className="menu-icons menu-icons1" 
                                 onMouseOver={this.handleHomeMouseOver} 
                                 onMouseOut={this.handleHomeMouseOut} 
