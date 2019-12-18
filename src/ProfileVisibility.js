@@ -2,6 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import Header from './common/Header';
 import { Link } from 'react-router-dom';
+import Footer from './common/Footer';
 
 
 
@@ -17,7 +18,7 @@ class ProfileVisibility extends Component{
            <Header />
            <div className="container">
                <div className="row">
-                   <div className="col-lg-12 mdv-singup-page">
+                   <div className="col-lg-12 mdv-singup-page role-height">
                          <div className="rolemain pv text-center">
                            <h2>Profile Visibility</h2>
                          </div>
@@ -46,6 +47,7 @@ class ProfileVisibility extends Component{
                  
                </div>
            </div>
+           <Footer />
        </div>
     )
     }

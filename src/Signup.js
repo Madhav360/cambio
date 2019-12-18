@@ -2,6 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import Header from './common/Header';
 import { Link } from 'react-router-dom';
+import Footer from './common/Footer';
 
 
 class Signup extends Component{
@@ -81,112 +82,110 @@ class Signup extends Component{
                <div className="row">
                    <div className="col-lg-12 mdv-singup-page text-center">
                       <h2>Hey There</h2>
-                      <h4>Signup to Continue</h4>
                         <div className="mdv-login-with">
                            <h4>Signup with</h4>
                            <ul>
-                               <li><img className="img-responsive fb" src="image/fb.png" /></li>
-                               <li><img className="img-responsive" src="image/gogle.png" /></li>
-                               <li><img className="img-responsive" src="image/in.png" /></li>
-                               <li><img className="img-responsive" src="image/phone.png" /></li>
+                           <li><img className="img-responsive" src="image/face.png" /></li>
+                            <li><img className="img-responsive" src="image/search.png" /></li>
+                            <li><img className="img-responsive" src="image/linkedin.png" /></li>
+                            <li><img className="img-responsive" src="image/telephone.png" /></li>
                             </ul>
                         </div>
                         <form onSubmit={this.handleSubmit}>
                           <div className="mdv-signup-form">
-                           <div className="col-lg-6">
-                              <div className="h">
-                              <input type='text' 
-                                     className="form-control signupinputs mrg" 
-                                     onChange={this.FirstNameHandler}
-                                     value={this.first_name} 
-                                     placeholder="First Name"/>
-                              
-                             
-                              </div>
-                            </div>
-                            <div className="col-md-6">
-                              <div className="form-group">
-                                  <input type='text' 
-                                  className="form-control signupinputs" 
-                                  onChange={this.LastNameHandler} 
-                                  value={this.state.last_name}
-                                  placeholder="Last Name"/>
-                              </div>
-                            </div>
-                           
-                            <div className="col-md-6">
-                              <div className="from-group">
-                                    <input type='text' 
-                                     className="form-control signupinputs mrg" 
-                                     onChange={this.CompanyNameHandler} 
-                                     value={this.company_name}
-                                     placeholder="Company Name"/>
-                              </div>
-                            </div>
-                            <div className="col-md-6">
-                              <div className="from-group">
-                                  <select class="form-control signupinputs" id="sel1">
-                                     <option>Industry Type</option>
-                                     <option>2</option>
-                                     <option>3</option>
-                                     <option>4</option>
-                                  </select>
-                              </div>
-                            </div>
-                            <div className="col-md-6">
-                              <div className="from-group">
-                                    <input type='text' 
-                                     className="form-control signupinputs mrg" 
-                                     onChange={this.CompanyEmailHandler} 
-                                     value={this.company_email}
-                                     placeholder="Your Company email ID"/>
-                              </div>
-                            </div>
-                            <div className="col-md-6">
-                              <div className="from-group">
-                                 <input type='text' 
-                                  className="form-control signupinputs" 
-                                  onChange={this.PhoneNoHandler} 
-                                  value={this.phone_no}
-                                  placeholder="Phone Number"/>
-                              </div>
-                            </div>
-                           </div>
-                           <div className="col-md-6 signup-upload-title">
-                             <label>Upload Company ID Card</label>
-                             <div className="signup-upload-id">
-                             <ul>
-                               <li> <i className="btn mdv-company-icon"><i className='fas fa-camera'></i></i></li>
-                             
-                              
-                                <li> <div class="upload-btn-wrapper">
-                                        <i class="btn btn mdv-company-icon" 
-                                           onChange={this.handleChange}>
-                                           <img src="image/icons/file.png" className="bio2-file" /> </i>
-                                           <input type="file" onChange={this.handleChange}/>
+                              <div className="col-md-8">
+                                  <div className="col-lg-6">
+                                    <div className="h">
+                                       <input type='text' 
+                                        className="form-control signupinputs mrg" 
+                                        onChange={this.FirstNameHandler}
+                                        value={this.first_name} 
+                                        placeholder="First Name"/>
+                                    </div>
+                                  </div>
+                                  <div className="col-md-6">
+                                     <div className="form-group">
+                                        <input type='text' 
+                                          className="form-control signupinputs" 
+                                          onChange={this.LastNameHandler} 
+                                          value={this.state.last_name}
+                                          placeholder="Last Name"/>
+                                       </div>
+                                  </div>
+                                  <div className="col-md-6">
+                                      <div className="from-group">
+                                         <input type='text' 
+                                           className="form-control signupinputs mrg" 
+                                           onChange={this.CompanyNameHandler} 
+                                           value={this.company_name}
+                                           placeholder="Company Name"/>
+                                      </div>
+                                  </div>
+                                  <div className="col-md-6">
+                                       <div className="from-group">
+                                          <select class="form-control signupinputs" id="sel1">
+                                             <option>Industry Type</option>
+                                             <option>2</option>
+                                             <option>3</option>
+                                             <option>4</option>
+                                          </select>
+                                      </div>
+                                   </div>
+                                   <div className="col-md-6">
+                                       <div className="from-group">
+                                         <input type='text' 
+                                           className="form-control signupinputs mrg" 
+                                           onChange={this.CompanyEmailHandler} 
+                                           value={this.company_email}
+                                           placeholder="Your Company email ID"/>
+                                       </div>
+                                    </div>
+                                    <div className="col-md-6">
+                                      <div className="from-group">
+                                        <input type='text' 
+                                          className="form-control signupinputs" 
+                                          onChange={this.PhoneNoHandler} 
+                                          value={this.phone_no}
+                                          placeholder="Phone Number"/>
                                      </div>
-                                </li>
-                            </ul>
-                             </div>
-                           </div>
-                           <div className="col-md-6">
-                              <div className="from-group">
-                                 <input type='text' 
-                                  className="form-control signupinputs" 
-                                  onChange={this.PasswordHandler} 
-                                  value={this.password}
-                                  placeholder="Password"/>
-                              </div>
-                            </div>
-                            <div className="col-md-6">
-                              <div className="from-group">
-                                 <input type='text' 
-                                  className="form-control signupinputs" 
-                                  onChange={this.ConfirmPasswordHandler} 
-                                  value={this.comfirm_password}
-                                  placeholder="Comfirm Password"/>
-                              </div>
-                            </div>
+                                   </div>
+                                   <div className="col-md-6">
+                                       <div className="from-group">
+                                          <input type='text' 
+                                            className="form-control signupinputs" 
+                                            onChange={this.PasswordHandler} 
+                                            value={this.password}
+                                            placeholder="Password"/>
+                                       </div>
+                                    </div>
+                                   <div className="col-md-6">
+                                      <div className="from-group">
+                                         <input type='text' 
+                                           className="form-control signupinputs" 
+                                           onChange={this.ConfirmPasswordHandler} 
+                                           value={this.comfirm_password}
+                                          placeholder="Comfirm Password"/>
+                                      </div>
+                                   </div>
+                                </div> 
+                               </div>
+                               <div className="col-md-4">
+                                   <div className="col-md-6 signup-upload-title">
+                                      <label>Upload Company ID Card</label>
+                                      <div className="signup-upload-id">
+                                         <ul>
+                                            <li> <i className="btn mdv-company-icon"><i className='fas fa-camera'></i></i></li>
+                                            <li> <div class="upload-btn-wrapper">
+                                                    <i class="btn btn mdv-company-icon" 
+                                                    onChange={this.handleChange}>
+                                                    <img src="image/icons/file.png" className="bio2-file" /> </i>
+                                                    <input type="file" onChange={this.handleChange}/>
+                                                 </div>
+                                            </li>
+                                         </ul>
+                                    </div>
+                                  </div>
+                               </div>
                             <div class="col-md-12 form-group text-center">
                             
                             <Link to="/industry"> <input type="submit" className="btn mdv-signup-btn" value="Submit" /></Link>
@@ -201,6 +200,7 @@ class Signup extends Component{
                            
                </div>
            </div>
+           <Footer/>
        </div>
     )
     }

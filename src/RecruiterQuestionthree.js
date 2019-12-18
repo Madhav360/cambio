@@ -2,6 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import Header from './common/Header';
 import { Link } from 'react-router-dom';
+import Footer from './common/Footer';
 
 
 
@@ -54,12 +55,13 @@ class RecruiterQuestionthree extends Component{
                          </Link>
                          </div>
                          <div className="col-md-12 qskip text-center">
-                           <Link to="/recruiterquestionfour">SKIP</Link>
+                           <Link to="/recruiterquestionfour">Skip</Link>
                            </div>
                    </div>  
                  
                </div>
            </div>
+           <Footer />
        </div>
     )
     }

@@ -58,10 +58,10 @@ export default class Login extends React.Component{
                     <div className="mdv-login-with">
                         <h4>Login with</h4>
                         <ul>
-                            <li><img className="img-responsive fb" src="image/fb.png" /></li>
-                            <li><img className="img-responsive" src="image/gogle.png" /></li>
-                            <li><img className="img-responsive" src="image/in.png" /></li>
-                            <li><img className="img-responsive" src="image/phone.png" /></li>
+                            <li><img className="img-responsive" src="image/face.png" /></li>
+                            <li><img className="img-responsive" src="image/search.png" /></li>
+                            <li><img className="img-responsive" src="image/linkedin.png" /></li>
+                            <li><img className="img-responsive" src="image/telephone.png" /></li>
                             
                         </ul>
                     </div>

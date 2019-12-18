@@ -3,6 +3,7 @@ import {Component} from 'react';
 import Header from './common/Header';
 import { Link } from 'react-router-dom';
 import $ from "jquery";
+import Footer from './common/Footer';
 
 
 
@@ -217,6 +218,7 @@ class Industry extends Component{
     </div>
 
 </div>
+<Footer/>
        </div>
     )
     }

@@ -3,6 +3,7 @@ import {Component} from 'react';
 import Header from './common/Header';
 import { Link } from 'react-router-dom';
 import Webcam from "react-webcam";
+import Footer from './common/Footer';
 
 
 
@@ -78,6 +79,7 @@ class Bio extends Component{
                      </div>    
                </div>
            </div>
+           <Footer />
        </div>
     )
     }

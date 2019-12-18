@@ -2,6 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import Header from './common/Header';
 import { Link } from 'react-router-dom';
+import Footer from './common/Footer';
 
 
 
@@ -183,7 +184,7 @@ class Company extends Component{
                            <div className="col-md-12">
                                <div className="company-nxt-skip text-center">
                                    <Link to="/group"><button className="btn">next</button> </Link>
-                                   <Link to="/group">SKIP</Link>
+                                   <Link to="/group">Skip</Link>
                                </div>
                            </div>
                        </form>
@@ -192,6 +193,7 @@ class Company extends Component{
                  
                </div>
            </div>
+           <Footer />
        </div>
     )
     }

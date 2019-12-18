@@ -1,6 +1,7 @@
 import React from 'react';
 import {Component} from 'react';
 import Header from './common/Header';
+import Footer from './common/Footer';
 import { Link } from 'react-router-dom';
 import Slider from 'react-rangeslider'
 
@@ -80,8 +81,8 @@ class CandidateAlert extends Component{
                                <li><button className="btn mdv-company-icons basic-active" type="text"><i className='far  fa-bell'></i> </button></li>
                             </ul>
                             <p>Basic</p>
-                            <p>This will allow you to get notified on any<br />
-                                New Candidate matches these crieria you <br />
+                            <p>This will allow you to get notified on any
+                                New Candidate matches these crieria you
                                 have set
                             </p>
                          </div>
@@ -170,6 +171,7 @@ class CandidateAlert extends Component{
                    </div>  
                </div>
            </div>
+           <Footer />
        </div>
     )
     }

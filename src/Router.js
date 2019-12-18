@@ -76,6 +76,8 @@ import CandidateAdharUpload from "./Component/Candidate/UploadAdhar";
 import CandidateAbout from "./Component/Candidate/CandidateAbout";
 import CandidateVideoResume from "./Component/Candidate/CandidateVideoResume";
 import EmployeeBio from "./EmployeeBio";
+import PrivacyPolicy from "./common/Privacy-Policy";
+import TermsConditions from './common/Terms-and-Conditions';
 
 
 
@@ -416,6 +418,16 @@ const appRoute =[
 	path:"/employee-bio",
 	isExactPath: true,
 	component: <EmployeeBio />
+ },
+ {
+	path:"/terms-and-conditions",
+	isExactPath: true,
+	component: <TermsConditions />
+ },
+ {
+	path:"/privacy-policy",
+	isExactPath: true,
+	component: <PrivacyPolicy />
  },
 ];
 

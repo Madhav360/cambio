@@ -1,6 +1,7 @@
 import React from 'react';
 import {Component} from 'react';
 import Header from './common/Header';
+import Footer from './common/Footer';
 import { Link } from 'react-router-dom';
 
 
@@ -54,7 +55,9 @@ class Role extends Component{
                            
                </div>
            </div>
+           <Footer />
        </div>
+      
     )
     }
 }

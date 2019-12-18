@@ -571,26 +571,18 @@ font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
 
 /* footer begin */
 .footer1 {
-  background: #0a0a0a;
-padding-top: 40px;
-padding-right: 0;
-padding-bottom: 20px;
-padding-left: 0;
-border-top:0.5px solid #1b1b1b;
-}
-.title-widget {
-  color: #D8B865;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1;
-  position: relative;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 25px;
+  background: #9e9e9e29;
+    padding-top: 5px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    color: #000;
+    height: 39px;
 }
 .widget_nav_menu ul {
   list-style: outside none none;
   padding-left: 0;
+  display: inline-flex;
 }
 .widget_archive ul li {
   background-color: rgba(0, 0, 0, 0.3);
@@ -605,16 +597,14 @@ border-top:0.5px solid #1b1b1b;
   font-size: 13px;
   font-weight: 300;
   line-height: 30px;
-  color: #fff;
+  color: #000;
   position: relative;
   margin-bottom: 7px;
   padding-bottom: 7px;
   width: 95%;
+  margin-right: 50px;
 }
-.widget_nav_menu ul li a:hover{
-  text-decoration: none;
-  color: #D8B865;
-}
+
 .title-median {
   color: #efecec;
   font-size: 13px;
@@ -625,7 +615,7 @@ border-top:0.5px solid #1b1b1b;
   width: 30px;
   height: 30px;
   font-size: 15px;
-  background-color: #E2CB74;
+  background-color: #55aefa;
   color: #0a0a0a;
   text-align: center;
   margin-right: 10px;
@@ -652,7 +642,7 @@ width: 30px;
   margin-bottom: 30px;
 }
 .footer-bottom {
-  background-color: #0a0a0a;
+  background-color: #9e9e9e29;
   min-height: 30px;
   width: 100%;
 }
@@ -660,9 +650,9 @@ width: 30px;
 width: 200px;
 }
 .copyright {
-  color: #fff;
+  color: #000;
   line-height: 30px;
-  min-height: 30px;
+  min-height: 10px;
   padding: 7px 0;
   font-size: 12px;
 }
@@ -708,8 +698,8 @@ width: 200px;
   box-shadow: none;
   border-bottom: 1px solid #807777eb;
   border-radius: 0;
-  width: 50%;
-  height: 50px;
+  width: 100%;
+  height: 40px;
   padding: 0px 0px;
   font-size: 15px;
   color: #555;
@@ -719,9 +709,9 @@ width: 200px;
    box-shadow: none;
    border-bottom: 1px solid #807777eb;
 }
-.mrg{
+/* .mrg{
   margin-left: 250px;
-}
+} */
 .mdv-signup-form{
   margin-top: 20px;
   
@@ -745,8 +735,7 @@ width: 200px;
 }
 .signup-upload-id{
   height: 100px;
-  width: 50%;
-  margin-left: 47%;
+  width: 250px;
   background-color: #f9f9f9;
 }
 .signup-upload-id ul{
@@ -756,11 +745,14 @@ width: 200px;
   margin-top: 14px;
   color: grey
 }
+.signup-upload-title{
+  width: 250px;
+}
 .signup-upload-title label{
-  padding-left: 28% !important;
   display: block;
   padding: 8px 0px 4px 0px;
   color: #55aefa;
+  text-align: center;
 }
 @media only screen and (max-width: 768px) {
 
@@ -826,11 +818,11 @@ width: 200px;
 }
 
 .condidate-roles-btn{
-  background-color: #8a8c8a29;
+  background-color: #f9f9f9;
   height: 150px;
   width: 150px;
   border-radius: 100px;
-  border: 1px solid #8a8c8a29;
+  border: 1px solid #f9f9f9
  
 }
 .condidate-roles-btn:hover{
@@ -838,11 +830,11 @@ width: 200px;
   text-decoration: none;
   color: #fff;
 }
-.condidate-roles-btn a{
+.condidate-roles-btn p{
   color: #000;
   font-size: 21px;
 }
-.condidate-roles-btn a:hover{
+.condidate-roles-btn p:hover{
   text-decoration: none;
   color:#fff;
 }
@@ -1005,7 +997,7 @@ width: 200px;
 .qskip a{
   color:#55aefa;
   font-size: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 
@@ -1094,7 +1086,7 @@ width: 200px;
 }
 
 .company p{
-  font-size: 20px;
+  font-size: 17px;
   color: #55aefa;
 }
 .company p:last-child{
@@ -1109,8 +1101,8 @@ width: 200px;
   box-shadow: none;
   border-bottom: 1px solid #807777eb;
   border-radius: 0;
-  width: 60%;
-  height: 50px;
+  width: 65%;
+  height: 30px;
   padding: 0px 0px;
   font-size: 15px;
   color: #555;
@@ -1301,10 +1293,9 @@ padding: 2px;
 /* -------------------Bio----------------------------------- */
 .employee-profile-pic img{
     margin: auto;
-    height: 90px !important;
-    width: 90px;
-
-    border-radius: 94px;
+    height: 70px !important;
+    width: 70px;
+    border-radius: 50%;
     border: 1px solid #e3e2e2;
 }
 
@@ -1313,7 +1304,7 @@ padding: 2px;
   float: none;
 }
 .col-centered textarea{
-  height: 137px !important;
+  height: 100px !important;
   resize: none;
   border: 1px solid #f9f9f9;
   border-radius: 0;
@@ -3224,6 +3215,16 @@ list-style: none;
   border-radius: 50%;
   border: 1px solid #2196F3;
 }
+.chating-section1{
+  padding: 0px;
+  margin-left: -12px;
+  width: 75%;
+}
+.jj{
+  background-color: #03a9f447;
+  margin-top: -10px;
+  height: 59px;
+}
 .chating-section{
   padding: 0px;
   margin-left: -12px;
@@ -3247,6 +3248,7 @@ list-style: none;
   border-radius: 22px;
   color: #000;
   padding: 9px;
+  
   display: inline-block;
   float: right;
   margin-right: -48px;
@@ -3260,10 +3262,53 @@ list-style: none;
   float: right;
 }
 .chatting-page-height{
-  height: 500px;
+  height: 457px;
   overflow: auto;
 }
+.chating-attachement-icons{
+  position: absolute;
+  top: 9px;
+  right: 31px;
+  font-size: 32px;
+}
+.chatting-input-typing{
+  border: 1px solid #1595fb73;
+    background-color: #1595fb73;
+    height: 43px;
+    border-radius: 24px;
+    font-weight: 500;
+    color: #000;
+    margin-top: 5px;
+}
+.chatting-input-typing-send i{
+  background-color: #1595fb73;
+    padding: 13px 10px 5px 11px;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* width */
+/* ::-webkit-scrollbar {
+  width: 10px;
+} */
 
+/* Track */
+/* ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #fff; 
+  border-radius: 10px;
+} */
+ 
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background: #55aefa; 
+  border-radius: 5px;
+} */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #55aefa;
+} */
 @media only screen and (max-width: 768px) {
   .chating-section {
     margin-left: 11px;
@@ -3275,6 +3320,11 @@ list-style: none;
 .your-chat p {
     margin-right: -39px;
 }
+.chating-section1 h6{
+  padding-left: 24px;
+}
+
+
 }
 /* -------------------------Chat end here----------------------------------------- */
 
@@ -3820,10 +3870,24 @@ color: #55aefa;
 }
 
 
-/* ------------------------Candidate Basic  start ------------------- */
+/* ------------------------Privacy Policy start ------------------- */
+.term-of-uses span{
+  font-weight: 700;
+  color: #000;
+
+}
+.term-of-uses h4{
+  font-weight: 700;
+  color: #000;
+  
+}
+.term-of-uses li{
+  font-size: 16px;
+}
+.term-of-uses p{
+  font-size: 16px;
+}
 
 
 
-
-
-/* -----------------------Candidate Basic end---------------------------- */
+/* -----------------------Privacy Policy end---------------------------- */

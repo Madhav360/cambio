@@ -3,6 +3,7 @@ import {Component} from 'react';
 import Header from './common/Header';
 import { Link } from 'react-router-dom';
 import Sidebar from './Sidebar'
+import Footer from './common/Footer';
 
 
 class Post extends Component{

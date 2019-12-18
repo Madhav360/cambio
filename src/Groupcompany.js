@@ -2,6 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import Header from './common/Header';
 import { Link } from 'react-router-dom';
+import Footer from './common/Footer';
 
 
 
@@ -218,6 +219,7 @@ class Groupcompany extends Component{
                  
                </div>
            </div>
+           <Footer />
        </div>
     )
     }

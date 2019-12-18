@@ -69,6 +69,8 @@ import CandidateAdharUpload from './Component/Candidate/UploadAdhar';
 import CandidateAbout from './Component/Candidate/CandidateAbout';
 import CandidateVideoResume from './Component/Candidate/CandidateVideoResume';
 import EmployeeBio from './EmployeeBio';
+import TermsConditions from './common/Terms-and-Conditions';
+import PrivacyPolicy from './common/Privacy-Policy';
 
 
 
@@ -148,6 +150,8 @@ class App extends Component {
             <Route exact path="/about-you" component={() =>(<CandidateAbout />)} />
             <Route exact path="/video-resume" component={() =>(<CandidateVideoResume />)} />
             <Route exact path="/employee-bio" component={() =>(<EmployeeBio />)} />
+            <Route exact path="/terms-and-conditions" component={() =>(<TermsConditions />)} />
+            <Route exact path="/privacy-policy" component={() =>(<PrivacyPolicy />)} />
           </Switch>
       </BrowserRouter>
     );

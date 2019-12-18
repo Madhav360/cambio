@@ -2,6 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import Header from './common/Header';
 import { Link } from 'react-router-dom';
+import Footer from './common/Footer';
 
 
 
@@ -31,7 +32,7 @@ class Accountrecovery extends Component{
            <Header />
            <div className="container">
                <div className="row">
-                   <div className="col-lg-12 mdv-singup-page">
+                   <div className="col-lg-12 mdv-singup-page role-height">
                          <div className="account-recovery  text-center">
                            <h2>Account Recovery</h2>
                            <p>This will allow you to recover your account< br/>
@@ -58,6 +59,7 @@ class Accountrecovery extends Component{
                      </div>    
                </div>
            </div>
+           <Footer />
        </div>
     )
     }

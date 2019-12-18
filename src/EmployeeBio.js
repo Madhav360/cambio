@@ -2,6 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import Header from './common/Header';
 import { Link } from 'react-router-dom';
+import Footer from './common/Footer';
 
 class EmployeeBio extends Component{
     constructor(props) {
@@ -43,6 +44,7 @@ class EmployeeBio extends Component{
                        </section>
                    </div>
                </div>
+               <Footer />
        </div>
     )
     }

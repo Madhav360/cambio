@@ -2,6 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import Header from './common/Header';
 import { Link } from 'react-router-dom';
+import Footer from './common/Footer';
 
 
 
@@ -17,7 +18,7 @@ class EnableLocation extends Component{
            <Header />
            <div className="container">
                <div className="row">
-                   <div className="col-lg-12 mdv-singup-page">
+                   <div className="col-lg-12 mdv-singup-page role-height">
                          <div className="enable-loaction-head text-center">
                            <h2>Enable Location</h2>
                            <p>Enabling GPS will help us find you<br />the most appropriate for your job match</p>
@@ -33,6 +34,7 @@ class EnableLocation extends Component{
                  
                </div>
            </div>
+           <Footer />
        </div>
     )
     }
