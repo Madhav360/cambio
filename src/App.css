@@ -2193,6 +2193,9 @@ color: #5a5959;
 #div2{
   display: none;
 }
+.cardpointer{
+  cursor: pointer;
+}
 
 
 /* ----------------------Applicants end here------------------------------------------ */

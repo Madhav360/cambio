@@ -24,6 +24,18 @@ class Post_a_Job extends Component{
             $('#div2').show();
           });
         });
+        $(function(){
+          $('#button2').on('click',function(){
+              $('#div1').show();
+            $('#div2').hide();
+          });
+        });
+        $(function(){
+          $('#button3').on('click',function(){
+              $('#div1').hide();
+            $('#div2').show();
+          });
+        });
     }
 
 
@@ -190,9 +202,9 @@ class Post_a_Job extends Component{
                           </div>
                            <div className="col-md-12">
                              <div className="swipe-buutons text-center">
-                                  <img src="image/menuicon/backbtn.png" />
-                                  <img id='button1' src="image/menuicon/closebtn.png" />
-                                  <img src="image/menuicon/likebtn.png" />
+                                  <img id='button2' className="cardpointer" title="Prevoius" src="image/menuicon/backbtn.png" />
+                                  <img id='button1' className="cardpointer" title="Pass" src="image/menuicon/closebtn.png" />
+                                  <img id='button3' className="cardpointer" title="Like" src="image/menuicon/likebtn.png" />
                              </div>
                            </div>
                       </div>
