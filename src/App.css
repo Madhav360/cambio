@@ -2190,6 +2190,11 @@ color: #5a5959;
  /* ----------------------Schedule popup----------------------------- */
 
 
+#div2{
+  display: none;
+}
+
+
 /* ----------------------Applicants end here------------------------------------------ */
 
 
@@ -3511,10 +3516,68 @@ border: 0;
 }
 .student-progress{
   width: 5px;
-    height: 45px;
+    height: 103px;
+    top: 69px;
     position: absolute;
     background-color: #f9f9f9;
-    margin-left: 153px;
+    
+}
+.student-dot-progess{
+  position: absolute;
+    top: 64px;
+    left: 8px;
+    z-index: 999;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+}
+.student-dot-second-progess{
+  position: absolute;
+  top: 160px;
+  left: 8px;
+  z-index: 999;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+}
+.candi-sign-up{
+  margin: auto;
+  float: none;
+}
+._2OR24XnUXt8OCrysr3G0XI {
+  border: 0 !important;
+  border-bottom: 1px solid grey !important;
+  border-radius: 0 !important;
+
+}
+.candidate-progress{
+  width: 5px;
+  height: 100px;
+  top: 69px;
+  position: absolute;
+  background-color: #f9f9f9;
+}
+.condidate-second-progess{
+  width: 5px;
+  height: 100px;
+  top: 169px;
+  position: absolute;
+  background-color: #f9f9f9;
+}
+.student-third-second-progess{
+  position: absolute;
+  top: 264px;
+  left: 8px;
+  z-index: 999;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+}
+.stident-dot-actived{
+  background-color: #55aefa;
 }
 .actived-progress{
   background-color: #55aefa;

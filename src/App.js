@@ -71,6 +71,10 @@ import CandidateVideoResume from './Component/Candidate/CandidateVideoResume';
 import EmployeeBio from './EmployeeBio';
 import TermsConditions from './common/Terms-and-Conditions';
 import PrivacyPolicy from './common/Privacy-Policy';
+import CandidateProfileVisibility from './Component/Candidate/Candidate-Profile-Visibility';
+import CandidateEnableLocation from './Component/Candidate/CandidateEnableLocation';
+import CandidateIndustry from './Component/Candidate/CandidateIndustry';
+import CandidateCategory from './Component/Candidate/CandidateCategory';
 
 
 
@@ -152,6 +156,12 @@ class App extends Component {
             <Route exact path="/employee-bio" component={() =>(<EmployeeBio />)} />
             <Route exact path="/terms-and-conditions" component={() =>(<TermsConditions />)} />
             <Route exact path="/privacy-policy" component={() =>(<PrivacyPolicy />)} />
+            <Route exact path="/candidate-profile-visibility" component={() =>(<CandidateProfileVisibility />)} />
+            <Route exact path="/candidate-enable-location" component={() =>(<CandidateEnableLocation />)} />
+            <Route exact path="/candidate-category" component={() =>(<CandidateCategory />)} />
+            <Route exact path="/candidate-industry" component={() =>(<CandidateIndustry />)} />
+           
+            
           </Switch>
       </BrowserRouter>
     );

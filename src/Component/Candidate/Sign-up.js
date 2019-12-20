@@ -86,6 +86,7 @@ class CandidateSignup extends Component{
                                <li><img className="img-responsive" src="image/phone.png" /></li>
                             </ul>
                         </div>
+                        <div className="col-md-8 offset-md-4 candi-sign-up">
                         <form onSubmit={this.handleSubmit}>
                           <div className="mdv-signup-form">
                            <div className="col-lg-6">
@@ -149,10 +150,10 @@ class CandidateSignup extends Component{
                          
                             <div class="col-md-12 form-group text-center">
                             
-                            <Link to="/studentquestionone"> <input type="submit" className="btn mdv-signup-btn" value="Submit" /></Link>
+                            <Link to="/candidate-industry"> <input type="submit" className="btn mdv-signup-btn" value="Submit" /></Link>
                         </div>
                         </form>
-                      
+                      </div>
                         <div class="col-md-12 form-group signup-text">
                            A Already User ? <Link to="/Login">Login</Link>
                            

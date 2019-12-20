@@ -23,23 +23,27 @@ class CandidateExperience extends Component{
                                
                                <div className="col-md-4 offset-md-8 tabs">
                                   
-                                   <div className="col-xs-12 text-center">
-                                   <div className="profile-build-tabs">
-                                       <div className="roundedd activeded">
-                                           <Link to="/basic"><button className="btn">Basic</button></Link>
-                                           <div className="student-progress actived-progress"></div>
-                                       </div>
-                                       <div className="roundedd activeded">
-                                           <Link to="/highest-qualification"><button className="btn">Education & Experience</button></Link>
-                                           <div className="student-progress"></div>
-                                       </div>
-                                       <div className="roundedd">
-                                         
-                                           <Link to="#"><button className="btn">Bio</button></Link>
-                                       </div>
-                                   </div>
-                                   </div>
-                               </div>
+                                  <div className="col-xs-12 text-center">
+                                  <div className="profile-build-tabs">
+                                      <div className="roundedd activeded">
+                                          <Link to="/basic"><button className="btn">Basic</button></Link>
+                                          <div className="student-dot-progess stident-dot-actived"></div>
+                                          <div className="candidate-progress stident-dot-actived"></div>
+                                      </div>
+                                      <div className="roundedd activeded">
+                                          <Link to="/highest-qualification"><button className="btn">Education & Experience</button></Link>
+                                          <div className="student-dot-second-progess stident-dot-actived"></div>
+                                          
+                                      </div>
+                                      <div className="roundedd">
+                                          
+                                          <Link to="#"><button className="btn">Bio</button></Link>
+                                          <div className="student-third-second-progess "></div>
+                                          <div className="condidate-second-progess"></div>
+                                      </div>
+                                  </div>
+                                  </div>
+                              </div>
                                <div className="col-md-8 offset-md-4 tabs">
                                    <div className="col-md-4"></div>
                                </div>

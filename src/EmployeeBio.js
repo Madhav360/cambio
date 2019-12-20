@@ -27,9 +27,11 @@ class EmployeeBio extends Component{
                                    <div className="profile-build-tabs">
                                        <div className="roundedd activeded">
                                            <Link to="/company"><button className="btn">Company</button></Link>
+                                           <div className="student-dot-progess stident-dot-actived"></div>
                                            <div className="student-progress actived-progress"></div>
                                        </div>
                                        <div className="roundedd activeded">
+                                       <div className="student-dot-second-progess stident-dot-actived"></div>
                                            <Link to="/bio"><button className="btn">Bio</button></Link>
                                            
                                        </div>

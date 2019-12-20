@@ -78,6 +78,10 @@ import CandidateVideoResume from "./Component/Candidate/CandidateVideoResume";
 import EmployeeBio from "./EmployeeBio";
 import PrivacyPolicy from "./common/Privacy-Policy";
 import TermsConditions from './common/Terms-and-Conditions';
+import CandidateProfileVisibility from "./Component/Candidate/Candidate-Profile-Visibility";
+import CandidateEnableLocation from "./Component/Candidate/CandidateEnableLocation";
+import CandidateIndustry from "./Component/Candidate/CandidateIndustry";
+import CandidateCategory from "./Component/Candidate/CandidateCategory";
 
 
 
@@ -428,6 +432,26 @@ const appRoute =[
 	path:"/privacy-policy",
 	isExactPath: true,
 	component: <PrivacyPolicy />
+ },
+ {
+	path:"/candidate-privacy-policy",
+	isExactPath: true,
+	component: <CandidateProfileVisibility />
+ },
+ {
+	path:"/candidate-enable-location",
+	isExactPath: true,
+	component: <CandidateEnableLocation />
+ },
+ {
+	path:"/candidate-industry",
+	isExactPath: true,
+	component: <CandidateIndustry />
+ },
+ {
+	path:"/candidate-category",
+	isExactPath: true,
+	component: <CandidateCategory />
  },
 ];
 

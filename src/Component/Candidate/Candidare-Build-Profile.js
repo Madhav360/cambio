@@ -27,15 +27,19 @@ class Candidate_Build_Profile extends Component{
                                    <div className="profile-build-tabs">
                                        <div className="roundedd activeded">
                                            <Link to="/basic"><button className="btn">Basic</button></Link>
-                                           <div className="student-progress"></div>
+                                           <div className="student-dot-progess stident-dot-actived"></div>
+                                           <div className="candidate-progress"></div>
                                        </div>
                                        <div className="roundedd">
                                            <Link to="#"><button className="btn">Education & Experience</button></Link>
-                                           <div className="student-progress"></div>
+                                           <div className="student-dot-second-progess"></div>
+                                           
                                        </div>
                                        <div className="roundedd">
-                                         
+                                           
                                            <Link to="#"><button className="btn">Bio</button></Link>
+                                           <div className="student-third-second-progess"></div>
+                                           <div className="condidate-second-progess"></div>
                                        </div>
                                    </div>
                                    </div>

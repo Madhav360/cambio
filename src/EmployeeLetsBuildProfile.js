@@ -29,9 +29,11 @@ class EmpLetsBuildProfile extends Component{
                                    <div className="profile-build-tabs">
                                        <div className="roundedd activeded">
                                            <Link to="/company"><button className="btn">Company</button></Link>
+                                           <div className="student-dot-progess stident-dot-actived"></div>
                                            <div className="student-progress"></div>
                                        </div>
                                        <div className="roundedd">
+                                           <div className="student-dot-second-progess"></div>
                                            <Link to="#"><button className="btn">Bio</button></Link>
                                            
                                        </div>
