@@ -82,6 +82,7 @@ import CandidateProfileVisibility from "./Component/Candidate/Candidate-Profile-
 import CandidateEnableLocation from "./Component/Candidate/CandidateEnableLocation";
 import CandidateIndustry from "./Component/Candidate/CandidateIndustry";
 import CandidateCategory from "./Component/Candidate/CandidateCategory";
+import CandidateAccountrecovery from "./Component/Candidate/CandidateAccountrecovery";
 
 
 
@@ -452,6 +453,11 @@ const appRoute =[
 	path:"/candidate-category",
 	isExactPath: true,
 	component: <CandidateCategory />
+ },
+ {
+	path:"/candidate-account-recovery",
+	isExactPath: true,
+	component: <CandidateAccountrecovery />
  },
 ];
 

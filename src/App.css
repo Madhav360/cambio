@@ -6,7 +6,7 @@
 }
 body{
   background-color: #F9F9F9;
-  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif !important;
 }
 
 .navbar-default {
@@ -3434,6 +3434,18 @@ list-style: none;
   padding-top: 10px;
   
 }
+.swip-active{
+  color: #000;
+}
+.swip-active:active{
+  color: #000;
+}
+.swip-active:focus{
+  color: #000;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+background-color: #55aefa;
+}
 .swipe-jobs p{
 margin: 0px;
 }
@@ -3456,10 +3468,10 @@ margin: 0px;
   color: #fff !important;
   background-color: #55aefa;
  }
- .mm>li>a:active{
+ /* .mm>li>a:active{
   color: #fff !important;
   background-color: #55aefa;
- }
+ } */
  .mm>li>a:focus{
   color: #fff !important;
   background-color: #55aefa;

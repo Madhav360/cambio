@@ -96,9 +96,9 @@ class Post_a_Job extends Component{
                           <div className="col-md-6 swipe-tab-background">
                             <div classname="swipe-tabs">
                                 <ul class="nav nav-tabs mm">
-                                   <li class="active"><a data-toggle="tab" href="#home">Bio</a></li>
-                                   <li><a data-toggle="tab" href="#menu1">Eduction</a></li>
-                                   <li><a data-toggle="tab" href="#menu2">Experience</a></li>
+                                   <li class="swip-active"><a data-toggle="tab" href="#home">Bio</a></li>
+                                   <li className="swip-active"><a data-toggle="tab" href="#menu1">Eduction</a></li>
+                                   <li className="swip-active"><a data-toggle="tab" href="#menu2">Experience</a></li>
                                 </ul>
 
                                 <div class="tab-content text-center">
@@ -169,21 +169,21 @@ class Post_a_Job extends Component{
                           <div className="col-md-6 swipe-tab-background">
                             <div classname="swipe-tabs">
                                 <ul class="nav nav-tabs mm">
-                                   <li class="active"><a data-toggle="tab" href="#home">Bio</a></li>
-                                   <li><a data-toggle="tab" href="#menu1">Eduction</a></li>
-                                   <li><a data-toggle="tab" href="#menu2">Experience</a></li>
+                                   <li class="active swip-active"><a data-toggle="tab" href="#home">Bio</a></li>
+                                   <li className="swip-active"><a data-toggle="tab" href="#menu1">Eduction</a></li>
+                                   <li className="swip-active"><a data-toggle="tab" href="#menu2">Experience</a></li>
                                 </ul>
 
                                 <div class="tab-content text-center">
                                      <div id="home" class="tab-pane fade in active">
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                       <p>kkkkkkLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                        <div className="resume">
                                          <p>Candidate.pdf</p>
                                        </div>
                                        <embed src="https://sumanbogati.github.io/tiny.pdf" width="100px" height="200px" />  
                                      </div>
                                      <div id="menu1" class="tab-pane fade">
-                                         <h4>B.tech at Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</h4>
+                                         <h4>M.tech at Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</h4>
                                          <p>2009 - 2014</p>
                                          <h4>12th at iste natus error sit voluptatem accusantium </h4>
                                          <p>2007 - 2009</p>
