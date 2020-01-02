@@ -39,7 +39,7 @@ class IQTestQuestionsix extends Component{
                                <Link to="/candidate-cardview"><button className="btn">{this.state.question_one}</button></Link>
                                <Link to="/candidate-cardview"><button className="btn">{this.state.question_two}</button></Link>
                                <Link to="/candidate-cardview"><button className="btn">{this.state.question_three}</button></Link>
-                               <Link to="/candidate-cardview"><button className="btn">{this.state.question_four}</button></Link>
+                               <Link to="/candidate-cardview"><button className="btn f">{this.state.question_four}</button></Link>
                          </div>
                          </form>
                      </div>    
