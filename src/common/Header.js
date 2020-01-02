@@ -31,7 +31,7 @@ export default class Header extends React.Component{
                 <li><Link to="#">Find a job</Link></li>
                 <li><Link to="/Postjob">Post a job</Link></li> */}
                 <li className="mdv-login mdv-navlinks"><Link to="/Login">Login</Link></li>
-                <li class="mdv-signup mdv-navlinks"><Link to="/Signup">Signup</Link></li>
+                <li class="mdv-signup mdv-navlinks"><Link to="/role">Signup</Link></li>
                 
             </ul>
             </div>

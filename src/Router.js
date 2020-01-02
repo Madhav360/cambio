@@ -83,6 +83,21 @@ import CandidateEnableLocation from "./Component/Candidate/CandidateEnableLocati
 import CandidateIndustry from "./Component/Candidate/CandidateIndustry";
 import CandidateCategory from "./Component/Candidate/CandidateCategory";
 import CandidateAccountrecovery from "./Component/Candidate/CandidateAccountrecovery";
+import CandidateSetAJobAlert from "./Component/Candidate/SetAJobAlert";
+import IQTest from "./Component/Candidate/IQTest";
+import IQTestBegin from "./Component/Candidate/IQTestBegin";
+import IQTestQuestionone from "./Component/Candidate/IQTestQuestionone";
+import IQTestQuestiontwo from "./Component/Candidate/IQTestQuestiontwo";
+import IQTestQuestionthree from "./Component/Candidate/IQTestQuestionthree";
+import IQTestQuestionfour from "./Component/Candidate/IQTestQuestionfour";
+import IQTestQuestionfive from "./Component/Candidate/IQTestQuestionfive";
+import IQTestQuestionsix from "./Component/Candidate/IQTestQuestionsix";
+import CandidateDashboard from "./Component/Candidate/CandidateDashboard";
+import CandidateHome from "./Component/Candidate/CandidateHome";
+import CandidateUdgrade from "./Component/Candidate/CandidateUpgrade";
+import CandidateNotifications from "./Component/Candidate/CandidateNotificatins";
+import CandidateCardview from "./Component/Candidate/CandidateCardview";
+import CandidateProfileSetting from "./Component/Candidate/CandidateProfileSetting";
 
 
 
@@ -458,6 +473,81 @@ const appRoute =[
 	path:"/candidate-account-recovery",
 	isExactPath: true,
 	component: <CandidateAccountrecovery />
+ },
+ {
+	path:"/candidate-set-a-job-alert",
+	isExactPath: true,
+	component: <CandidateSetAJobAlert />
+ },
+ {
+	path:"/iq-test",
+	isExactPath: true,
+	component: <IQTest />
+ },
+ {
+	path:"/iq-test-begin",
+	isExactPath: true,
+	component: <IQTestBegin />
+ },
+ {
+	path:"/iq-test-question-1",
+	isExactPath: true,
+	component: <IQTestQuestionone />
+ },
+ {
+	path:"/iq-test-question-2",
+	isExactPath: true,
+	component: <IQTestQuestiontwo />
+ },
+ {
+	path:"/iq-test-question-3",
+	isExactPath: true,
+	component: <IQTestQuestionthree/>
+ },
+ {
+	path:"/iq-test-question-4",
+	isExactPath: true,
+	component: <IQTestQuestionfour />
+ },
+ {
+	path:"/iq-test-question-5",
+	isExactPath: true,
+	component: <IQTestQuestionfive />
+ },
+ {
+	path:"/iq-test-question-6",
+	isExactPath: true,
+	component: <IQTestQuestionsix />
+ },
+ {
+	path:"/candidate-dashboard",
+	isExactPath: true,
+	component: <CandidateDashboard />
+ },
+ {
+	path:"/candidate-home",
+	isExactPath: true,
+	component: <CandidateHome />
+ },
+ {
+	path:"/candidate-upgrade",
+	isExactPath: true,
+	component: <CandidateUdgrade />
+ },
+ {
+	path:"/candidate-notifications",
+	isExactPath: true,
+	component: <CandidateNotifications />
+ },
+ {
+	path:"/candidate-cardview",
+	isExactPath: true,
+	component: <CandidateCardview />
+ },
+ {
+	path:"/candidate-profile-setting",
+	isExactPath: true,
+	component: <CandidateProfileSetting />
  },
 ];
 

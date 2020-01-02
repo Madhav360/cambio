@@ -75,6 +75,22 @@ import CandidateProfileVisibility from './Component/Candidate/Candidate-Profile-
 import CandidateEnableLocation from './Component/Candidate/CandidateEnableLocation';
 import CandidateIndustry from './Component/Candidate/CandidateIndustry';
 import CandidateCategory from './Component/Candidate/CandidateCategory';
+import CandidateAccountrecovery from './Component/Candidate/CandidateAccountrecovery';
+import CandidateSetAJobAlert from './Component/Candidate/SetAJobAlert';
+import IQTest from './Component/Candidate/IQTest';
+import IQTestBegin from './Component/Candidate/IQTestBegin';
+import IQTestQuestionone from './Component/Candidate/IQTestQuestionone';
+import IQTestQuestiontwo from "./Component/Candidate/IQTestQuestiontwo";
+import IQTestQuestionthree from "./Component/Candidate/IQTestQuestionthree";
+import IQTestQuestionfour from "./Component/Candidate/IQTestQuestionfour";
+import IQTestQuestionfive from "./Component/Candidate/IQTestQuestionfive";
+import IQTestQuestionsix from "./Component/Candidate/IQTestQuestionsix";
+import CandidateDashboard from './Component/Candidate/CandidateDashboard';
+import CandidateHome from './Component/Candidate/CandidateHome';
+import CandidateUdgrade from './Component/Candidate/CandidateUpgrade';
+import CandidateNotifications from './Component/Candidate/CandidateNotificatins';
+import CandidateCardview from './Component/Candidate/CandidateCardview';
+import CandidateProfileSetting from './Component/Candidate/CandidateProfileSetting';
 
 
 
@@ -160,6 +176,22 @@ class App extends Component {
             <Route exact path="/candidate-enable-location" component={() =>(<CandidateEnableLocation />)} />
             <Route exact path="/candidate-category" component={() =>(<CandidateCategory />)} />
             <Route exact path="/candidate-industry" component={() =>(<CandidateIndustry />)} />
+            <Route exact path="/candidate-account-recovery" component={() =>(<CandidateAccountrecovery />)} />
+            <Route exact path="/candidate-set-a-job-alert" component={() =>(<CandidateSetAJobAlert />)} />
+            <Route exact path="/iq-test" component={() =>(<IQTest />)} />
+            <Route exact path="/iq-test-begin" component={() =>(<IQTestBegin />)} />
+            <Route exact path="/iq-test-question-1" component={() =>(<IQTestQuestionone />)} />
+            <Route exact path="/iq-test-question-2" component={() =>(<IQTestQuestiontwo />)} />
+            <Route exact path="/iq-test-question-3" component={() =>(<IQTestQuestionthree />)} />
+            <Route exact path="/iq-test-question-4" component={() =>(<IQTestQuestionfour />)} />
+            <Route exact path="/iq-test-question-5" component={() =>(<IQTestQuestionfive />)} />
+            <Route exact path="/iq-test-question-6" component={() =>(<IQTestQuestionsix />)} />
+            <Route exact path="/candidate-dashboard" component={() =>(<CandidateDashboard />)} />
+            <Route exact path="/candidate-home" component={() =>(<CandidateHome />)} />
+            <Route exact path="/candidate-upgrade" component={() =>(<CandidateUdgrade />)} />
+            <Route exact path="/candidate-notifications" component={() =>(<CandidateNotifications />)} />
+            <Route exact path="/candidate-cardview" component={() =>(<CandidateCardview />)} />
+            <Route exact path="/candidate-profile-setting" component={() =>(<CandidateProfileSetting />)} />
            
             
           </Switch>

@@ -26,23 +26,6 @@ body{
   color: black;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-
-
-
 .nav>li>a {
   position: relative;
   display: block;
@@ -2195,6 +2178,7 @@ color: #5a5959;
 }
 .cardpointer{
   cursor: pointer;
+  width:70px;
 }
 
 
@@ -3485,8 +3469,8 @@ border: 0;
  }
  .swipe-buutons{
   position: absolute;
-  top: -31px;
-  left: 41%
+  top: -81px;
+  right: 150px;
  }
 /* ----------------------Swipe end here------------------------------------------- */
 
@@ -3969,3 +3953,257 @@ color: #55aefa;
 
 
 /* -----------------------Privacy Policy end---------------------------- */
+
+/* ------------------------Candidate job alert----------------------------- */
+.setjobalertuseloaction label{
+  padding-top: 20px;
+}
+.setjobalertuseloaction ul{
+  display: inline-flex;
+  list-style: none;
+  margin-left: -35px;
+  margin-top: 10px;
+}
+.setjobalertuseloaction ul li{
+  margin-right: 30px;
+}
+.setjobalertuseloaction ul li button{
+  width: 152px;
+    border-radius: 18px
+}
+.setjobalertuseloaction ul li button:hover{
+  background-color: #55aefa;
+  color: #fff;
+}
+.setjobalertuseloaction ul li button:focus{
+  background-color: #55aefa;
+  color: #fff;
+}
+
+.iq-test-input{
+  margin-top: 50px;
+}
+.test-begin{
+  font-size: 18px;
+  color: #55aefa;
+  text-align: center;
+}
+.iq-question-test a{
+  float: right;
+  display: block;
+  margin: 10px 0px 10px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #55aefa;
+}
+.iq-test-question p:nth-child(1){
+  text-align: center;
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: grey;
+}
+.iq-test-question p:nth-child(2){
+  text-align: center;
+  padding-top: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+.iq-test-question p:nth-child(3){
+color: #55aefa;
+text-transform: uppercase;
+text-align: center;
+font-weight: 500;
+font-size: 20px;
+}
+.iq-test-question button{
+  width: 200px;
+  margin-top: 10px;
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #000;
+  border-radius: 11px;
+
+}
+.iq-test-question button:hover{
+  background-color: #55aefa;
+  color: #fff;
+}
+.iq-test-question button:focus{
+  background-color: #55aefa;
+  color: #fff;
+}
+/* --------------------------Candidate job alert end here-------------------- */
+
+
+/* ---------------------------Candidate Dashboard --------------------------- */
+.candidate-dashboard-menu button{
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: #F1F1F1;
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+}
+.candidate-dashboard-menu button:hover{
+background-color: #55aefa;
+color: #fff;
+}
+.candidate-dashboard-menu button:focus{
+  background-color: #55aefa;
+  color: #fff;
+  }
+/* ----------------------------- Candidate Dashboard end--------------------- */
+
+/* --------------------------------Candidate Home ----------------------------- */
+.candidate-home-main{
+  margin: auto;
+  float: none;
+  
+}
+.candidate-home-picture img{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin-top: 8px;
+  border: 1px solid #fff;
+}
+.candidate-home-search-input{
+  height: 49px;
+    margin-top: 16px;
+    border-radius: 10px;
+    /* border-top: 0px; */
+    border: 1px solid #f9f9f9;
+    background-color: #f9f9f9;
+
+}
+.candidate-search-icon{
+  position: absolute;
+    top: 31px;
+    right: 30px;
+    color: #cecccc;
+    font-size: 20px;
+}
+.candidate-home-featured-button button{
+  width: 161px;
+    margin: 33px 9px 0px 8px;
+    height: 52px;
+    font-size: 18px;
+    border-radius: 13px;
+}
+.candidate-home-featured-button button:hover{
+  background-color: #55aefa;
+  color: #fff;
+}
+.candidate-home-featured-button button:focus{
+  background-color: #55aefa;
+  color: #fff;
+}
+.candidate-hone-name p{
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 16px;
+  margin-bottom: 0px;
+}
+.candidate-hone-name button{
+  background-color: #fff;
+  color: #55aefa;
+  border: 1px solid #55aefa;
+  border-radius: 12px;
+  width: 88px
+
+}
+.candidate-hone-name button:hover{
+  background-color: #55aefa;
+  color: #fff;
+}
+.candidate-hone-name button:focus{
+  background-color: #55aefa;
+  color: #fff;
+}
+.candidate-home-date-time p:nth-child(1){
+  font-weight: 600;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.candidate-home-date-time p:nth-child(2){
+  color: #80808094;
+  font-size: 15px;
+  font-weight: 600;
+}
+.candidate-home-post-data p{
+  font-size: 15px;
+  padding-top: 10px;
+}
+.candidate-home-post-data img{
+  width: 100%;
+  height: 300px;
+}
+.candidate-viewer-comments{
+  margin: auto;
+  float: none;
+  display: block;
+  height: 30px;
+}
+.candidate-viewer-picture img{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: block;
+  margin-top: 10px;
+}
+.candidate-viewer-name h5{
+  margin-bottom: 0px;
+  font-size: 17px;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: block;
+  margin-top: 18px;
+}
+.candidate-viewer-name p{
+  color: grey;
+}
+.candidate-viewer-date-time{
+  float: right;
+  color: #000;
+}
+.candidate-viewer-date-time h5{
+  margin-bottom: 0px;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #000;
+
+}
+.candidate-viewer-date-time p{
+  color: grey;
+
+  font-size: 14px;
+ 
+}
+.candidate-comments-inputs input{
+  border: 0;
+  background-color: #f9f9f9;
+  height: 42px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+  -webkit-transition: 0;
+  -o-transition: 0;
+  transition: 0;
+}
+.candidate-comments-icon{
+  position: absolute;
+  top: 11px;
+  right: 30px;
+  font-size: 22px;
+  color: grey;
+}
+.hhhh{
+  display: block;
+}
+/* -------------------------------Candidate Home End--------------------------- */

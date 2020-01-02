@@ -1,8 +1,8 @@
 import React from 'react';
 import {Component} from 'react';
-import Header from './common/Header';
+import Header from '../../common/Header';
 import { Link } from 'react-router-dom';
-import Footer from './common/Footer';
+import Footer from '../../common/Footer';
 
 
 
@@ -29,7 +29,7 @@ class CandidateAccountrecovery extends Component{
     render(){
 	return(
        <div>
-           <Header />
+          <Header />
            <div className="container">
                <div className="row">
                    <div className="col-lg-12 mdv-singup-page role-height">
@@ -51,7 +51,7 @@ class CandidateAccountrecovery extends Component{
                              
                          </div>
                          <div className="col-md-12 company-skip-btn text-center">
-                              <Link to="/cardview"> <buttom className="btn company-skip">Next</buttom><br /></Link>
+                              <Link to="/candidate-set-a-job-alert"> <buttom className="btn company-skip">Next</buttom><br /></Link>
                              
                               
                          </div>
@@ -59,7 +59,7 @@ class CandidateAccountrecovery extends Component{
                      </div>    
                </div>
            </div>
-           <Footer />
+       <Footer />
        </div>
     )
     }
