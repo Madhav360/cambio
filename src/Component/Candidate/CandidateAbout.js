@@ -116,12 +116,12 @@ class CandidateAbout extends Component{
                             </div>
                             <div className="col-md-12">
                                <div className="basic-nxr-btn text-center">
-                                    <Link to="#"> <button className="btn">Next</button></Link>
+                                    <Link to="/candidate-account-recovery"> <button className="btn">Next</button></Link>
                                </div>
                             </div>
                             <div className="col-md-12">
                                 <div className="basic-skip text-center">
-                                  <Link to="#">Skip</Link>
+                                  <Link to="/candidate-account-recovery">Skip</Link>
                                  </div>
                             </div>
                         </div>
