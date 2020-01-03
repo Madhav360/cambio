@@ -3,6 +3,8 @@ import {Component} from 'react';
 import {Link} from 'react-router-dom';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import Header from '../../common/Header';
+import Footer from '../../common/Footer';
 
 
 class CandidateAdharUpload extends Component{
@@ -22,6 +24,7 @@ class CandidateAdharUpload extends Component{
     render(){
         return(
             <div>
+                <Header />
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 main-root">
@@ -63,6 +66,7 @@ class CandidateAdharUpload extends Component{
                         </div>
                     </div> 
                 </div>
+                <Footer />
             </div>
         )
     }

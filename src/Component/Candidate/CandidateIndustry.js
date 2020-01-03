@@ -2,6 +2,8 @@ import React from 'react';
 import {Component} from 'react';
 import { Link } from 'react-router-dom';
 import $ from "jquery";
+import Header from '../../common/Header';
+import Footer from '../../common/Footer';
 
 
 
@@ -32,7 +34,7 @@ class CandidateIndustry extends Component{
     render(){
 	return(
        <div>
-   
+          <Header />
            <div class="container">
            <div className="col-lg-12 mdv-singup-page">
                          <div className="industrymain  text-center">
@@ -217,7 +219,7 @@ class CandidateIndustry extends Component{
     </div>
 
 </div>
-
+<Footer />
        </div>
     )
     }

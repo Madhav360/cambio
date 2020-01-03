@@ -1,6 +1,8 @@
 import React from 'react';
 import {Component} from 'react';
 import {Link} from 'react-router-dom';
+import Header from '../../common/Header';
+import Footer from '../../common/Footer';
 
 
 class HighestQualification extends Component{
@@ -15,6 +17,7 @@ class HighestQualification extends Component{
     render(){
         return(
             <div>
+                <Header />
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 main-root">
@@ -67,6 +70,7 @@ class HighestQualification extends Component{
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

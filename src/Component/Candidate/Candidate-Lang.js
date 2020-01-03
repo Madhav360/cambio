@@ -2,6 +2,8 @@ import React from 'react';
 import {Component} from 'react';
 import {Link} from 'react-router-dom';
 import { Multiselect } from 'multiselect-react-dropdown';
+import Header from '../../common/Header';
+import Footer from '../../common/Footer';
 
 class CandidateLang extends Component{
    constructor(props){
@@ -15,6 +17,7 @@ class CandidateLang extends Component{
     render(){
         return(
             <div>
+                <Header />
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 main-root role-height">
@@ -53,6 +56,7 @@ class CandidateLang extends Component{
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

@@ -3,6 +3,8 @@ import {Component} from 'react';
 import {Link} from 'react-router-dom';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import Footer from '../../common/Footer';
+import Header from '../../common/Header';
 
 
 class CandidateAbout extends Component{
@@ -41,6 +43,7 @@ class CandidateAbout extends Component{
     render(){
         return(
             <div>
+                <Header />
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 main-root">
@@ -127,6 +130,7 @@ class CandidateAbout extends Component{
                         </div>
                     </div> 
                 </div>
+                <Footer />
             </div>
         )
     }

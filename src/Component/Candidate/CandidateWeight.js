@@ -1,6 +1,8 @@
 import React from 'react';
 import {Component} from 'react';
 import {Link} from 'react-router-dom';
+import Footer from '../../common/Footer';
+import Header from '../../common/Header';
 
  
 
@@ -29,6 +31,7 @@ class CandidateWeight extends Component{
       
         return(
             <div>
+                <Header />
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 main-root">
@@ -73,6 +76,7 @@ class CandidateWeight extends Component{
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

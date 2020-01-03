@@ -1,6 +1,8 @@
 import React from 'react';
 import {Component} from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../../common/Header';
+import Footer from '../../common/Footer';
 
 
 class CandidateSignup extends Component{
@@ -72,6 +74,7 @@ class CandidateSignup extends Component{
     render(){
 	return(
        <div>
+         <Header />
            <div className="container">
                <div className="row">
                    <div className="col-lg-12 mdv-singup-page text-center">
@@ -162,6 +165,7 @@ class CandidateSignup extends Component{
                            
                </div>
            </div>
+           <Footer />
        </div>
     )
     }

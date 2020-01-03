@@ -1,6 +1,8 @@
 import React from 'react';
 import {Component} from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../../common/Header';
+import Footer from '../../common/Footer';
 
 
 
@@ -13,6 +15,7 @@ class StudentQuestiontwo extends Component{
     render(){
 	return(
        <div>
+         <Header />
            <div className="container">
                <div className="row">
                    <div className="col-lg-12 mdv-singup-page">
@@ -62,6 +65,7 @@ class StudentQuestiontwo extends Component{
                  
                </div>
            </div>
+           <Footer />
        </div>
     )
     }

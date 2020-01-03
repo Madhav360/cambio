@@ -8,6 +8,7 @@ import {Link} from 'react-router-dom';
 
 
 
+
 class CandidateProfileSetting extends Component{
     constructor(props) {
         super(props);
@@ -139,6 +140,7 @@ render(){
     let datas = this.state.datas;
     return(
         <div>
+       
             <div className="col-lg-3 col-md-3 col-sm-12 col-12">
                 <AccountInfo />
             </div>

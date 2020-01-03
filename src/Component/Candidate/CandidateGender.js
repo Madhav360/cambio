@@ -1,6 +1,8 @@
 import React from 'react';
 import {Component} from 'react';
 import {Link} from 'react-router-dom';
+import Header from '../../common/Header';
+import Footer from '../../common/Footer';
 
 class CandidateGender extends Component{
     constructor(props){
@@ -11,6 +13,7 @@ class CandidateGender extends Component{
     render(){
         return(
             <div>
+                <Header />
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 main-root">
@@ -49,6 +52,7 @@ class CandidateGender extends Component{
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }
