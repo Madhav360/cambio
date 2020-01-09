@@ -98,6 +98,12 @@ import CandidateUdgrade from "./Component/Candidate/CandidateUpgrade";
 import CandidateNotifications from "./Component/Candidate/CandidateNotificatins";
 import CandidateCardview from "./Component/Candidate/CandidateCardview";
 import CandidateProfileSetting from "./Component/Candidate/CandidateProfileSetting";
+import CandidateAllappliedJob from "./Component/Candidate/CandidateAllappliedJob";
+import CandidateUpCommingInterview from "./Component/Candidate/CandidateUpCommingInterview";
+import CandidateComplitedInterviews from "./Component/Candidate/CandidateComplitedInterviews";
+import CandidateMatchedJob from "./Component/Candidate/CandidateMatchedJob";
+import CandidateCurrentInterviews from "./Component/Candidate/CandidateCurrentInterviews";
+import CandidateSaved from "./Component/Candidate/CandidateSaved";
 
 
 
@@ -548,6 +554,36 @@ const appRoute =[
 	path:"/candidate-profile-setting",
 	isExactPath: true,
 	component: <CandidateProfileSetting />
+ },
+ {
+	path:"/candidate-upcoming-interview",
+	isExactPath: true,
+	component: <CandidateUpCommingInterview />
+ },
+ {
+	path:"/candidate-all-applied-job",
+	isExactPath: true,
+	component: <CandidateAllappliedJob />
+ },
+ {
+	path:"/candidate-complited-interviews",
+	isExactPath: true,
+	component: <CandidateComplitedInterviews />
+ },
+ {
+	path:"/candidate-matched-job",
+	isExactPath: true,
+	component: <CandidateMatchedJob />
+ },
+ {
+	path:"/candidate-current-interview",
+	isExactPath: true,
+	component: <CandidateCurrentInterviews />
+ },
+ {
+	path:"/candidate-saved",
+	isExactPath: true,
+	component: <CandidateSaved />
  },
 ];
 

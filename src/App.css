@@ -843,6 +843,9 @@ width: 200px;
 }
 
 @media only screen and (max-width: 768px) {
+  .role-height{
+    height: auto;
+  }
   .roles {
    margin-left: 0px;
   }
@@ -919,12 +922,16 @@ width: 200px;
   margin-top: 20px;
   border: 1px solid #dddddd;
   border-radius: 16px;
-  background-color: #c7c4c43b;
+  background-color: #55aefa54;
 
 }
 .industry-job:hover{
-  background-color: #55aefa54;
-    border: 1px solid #55aefa54;
+  background-color: #f9f9f9;
+    border: 1px solid #f9f9f9;
+}
+.industry-job:focus{
+  background-color: #f9f9f9;
+    border: 1px solid #f9f9f9;
 }
 .industry-job img{
   margin: auto;
@@ -1269,6 +1276,20 @@ padding: 2px;
 .company p{
   color: #55aefa !important;
   cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .mdv-first-input {
+    float: none;
+}
+.company-inputs {
+width: 100%;
+}
+.company-textarea {
+  width: 100%;
+ }
+ .company-braches-inputs {
+   width: 100%;
+ }
 }
 /* -----------------------company end------------------ */
 
@@ -2249,7 +2270,7 @@ color: grey;
 
   .updrade-pricing > .flex-container > div {
     background-color: #f9f9f9;
-    width: 129px;
+    width: 152px;
   }
 
 }
@@ -2258,7 +2279,12 @@ color: grey;
 
 
 /* ------------------------------Upgrade end------------------------------------------------ */
-
+.errorMsg{
+  position: absolute;
+ top: 0;
+ color: red;
+ right: 0;
+}
 
 /* ----------------------------Notification start------------------------------- */
 
@@ -3910,7 +3936,7 @@ color: #55aefa;
   margin:20px 0 0 0;
 }
 .items-collection label.btn-default.active{
-  background-color:#55aefa42;
+  background-color:#f9f9f9;
   color:#000;
 }
 .items-collection label.btn-default{
@@ -4207,3 +4233,123 @@ color: #fff;
   display: block;
 }
 /* -------------------------------Candidate Home End--------------------------- */
+
+
+/* ------------------------------Candidate Complited Interview---------------------- */
+.interviewcomplited-data h5{
+  font-weight: 700;
+    color: #0789f7;
+    font-size: 14px;
+    margin-bottom: 0px;
+    text-transform: capitalize;;
+}
+
+.interviewcomplited-data h4{
+  color: #585757;
+    margin-bottom: 0px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 3px;
+}
+.interviewcomplited-data p :nth-child(1){
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin: 0px;
+  color: #000;
+}
+.interviewcomplited-data .interview-status{
+float: right;
+color: #0789f7;
+}
+
+.hori-line{
+  background-color: grey;
+  margin-top: 0px;
+}
+.current-interview-date p{
+  font-size: 12px;
+    margin-top: -12px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------Candidate Complited Interview End------------------------------ */
+
+
+
+
+
+
+
+.stu-category.ks-cboxtags {
+  list-style: none;
+  padding: 20px;
+}
+.stu-category.ks-cboxtags .mm{
+display: inline;
+}
+.stu-category.ks-cboxtags .mm label{
+  display: inline-block;
+  background-color: rgba(0, 188, 212, 0.15);
+  border: 1px solid rgba(0, 188, 212, 0.15);
+  color: #adadad;
+  border-radius: 10px;
+  white-space: nowrap;
+  margin: 3px 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all .2s;
+}
+
+.stu-category.ks-cboxtags .mm label {
+  width: 100%;
+  height: 150px;
+  cursor: pointer;
+  text-align: center;
+  color: #000;
+  padding: 16px 0px 33px 0px;
+  margin-bottom: 22px;
+   
+}
+
+.stu-category img{
+  width: 50px;
+  margin: auto;
+
+}
+
+
+
+.stu-category.ks-cboxtags .mm input[type="checkbox"]:checked + label {
+  border: 2px solid #f9f9f9;
+  background-color: #f9f9f9;
+  color: #000;
+  transition: all .2s;
+}
+
+.stu-category.ks-cboxtags .mm input[type="checkbox"] {
+display: absolute;
+}
+.stu-category.ks-cboxtags .mm input[type="checkbox"] {
+position: absolute;
+opacity: 0;
+}
+.stu-category.ks-cboxtags .mm input[type="checkbox"]:focus + label {
+border: 2px solid #f9f9f9;
+}

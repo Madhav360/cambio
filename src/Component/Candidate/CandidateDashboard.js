@@ -33,27 +33,27 @@ class CandidateDashboard extends Component{
                               </Link>
                           </div>
                           <div className="col-md-4 candidate-dashboard-menu">
-                              <Link to="#">
+                              <Link to="/candidate-current-interview">
                                   <button className="btn">Current<br /> Interviews</button>
                               </Link>
                           </div>
                           <div className="col-md-4 candidate-dashboard-menu">
-                              <Link to="#">
+                              <Link to="/candidate-upcoming-interview">
                                   <button className="btn">Upcoming<br /> Interviews</button>
                               </Link>
                           </div>
                           <div className="col-md-4 candidate-dashboard-menu">
-                              <Link to="#">
+                              <Link to="/candidate-all-applied-job">
                                   <button className="btn">All applied jobs</button>
                               </Link>
                           </div>
                           <div className="col-md-4 candidate-dashboard-menu">
-                              <Link to="#">
+                              <Link to="/candidate-matched-job">
                                   <button className="btn">Matched Jobs</button>
                               </Link>
                           </div>
                           <div className="col-md-4 candidate-dashboard-menu">
-                              <Link to="#">
+                              <Link to="/candidate-complited-interviews">
                                   <button className="btn">Completed <br />Interviews</button>
                               </Link>
                           </div>

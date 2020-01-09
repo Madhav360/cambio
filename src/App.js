@@ -91,6 +91,12 @@ import CandidateUdgrade from './Component/Candidate/CandidateUpgrade';
 import CandidateNotifications from './Component/Candidate/CandidateNotificatins';
 import CandidateCardview from './Component/Candidate/CandidateCardview';
 import CandidateProfileSetting from './Component/Candidate/CandidateProfileSetting';
+import CandidateUpCommingInterview from './Component/Candidate/CandidateUpCommingInterview';
+import CandidateAllappliedJob from './Component/Candidate/CandidateAllappliedJob';
+import CandidateComplitedInterviews from './Component/Candidate/CandidateComplitedInterviews';
+import CandidateMatchedJob from './Component/Candidate/CandidateMatchedJob';
+import CandidateCurrentInterviews from './Component/Candidate/CandidateCurrentInterviews';
+import CandidateSaved from './Component/Candidate/CandidateSaved';
 
 
 
@@ -192,6 +198,12 @@ class App extends Component {
             <Route exact path="/candidate-notifications" component={() =>(<CandidateNotifications />)} />
             <Route exact path="/candidate-cardview" component={() =>(<CandidateCardview />)} />
             <Route exact path="/candidate-profile-setting" component={() =>(<CandidateProfileSetting />)} />
+            <Route exact path="/candidate-upcoming-interview" component={() =>(<CandidateUpCommingInterview />)} />
+            <Route exact path="/candidate-all-applied-job" component={() =>(<CandidateAllappliedJob />)} />
+            <Route exact path="/candidate-complited-interviews" component={() =>(<CandidateComplitedInterviews />)} />
+            <Route exact path="/candidate-matched-job" component={() =>(<CandidateMatchedJob />)} />
+            <Route exact path="/candidate-current-interview" component={() =>(<CandidateCurrentInterviews />)} />
+            <Route exact path="/candidate-saved" component={() =>(<CandidateSaved />)} />
            
             
           </Switch>
