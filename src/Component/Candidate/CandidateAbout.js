@@ -84,7 +84,7 @@ class CandidateAbout extends Component{
                                         </div>
                                   </div>
                                </div>
-                                   <div className="social-responsibility text-center">
+                                   {/* <div className="social-responsibility text-center">
                                        <p>Corporate Social Responsibility</p>
                                    </div>
                                    <div className="col-md-6 social-responsibility">
@@ -101,7 +101,39 @@ class CandidateAbout extends Component{
                                    </div>
                                    <div className="col-md-6 social-responsibility">
                                        <button className="btn">HIV/Cancer</button>
-                                   </div>
+                                   </div> */}
+                                   <div class="about-quation">
+                                        <div className="col-md-6">
+                                            <input type="radio" id="option1" name="flavor" value="option1" />
+                                            <label for="option1" class="option11">Corporate Social Responsibility</label>
+                                        </div>
+    
+                                        <div className="col-md-6">
+                                            <input type="radio" id="option2" name="flavor" value="option2" />
+                                            <label for="option2" class="option11">Environment and carbon footprint</label>
+                                        </div>
+    
+                                        <div className="col-md-6">
+                                            <input type="radio" id="option3" name="flavor" value="option3" />
+                                            <label for="option3" class="option11">Education and nourishment of underprivileged<br />children and women</label>
+                                        </div>
+
+                                        <div className="col-md-6">
+                                            <input type="radio" id="option4" name="flavor" value="option4" />
+                                            <label for="option4" class="option11">Access to clean and potable water for all</label>
+                                        </div>
+    
+                                        <div className="col-md-6">
+                                            <input type="radio" id="option5" name="flavor" value="option5" />
+                                            <label for="option5" class="option11">Animal rights protection</label>
+                                        </div>
+
+                                        <div className="col-md-6">
+                                            <input type="radio" id="option6" name="flavor" value="option6" />
+                                            <label for="option6" class="option11">HIV/Cancer</label>
+                                        </div>
+
+                                           </div>
                                    <div className="col-md-12 candidate-about-us text-center">
                                       <label className="resi-sub-head">Sports</label>
                                        <div class="form-group">

@@ -30,8 +30,13 @@ class MarriageStatus extends Component{
                                   <p>Marriage Status</p>
                                  <div className="col-md-12">
                                      <div className="marrige-status">
-                                       <button type="radio" className="btn">Single</button>
-                                       <button type="radio" className="btn">Marriged</button>
+                                          <div class="flavor">
+                                               <input type="radio" id="radio_vanilla" name="flavor" value="vanilla" />
+                                               <label for="radio_vanilla" class="option11">Single</label>
+    
+                                               <input type="radio" id="radio_chocolate" name="flavor" value="chocolate" />
+                                               <label for="radio_chocolate" class="option11">Marriged</label>
+                                           </div>
                                      </div>
                                  </div>
                                   <div className="col-md-12">

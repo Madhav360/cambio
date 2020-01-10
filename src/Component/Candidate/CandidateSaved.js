@@ -29,9 +29,12 @@ class CandidateSaved extends Component{
                    
 
                    {/* --------------applicant profile---------------------- */}
-                   <div className="col-md-8 offset-md-2 bg-primary">
+                
                    <CandidatesSaved />
-                   </div>
+                   <CandidatesSaved />
+                   <CandidatesSaved />
+                  
+                   
                    
                   
 

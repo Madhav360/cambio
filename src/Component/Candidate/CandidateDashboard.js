@@ -28,7 +28,7 @@ class CandidateDashboard extends Component{
                      <div className="col-md-12">
                        <div className="dashboardmenus text-center">
                           <div className="col-md-4 candidate-dashboard-menu">
-                              <Link to="#">
+                              <Link to="/candidate-saved">
                                   <button className="btn">Search Job</button>
                               </Link>
                           </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-
+import $ from "jquery";
 
 class Sidebar extends Component{
     constructor(props){

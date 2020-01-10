@@ -32,12 +32,26 @@ class HighestQualification extends Component{
                                   <p>Highest Qualification</p>
                                   <div className="col-md-12">
                                       <div className="highest-edu-option">
-                                          <button className="btn">High School</button>
-                                          <button className="btn"> Under Graduate</button>
-                                          <button className="btn">Graduate</button>
-                                          <button className="btn">Post Graduate</button>
-                                          <button className="btn">Doctorate</button>
-                                          <button className="btn">Post Doctorate</button>
+                                          <div class="flavor high-qul">
+                                               <input type="radio" id="radio_high-school" name="flavor" value="radio_high-school" />
+                                               <label for="radio_high-school" class="option11">High School</label>
+    
+                                               <input type="radio" id="radio_under-graduate" name="flavor" value="radio_under-graduate" />
+                                               <label for="radio_under-graduate" class="option11">Under Graduate</label>
+                                                 <br />
+                                               <input type="radio" id="radio_graduate" name="flavor" value="radio_graduate" />
+                                               <label for="radio_graduate" class="option11">Graduate</label>
+
+                                               <input type="radio" id="radio_post-graduate" name="flavor" value="radio_post-graduate" />
+                                               <label for="radio_post-graduate" class="option11">Post Graduate</label>
+                                               <br />
+                                               <input type="radio" id="radio_doctorate" name="flavor" value="radio_doctorate" />
+                                               <label for="radio_doctorate" class="option11">Doctorate</label>
+
+                                               <input type="radio" id="radio_post-doctorate" name="flavor" value="radio_post-doctorate" />
+                                               <label for="radio_post-doctorate" class="option11">Post Doctorate</label>
+
+                                           </div>
                                       </div>
                                       <div className="form-group">
                                           <input 

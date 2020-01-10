@@ -30,13 +30,18 @@ class CandidateGender extends Component{
                                   <p>Gender</p>
                                      <div className="col-md-12  gender-options">
                                         <div className="gender-option">
-                                            <button className="btn" type="radio">Male</button>
-                                            <button className="btn" type="radio">Female</button><br />
-                                            <button className="btn" type="radio">Others</button>
+                                           <div class="flavor">
+                                               <input type="radio" id="radio_vanilla" name="flavor" value="vanilla" />
+                                               <label for="radio_vanilla" class="option11">Male</label>
+    
+                                               <input type="radio" id="radio_chocolate" name="flavor" value="chocolate" />
+                                               <label for="radio_chocolate" class="option11">Female</label>
+    
+                                               <input type="radio" id="radio_strawberry" name="flavor" value="strawberry" />
+                                               <label for="radio_strawberry" class="option11">Other</label>
+                                           </div>
                                         </div>
-                                        <div className="gender-option">
-                                            
-                                        </div>
+                                       
                                      </div>
                                   <div className="col-md-12">
                                       <div className="basic-nxr-btn text-center">

@@ -89,6 +89,23 @@ body{
   list-style-position: outside;
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .chatimg{
   margin-top:-10px;
 }
@@ -100,6 +117,10 @@ body{
   color: grey;
 }
 .sidebarmenu a:hover{
+  color: #55aefa;
+  text-decoration: none;
+}
+.sidebarmenu a:focus{
   color: #55aefa;
   text-decoration: none;
 }
@@ -1470,30 +1491,23 @@ color: grey;
 }
 .dashaboard-menuu button{
   position: relative;
-  background-color: #e3e2e2;
   height: 140px;
   width: 140px;
   border-radius: 105px;
   font-size: 16px;
-  color: #000;
+  background-color: #55aefa;
+  color: #fff;
 }
 .dashaboard-menuu button:hover{
-  background-color: #55aefa;
-  color: #fff;
-}
-.dashaboard-menuu button:focus{
-  background-color: #55aefa;
-  color: #fff;
-}
-.dashaboard-menuu button{
-  position: relative;
+
   background-color: #e3e2e2;
-  height: 140px;
-  width: 140px;
-  border-radius: 105px;
-  font-size: 16px;
   color: #000;
 }
+.dashaboard-menuu button:focus{
+  background-color: #e3e2e2;
+  color: #000;
+}
+
 .dashboard-head h3{
   font-size: 35px;
     font-weight: 600;
@@ -3645,22 +3659,7 @@ color: #fff;
   font-weight: 600;
 }
 
-.gender-options{
-  display: flex;
-  margin-left: 73px;
-}
-.gender-options button{
-  margin-right: 40px;
-  height: 46px;
-  width: 123px;
-  border-radius: 10px;
-  margin-top: 20px;
-  font-weight: 600
-}
-.gender-options button:hover{ 
- color: #fff;
- background-color:#55aefa;
-}
+
 .gender-options button:focus{ 
   color: #fff;
   background-color:#55aefa;
@@ -4070,18 +4069,19 @@ font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 50%;
-  background-color: #F1F1F1;
   font-size: 20px;
-  color: #000;
+  background-color: #55aefa;
+color: #fff;
   font-weight: 500;
 }
 .candidate-dashboard-menu button:hover{
-background-color: #55aefa;
-color: #fff;
+
+  background-color: #F1F1F1;
+  color: #000;
 }
 .candidate-dashboard-menu button:focus{
-  background-color: #55aefa;
-  color: #fff;
+  background-color: #F1F1F1;
+color: #000;
   }
 /* ----------------------------- Candidate Dashboard end--------------------- */
 
@@ -4273,10 +4273,37 @@ color: #0789f7;
   
 }
 
+.saved-candidate{
+  margin:10px auto;
+  float: none;
+  border-radius: 20px;
+  background-color: #03a9f41f;
+  
+}
 
+.saved-candidate img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 22px;
 
+}
+.saved-candidate h3{
+  padding-left: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #048bf7;
+}
 
+.saved-candidate p{
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  color: grey;
+}
+.saved-candidate h5{
+  color: #000;
 
+}
 
 
 
@@ -4352,4 +4379,77 @@ opacity: 0;
 }
 .stu-category.ks-cboxtags .mm input[type="checkbox"]:focus + label {
 border: 2px solid #f9f9f9;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------------- */
+.flavor input[type=radio] {
+  display: none;
+}
+.flavor input[type=radio] + label {
+  background-color: #f9f9f9;
+  border-color: #f9f9f9;
+  color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: .5em;
+  padding: .5em 1em;
+  margin-left: 10px;
+  font-weight: 400;
+  width: 165px;
+}
+.flavor input[type=radio]:checked + label.option11 {
+  background-color: #55aefa;
+  border-color: #55aefa;
+  color: #fff;
+}
+.high-qul input[type=radio] {
+  display: none;
+}
+.high-qul input[type=radio] + label {
+  background-color: #f9f9f9;
+  border-color: #f9f9f9;
+  color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: .5em;
+  padding: .5em 1em;
+  margin-left: 10px;
+  font-weight: 400;
+  width: 165px;
+}
+.high-qul input[type=radio]:checked + label.option11 {
+  background-color: #55aefa;
+  border-color: #55aefa;
+  color: #fff;
+}
+
+.about-quation input[type=radio] {
+  display: none;
+}
+.about-quation input[type=radio] + label {
+  background-color: #f9f9f9;
+  border-color: #f9f9f9;
+  color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: .5em;
+  padding: .5em 1em;
+ 
+  font-weight: 400;
+  width: 392px;
+    height: 62px;
+ 
+}
+.about-quation input[type=radio]:checked + label.option11 {
+  background-color: #55aefa;
+  border-color: #55aefa;
+  color: #fff;
 }
