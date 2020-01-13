@@ -22,7 +22,7 @@ class CandidateSaved extends Component{
                 <div className="col-lg-9 col-md-9">
                     <p className="back">Back</p>
                    <div class="row  dashpagewidth role-height"> 
-                        <div className="col-md-12 postajob-head ">
+                        <div className="col-md-12 postajob-head lc">
                            <h3 className="text-center">Saved Jobs</h3>
                         </div>                            
         {/* ----------------------------- Applicants people end------------------------------------- */}
