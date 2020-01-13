@@ -237,7 +237,7 @@ class CandidateSignup extends Component{
                             </div>
                            </div>
                          
-                            <div class="col-md-12 form-group text-center">
+                            <div class="col-md-12 form-group text-center lc">
                             
                             
                            <Link to="/candidate-industry"><input type="submit" className="btn mdv-signup-btn" value="Submit" /></Link>

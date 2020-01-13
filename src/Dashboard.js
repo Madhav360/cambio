@@ -103,7 +103,7 @@ class Dashboard extends Component{
                                     </div>
                                 
                            </div>
-                           <div className="mg-20"></div>
+                           <div className="mg-20 lc"></div>
                      </div>                        
                    </div> 
                 </div>

@@ -37,7 +37,7 @@ class CurrentInterviews extends Component{
                                      <p className="postedon">Expire on</p>
                                      <p className="postedondate">{this.state.reschedule_interview.expire_date}</p>
                                   </div>
-                                  <div className="col-md-4">
+                                  <div className="col-md-4 l">
                                      <p className="totalapplicent">{this.state.reschedule_interview.total_application}</p>
                                      <p className="postedondatea">Applicant</p>
                                   </div>

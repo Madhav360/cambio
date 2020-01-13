@@ -286,7 +286,7 @@ class Signup extends Component{
                         </div>
                         </form>
                       
-                        <div class="col-md-12 form-group signup-text">
+                        <div class="col-md-12 form-group signup-text lc">
                            A Already User ? <Link to="/Login">Login</Link>
                            
                         </div>

@@ -41,7 +41,7 @@ class ComplitedInterviews extends Component{
                                      <p className="totalapplicent">{this.state.complited_interview.total_application}</p>
                                      <p className="postedondatea">Applicant</p>
                                   </div>
-                                  <div className="">
+                                  <div className="l">
                                   </div>
                            </div>
                        </div>

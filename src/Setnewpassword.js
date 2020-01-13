@@ -55,7 +55,7 @@ class Setnewpassword extends Component{
                                 onChange={this.handleChange} />
                              
                          </div>
-                         <div className="col-md-12 company-skip-btn text-center">
+                         <div className="col-md-12 company-skip-btn text-center lc">
                              <Link to="/login">  <buttom className="btn company-skip">Next</buttom><br /></Link>
 
                              

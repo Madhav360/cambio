@@ -78,7 +78,7 @@ class Support extends Component{
                                 </textarea>
                             </div>
                             </div>
-                            <div className="submit-form-button text-center">
+                            <div className="submit-form-button text-center lc">
                                  <img src="image/icons/submit.png" type="submit" alt="submit" />
                             </div>
                          </form>

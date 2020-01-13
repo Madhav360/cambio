@@ -70,7 +70,7 @@ class Udgrade extends Component{
                                     <h5>1 Day Job Pass </h5>
                                  </div>
                              </div>
-                             <div className="upgrade-pay-to-contineu text-center">
+                             <div className="upgrade-pay-to-contineu text-center lc">
                                  <button className="btn">Continue to Pay</button>
                              </div>
                          </div>
