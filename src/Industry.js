@@ -95,22 +95,22 @@ class Industry extends Component{
                                 </label>
                             </div>
                             <div class="col-md-2 mm">
-                                <input type="checkbox" class="single-checkbox" id="checkboxNine" />
-                                 <label for="checkboxNine">
+                                <input type="checkbox" class="single-checkbox" id="checkboxTwl" />
+                                 <label for="checkboxTwl">
                                  <img className="img-responsive" src="image/icons/shop.png" /> <br />
                                   Events & <br /> Entertainment
                                 </label>
                             </div>
                             <div class="col-md-2 mm">
-                                <input type="checkbox" class="single-checkbox" id="checkboxNine" />
-                                 <label for="checkboxNine">
+                                <input type="checkbox" class="single-checkbox" id="checkboxTen" />
+                                 <label for="checkboxTen">
                                    <img className="img-responsive" src="image/icons/dataanlytics.png" /> <br />
                                    Data Analytics
                                 </label>
                             </div>
                             <div class="col-md-2 mm">
-                                <input type="checkbox" class="single-checkbox" id="checkboxNine" />
-                                 <label for="checkboxNine">
+                                <input type="checkbox" class="single-checkbox" id="checkboxEleven" />
+                                 <label for="checkboxEleven">
                                    <img className="img-responsive" src="image/icons/contruction.png" /> <br />
                                    Construction
                                 </label>

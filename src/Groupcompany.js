@@ -144,6 +144,9 @@ class Groupcompany extends Component{
                                
                                <Link to="/condidatealert">Skip</Link>
                            </div>
+                             <div className="col-md-12 roles-nxt-btn text-center">
+                        <Link to="/condidatealert"><button className="btn">Next</button></Link>
+                </div>
                    </div>  
                     {/* -------------------------Add Member popup start here------------------------------ */}
 

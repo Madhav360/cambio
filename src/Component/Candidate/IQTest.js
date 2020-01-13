@@ -40,12 +40,12 @@ class IQTest extends Component{
                          <form onSubmit={this.handleSubmit}>
                          <div className="col-md-4 offset-md-8 accout-recover-input form-group">
                         
-                             <input 
+                             {/* <input 
                                 className="form-control iq-test-input" 
                                 type="email"
                                 placeholder="Email Id" 
                                 value={this.state.value} 
-                                onChange={this.handleChange} />
+                                onChange={this.handleChange} /> */}
                          </div>
                          <div className="col-md-12 company-skip-btn text-center">
                               <Link to="/iq-test-begin"> <buttom className="btn company-skip">Start the test</buttom><br /></Link>
