@@ -47,7 +47,7 @@ class CandidateBio extends Component{
                                   </div>
                                   </div>
                               </div>
-                               <div className="col-md-8 offset-md-4 tabs">
+                               <div className="col-md-8 offset-md-4 tabs lc">
                                    <div className="col-md-4"></div>
                                </div>
                            </div>

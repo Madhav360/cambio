@@ -125,7 +125,7 @@ handleNotiMouseOver() {
                              <li><Link to="/login"><img src="image/menuicon/logout.png" /> <span>Logout</span></Link></li>
                              <li><Link to="#"><span>Swap your Role</span></Link></li>
                              <li><Link to="#"><span>Job Alert</span></Link></li>
-                             <li><Link to="#"><span>Delete Account</span></Link></li>
+                             <li><Link to="#/"><span>Delete Account</span></Link></li>
                              <li><Link to="#"><img src="image/menuicon/share1.png" /> <span>Refer this App</span></Link></li>
                              
                           </ul>

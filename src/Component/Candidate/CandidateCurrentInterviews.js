@@ -30,6 +30,7 @@ class CandidateCurrentInterviews extends Component{
                  <CurrentInterviews />
                  <CurrentInterviews />
                  <CurrentInterviews />
+                 <CurrentInterviews />
               
 
                     

@@ -73,7 +73,7 @@ class CandidateAbled extends Component{
                                       </div>
                                   </div>
                                   <div className="col-md-12">
-                                      <div className="basic-skip text-center">
+                                      <div className="basic-skip text-center lc">
                                       <Link to="/candidate-experience">Skip</Link>
                                       </div>
                                   </div>

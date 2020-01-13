@@ -43,7 +43,7 @@ class CandidateNotifications extends Component{
                    </div>
 
 
-                   <div className="col-md-12 notification-data">
+                   <div className="col-md-12 notification-data lc">
                       
                        <div className="notifi">
                            <div className="col-md-10">

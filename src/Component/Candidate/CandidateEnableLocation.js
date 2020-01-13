@@ -27,7 +27,7 @@ class CandidateEnableLocation extends Component{
                          <div className="col-md-12 gps-img">
                           <img className="img-responsive" src="image/location.png" />
                         </div>
-                        <div className="roles-nxt-btn text-center">
+                        <div className="roles-nxt-btn text-center lc">
                            <Link to="/sign-up"><button className="btn">Allow Location</button></Link>
                            </div>
                         </div> 

@@ -130,7 +130,7 @@ class CandidateMatchedJob extends Component{
                                     <img src="image/icons/shikhar.jpg" />
                                     <p>Jacob</p>
                                 </div>
-                                <div className="inactive-people">
+                                <div className="inactive-people lc">
                                     <img src="image/icons/shikhar.jpg" />
                                     <p>Jacob</p>
                                 </div>

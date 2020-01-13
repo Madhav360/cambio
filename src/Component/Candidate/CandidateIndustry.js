@@ -117,7 +117,7 @@ class CandidateIndustry extends Component{
                                 </label>
                             </div>
                         </div>
-                        <div className="col-md-12 roles-nxt-btn text-center">
+                        <div className="col-md-12 roles-nxt-btn text-center lc">
                   <Link to="/candidate-category"><button className="btn">Next</button></Link>
                 </div>
                     </div>

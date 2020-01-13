@@ -33,6 +33,7 @@ class CandidateSaved extends Component{
                    <CandidatesSaved />
                    <CandidatesSaved />
                    <CandidatesSaved />
+                   <CandidatesSaved />
                   
                    
                    

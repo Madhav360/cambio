@@ -186,7 +186,7 @@ render(){
                               <h6>200</h6>
                           </div>
                       </div>
-                      <div className="col-md-12 profile-setting-candidate-desciption">
+                      <div className="col-md-12 profile-setting-candidate-desciption lc">
                            <p>{this.state.profile_summary}</p>
                           <i class="material-icons" data-toggle="modal" data-target="#profilesummary-popup">edit</i>
                           {/* -----------------------Profilr Summary popup---------------------- */}

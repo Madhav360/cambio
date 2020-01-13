@@ -201,7 +201,7 @@ class CandidateCardview extends Component{
                           </div>
                           </div>
                            <div className="col-md-12">
-                             <div className="swipe-buutons text-center">
+                             <div className="swipe-buutons text-center lc">
                                   <img id='button2' className="cardpointer" title="Prevoius" src="image/menuicon/backbtn.png" />
                                   <img id='button1' className="cardpointer" title="Pass" src="image/menuicon/closebtn.png" />
                                   <img id='button3' className="cardpointer" title="Like" src="image/menuicon/likebtn.png" />

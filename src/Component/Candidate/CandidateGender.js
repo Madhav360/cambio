@@ -28,7 +28,7 @@ class CandidateGender extends Component{
                             </div>
                             <div className="col-md-5 offset-md-7 text-center candidate-basic-root basic-details">
                                   <p>Gender</p>
-                                     <div className="col-md-12  gender-options">
+                                     <div className="col-md-12  gender-options lc">
                                         <div className="gender-option">
                                            <div class="flavor">
                                                <input type="radio" id="radio_vanilla" name="flavor" value="vanilla" />

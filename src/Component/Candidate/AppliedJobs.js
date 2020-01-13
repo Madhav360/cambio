@@ -50,7 +50,7 @@ class AppliedJobs extends Component{
                                </div>
                            </div>
                            <div className="col-xs-4">
-                               <div className="current-interview-date">
+                               <div className="current-interview-date lc">
                                    <p>{this.state.candidate.type_of_interview}</p>
                                </div>
                            </div>

@@ -43,7 +43,7 @@ class Candidateheight extends Component{
                             </div>
                             <div className="col-md-5 offset-md-7 text-center candidate-basic-root basic-details">
                                   <p>Height</p>
-                                     <div className="col-md-12">
+                                     <div className="col-md-12 lc">
                                         <div className="form-group">
                                         <Select
                                            value={selectedOption}

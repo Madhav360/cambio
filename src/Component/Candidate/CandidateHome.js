@@ -164,7 +164,7 @@ class CandidateHome extends Component{
                              <h5>{this.state.viewer_comments.name}</h5>
                              <p>{this.state.viewer_comments.comment}</p>
                            </div>
-                           <div className="col-md-3 candidate-viewer-date-time">
+                           <div className="col-md-3 candidate-viewer-date-time lc">
                               <h5>{this.state.viewer_comments.date}</h5>
                               <p>{this.state.viewer_comments.time}</p>
                            </div>  

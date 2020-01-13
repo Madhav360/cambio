@@ -63,7 +63,7 @@ class CandidateProfilePic extends Component{
                                </div>
                             </div>
                             <div className="col-md-12">
-                                <div className="basic-skip text-center">
+                                <div className="basic-skip text-center lc">
                                   <Link to="/upload-adhar">Skip</Link>
                                  </div>
                             </div>

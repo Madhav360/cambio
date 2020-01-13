@@ -41,7 +41,7 @@ class CandidateProfileVisibility extends Component{
                               <p>Your Profile Visible to allYour Profile Visible to all</p>
                             </div></button>
                         </div> 
-                        <div className="roles-nxt-btn text-center">
+                        <div className="roles-nxt-btn text-center lc">
                            <Link to="/candidate-enable-location"><button className="btn">Save</button></Link>
                            </div>
                    </div>  
