@@ -104,6 +104,12 @@ import CandidateComplitedInterviews from "./Component/Candidate/CandidateComplit
 import CandidateMatchedJob from "./Component/Candidate/CandidateMatchedJob";
 import CandidateCurrentInterviews from "./Component/Candidate/CandidateCurrentInterviews";
 import CandidateSaved from "./Component/Candidate/CandidateSaved";
+import EmployerRescheduleInterviews from "./Component/EmployerRescheduleInterviews";
+import EmployerCurrentInterviews from "./Component/EmployerCurrentInterviews";
+import EmployerComplitedInterviews from "./Component/EmployerComplitedInterviews";
+import EmployerUpcomingInterviews from "./EmployerUpcomingInterviews";
+import EmployerExpireJobs from "./EmployerExpireJobs";
+import EmployerAllJobs from "./EmployerAllJobs";
 
 
 
@@ -584,6 +590,36 @@ const appRoute =[
 	path:"/candidate-saved",
 	isExactPath: true,
 	component: <CandidateSaved />
+ },
+ {
+	path:"/employer-rescheule-interviews",
+	isExactPath: true,
+	component: <EmployerRescheduleInterviews />
+ },
+ {
+	path:"/employer-current-interviews",
+	isExactPath: true,
+	component: <EmployerCurrentInterviews />
+ },
+ {
+	path:"/employer-complited-interviews",
+	isExactPath: true,
+	component: <EmployerComplitedInterviews />
+ },
+ {
+	path:"/employer-upcoming-interviews",
+	isExactPath: true,
+	component: <EmployerUpcomingInterviews />
+ },
+ {
+	path:"/employer-expire-jobs",
+	isExactPath: true,
+	component: <EmployerExpireJobs />
+ },
+ {
+	path:"/employer-all-jobs",
+	isExactPath: true,
+	component: <EmployerAllJobs />
  },
 ];
 

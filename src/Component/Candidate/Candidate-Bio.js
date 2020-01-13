@@ -28,21 +28,21 @@ class CandidateBio extends Component{
                                   
                                   <div className="col-xs-12 text-center">
                                   <div className="profile-build-tabs">
-                                      <div className="roundedd activeded">
+                                      <div className="roundedd">
                                           <Link to="/basic"><button className="btn">Basic</button></Link>
-                                          <div className="student-dot-progess stident-dot-actived"></div>
-                                          <div className="candidate-progress stident-dot-actived"></div>
+                                          <div className="student-dot-progess"></div>
+                                          <div className="candidate-progress"></div>
                                       </div>
-                                      <div className="roundedd activeded">
+                                      <div className="roundedd">
                                           <Link to="/highest-qualification"><button className="btn">Education & Experience</button></Link>
-                                          <div className="student-dot-second-progess stident-dot-actived"></div>
+                                          <div className="student-dot-second-progess"></div>
                                           
                                       </div>
                                       <div className="roundedd activeded">
                                           
                                           <Link to="/profile-picture"><button className="btn">Bio</button></Link>
                                           <div className="student-third-second-progess stident-dot-actived"></div>
-                                          <div className="condidate-second-progess stident-dot-actived"></div>
+                                          <div className="condidate-second-progess "></div>
                                       </div>
                                   </div>
                                   </div>

@@ -97,6 +97,13 @@ import CandidateComplitedInterviews from './Component/Candidate/CandidateComplit
 import CandidateMatchedJob from './Component/Candidate/CandidateMatchedJob';
 import CandidateCurrentInterviews from './Component/Candidate/CandidateCurrentInterviews';
 import CandidateSaved from './Component/Candidate/CandidateSaved';
+import EmployerRescheduleInterviews from './Component/EmployerRescheduleInterviews';
+import EmployerCurrentInterviews from './EmployerCurrentInterviews';
+import EmployerComplitedInterviews from './EmployerComplitedInterviews';
+import EmployerUpcomingInterviews from './EmployerUpcomingInterviews';
+import EmployerExpireJobs from './EmployerExpireJobs';
+import EmployerAllJobs from './EmployerAllJobs';
+
 
 
 
@@ -204,6 +211,12 @@ class App extends Component {
             <Route exact path="/candidate-matched-job" component={() =>(<CandidateMatchedJob />)} />
             <Route exact path="/candidate-current-interview" component={() =>(<CandidateCurrentInterviews />)} />
             <Route exact path="/candidate-saved" component={() =>(<CandidateSaved />)} />
+            <Route exact path="/employer-reschedule-interviews" component={() =>(<EmployerRescheduleInterviews />)} />
+            <Route exact path="/employer-current-interviews" component={() =>(<EmployerCurrentInterviews />)} />
+            <Route exact path="/employer-complited-interviews" component={() =>(<EmployerComplitedInterviews />)} />
+            <Route exact path="/employer-upcoming-interviews" component={() =>(<EmployerUpcomingInterviews />)} />
+            <Route exact path="/employer-expire-jobs" component={() =>(<EmployerExpireJobs />)} />
+            <Route exact path="/employer-all-jobs" component={() =>(<EmployerAllJobs />)} />
            
             
           </Switch>

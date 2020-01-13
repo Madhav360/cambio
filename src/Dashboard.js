@@ -42,14 +42,14 @@ class Dashboard extends Component{
                                          </Link>
                                     </div>
                                     <div className="dashaboard-menuu text-center">
-                                          <Link to ="#">
+                                          <Link to ="/employer-all-jobs">
                                              <button className="btn">
                                              All Jobs
                                              </button>
                                          </Link>
                                     </div>
                                     <div className="dashaboard-menuu text-center">
-                                          <Link to ="#">
+                                          <Link to ="/employer-expire-jobs">
                                              <button className="btn">
                                              Expired Jobs
                                              </button>
@@ -63,14 +63,14 @@ class Dashboard extends Component{
                                          </Link>
                                     </div>
                                     <div className="dashaboard-menuu text-center">
-                                          <Link to ="#">
+                                          <Link to ="/employer-reschedule-interviews">
                                              <button className="btn">
                                              Rescheduled<br /> Interviews
                                              </button>
                                          </Link>
                                     </div>
                                     <div className="dashaboard-menuu text-center">
-                                          <Link to ="#">
+                                          <Link to ="/employer-current-interviews">
                                              <button className="btn">
                                              Current <br />
                                               Interviews
@@ -78,7 +78,7 @@ class Dashboard extends Component{
                                          </Link>
                                     </div>
                                     <div className="dashaboard-menuu text-center">
-                                          <Link to ="#">
+                                          <Link to ="/employer-complited-interviews">
                                              <button className="btn">
                                              Complited <br />
                                       Interviews
@@ -86,7 +86,7 @@ class Dashboard extends Component{
                                          </Link>
                                     </div>
                                     <div className="dashaboard-menuu text-center">
-                                          <Link to ="#">
+                                          <Link to ="/employer-upcoming-interviews">
                                              <button className="btn">
                                              Upcoming <br />
                                       Interviews
