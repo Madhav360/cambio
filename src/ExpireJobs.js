@@ -38,7 +38,7 @@ class ExpireJobs extends Component{
                                      <p className="postedondate">{this.state.expire_jobs.expire_date}</p>
                                   </div>
                                   <div className="col-md-4">
-                                     <p className="totalapplicent">{this.state.expire_jobs.total_application}</p>
+                                     <p className="totalapplicent lc">{this.state.expire_jobs.total_application}</p>
                                      <p className="postedondatea">Applicant</p>
                                   </div>
                                   <div className="">

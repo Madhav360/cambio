@@ -126,7 +126,7 @@ class EmployerAllJobs extends Component{
                    </section>
                   {/* ------------------- Applicants people start------------------------ */}
                    <div className="col-md-12">
-                       <div className="emp-all-jobs text-center">
+                       <div className="emp-all-jobs text-center lc">
                           <Link to="#"><button className="btn">Active</button></Link>
                           <Link to="#"><button className="btn">Expire</button></Link>
                        </div>

@@ -30,7 +30,7 @@ class CandidateComplitedInterviews extends Component{
                     <ComplitedInterviews />
                     <ComplitedInterviews />
                     <ComplitedInterviews />
-                    <ComplitedInterviews />
+                   
                   
                    {/* --------------------profile applicant end--------------------- */}
 

@@ -624,9 +624,7 @@ const appRoute =[
 ];
 
 
-
-
-//HashRouter  also apply # 
+//HashRouter  also apply + # 
 
 const routes= (
 	<BrowserRouter>

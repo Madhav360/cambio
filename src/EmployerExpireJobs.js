@@ -129,7 +129,7 @@ class EmployerExpireJobs extends Component{
                   <ExpireJobs />
                   <ExpireJobs />
                   <ExpireJobs />
-                  <ExpireJobs />
+                  
                    {/* --------------------profile applicant end--------------------- */}
                  </div> 
                 </div>

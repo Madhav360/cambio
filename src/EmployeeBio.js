@@ -17,7 +17,7 @@ class EmployeeBio extends Component{
                    <div className="row">
                        <section>
                            <p className="back">Back</p>
-                           <div className="col-md-12 main-root basic-page-height">
+                           <div className="col-md-12 main-root basic-page-height lc">
                                <h2 className="text-center">Let's Build Your Profile</h2>
                                <h4 className="text-center">Below are 2 individual tabs </h4>
                                

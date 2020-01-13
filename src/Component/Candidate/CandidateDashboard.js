@@ -43,7 +43,7 @@ class CandidateDashboard extends Component{
                               </Link>
                           </div>
                           <div className="col-md-4 candidate-dashboard-menu">
-                              <Link to="/candidate-all-applied-job">
+                              <Link to="/candidate-all-applied-job l">
                                   <button className="btn">All applied jobs</button>
                               </Link>
                           </div>

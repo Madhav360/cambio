@@ -218,7 +218,7 @@ class App extends Component {
             <Route exact path="/employer-expire-jobs" component={() =>(<EmployerExpireJobs />)} />
             <Route exact path="/employer-all-jobs" component={() =>(<EmployerAllJobs />)} />
            
-            
+        
           </Switch>
       </BrowserRouter>
     );

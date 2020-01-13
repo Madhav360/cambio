@@ -128,7 +128,7 @@ class EmployerUpcomingInterviews extends Component{
                    <UpcomingInterviews />
                    <UpcomingInterviews />
                    <UpcomingInterviews />
-                   <UpcomingInterviews />
+                  
                   
                    {/* --------------------profile applicant end--------------------- */}
                  </div> 
