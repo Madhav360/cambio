@@ -56,6 +56,7 @@ class IQTest extends Component{
                      </div>    
                </div>
            </div>
+           <div></div>
        <Footer />
        </div>
     )
