@@ -47,7 +47,7 @@ class IQTest extends Component{
                                 value={this.state.value} 
                                 onChange={this.handleChange} /> */}
                          </div>
-                         <div className="col-md-12 company-skip-btn text-center">
+                         <div className="col-md-12 company-skip-btn text-center lc">
                               <Link to="/iq-test-begin"> <buttom className="btn company-skip">Start the test</buttom><br /></Link>
                               <Link to="/iq-test-begin">I will attend later</Link>
                               

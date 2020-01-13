@@ -20,7 +20,7 @@ class IQTestBegin extends Component{
           <Header />
            <div className="container">
                <div className="row">
-                   <div className="col-lg-12 mdv-singup-page role-height">
+                   <div className="col-lg-12 mdv-singup-page role-height lc">
                          <div className="account-recovery  text-center">
                            <h2>IQ Test</h2>
                            
