@@ -59,7 +59,7 @@ class StudentQuestionfour extends Component{
                          </div>
                          
                          
-                         <div className="col-md-12 qskip text-center">
+                         <div className="col-md-12 qskip text-center lc">
                            <Link to="/studentquestionfive">SKIP</Link>
                            </div>
                    </div>  
